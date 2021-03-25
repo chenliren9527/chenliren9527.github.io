@@ -1,0 +1,1831 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="尚硅谷react全家桶, 薛定谔的腿毛">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>尚硅谷react全家桶 | 薛定谔的腿毛</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="薛定谔的腿毛" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">薛定谔的腿毛</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">薛定谔的腿毛</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">尚硅谷react全家桶</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E5%B0%9A%E7%A1%85%E8%B0%B7%E5%89%8D%E7%AB%AF%E5%AD%A6%E7%A7%91-%E9%AB%98%E7%BA%A7%E6%8A%80%E6%9C%AF/">
+                                <span class="chip bg-color">尚硅谷前端学科--高级技术</span>
+                            </a>
+                        
+                            <a href="/tags/React%E5%85%A8%E5%AE%B6%E6%A1%B6-%E6%8A%80%E6%9C%AF%E6%A0%88/">
+                                <span class="chip bg-color">React全家桶(技术栈)</span>
+                            </a>
+                        
+                            <a href="/tags/React/">
+                                <span class="chip bg-color">React</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%B0%9A%E7%A1%85%E8%B0%B7%E5%89%8D%E7%AB%AF%E5%AD%A6%E7%A7%91%E5%85%A8%E5%A5%97%E6%95%99%E7%A8%8B/" class="post-category">
+                                尚硅谷前端学科全套教程
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-03-24
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2021-03-24
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    4.6k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    18 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="React全家桶-技术栈"><a href="#React全家桶-技术栈" class="headerlink" title="React全家桶(技术栈)"></a>React全家桶(技术栈)</h1><p>尚硅谷前端研究院</p>
+<h2 id="第1章：React入门"><a href="#第1章：React入门" class="headerlink" title="第1章：React入门"></a>第1章：React入门</h2><h3 id="1-1-React简介"><a href="#1-1-React简介" class="headerlink" title="1.1. React简介"></a>1.1. React简介</h3><h4 id="1-1-1-官网"><a href="#1-1-1-官网" class="headerlink" title="1.1.1. 官网"></a>1.1.1. 官网</h4><ol>
+<li>英文官网:<a target="_blank" rel="noopener" href="https://reactjs.org/"> https://reactjs.org/</a></li>
+<li>中文官网: <a target="_blank" rel="noopener" href="https://react.docschina.org/">https://react.docschina.org/</a></li>
+</ol>
+<h4 id="1-1-2-介绍描述"><a href="#1-1-2-介绍描述" class="headerlink" title="1.1.2. 介绍描述"></a>1.1.2. 介绍描述</h4><ol>
+<li>  用于动态构建用户界面的 JavaScript 库(只关注于视图)</li>
+<li>  由Facebook开源</li>
+</ol>
+<h4 id="1-1-3-React的特点"><a href="#1-1-3-React的特点" class="headerlink" title="1.1.3. React的特点"></a>1.1.3. React的特点</h4><ol>
+<li><p>  声明式编码</p>
+</li>
+<li><p>  组件化编码</p>
+</li>
+<li><p>  React Native 编写原生应用</p>
+</li>
+<li><p>  高效（优秀的Diffing算法）</p>
+</li>
+</ol>
+<h4 id="1-1-4-React高效的原因"><a href="#1-1-4-React高效的原因" class="headerlink" title="1.1.4. React高效的原因"></a>1.1.4. React高效的原因</h4><ol>
+<li><p>  使用虚拟(virtual)DOM, 不总是直接操作页面真实DOM。</p>
+</li>
+<li><p>  DOM Diffing算法, 最小化页面重绘。</p>
+</li>
+</ol>
+<h3 id="1-2-React的基本使用"><a href="#1-2-React的基本使用" class="headerlink" title="1.2. React的基本使用"></a>1.2. React的基本使用</h3><h4 id="1-2-1-效果"><a href="#1-2-1-效果" class="headerlink" title="1.2.1. 效果"></a>1.2.1. 效果</h4><p><img src="%E5%B0%9A%E7%A1%85%E8%B0%B7react%E5%85%A8%E5%AE%B6%E6%A1%B6.assets/image-20210324203704032.png" alt="image-20210324203704032">                            </p>
+<h4 id="1-2-2-相关js库"><a href="#1-2-2-相关js库" class="headerlink" title="1.2.2. 相关js库"></a>1.2.2. 相关js库</h4><ol>
+<li><p>  react.js：React核心库。</p>
+</li>
+<li><p>  react-dom.js：提供操作DOM的react扩展库。</p>
+</li>
+<li><p>  babel.min.js：解析JSX语法代码转为JS代码的库。</p>
+</li>
+</ol>
+<h4 id="1-2-3-创建虚拟DOM的两种方式"><a href="#1-2-3-创建虚拟DOM的两种方式" class="headerlink" title="1.2.3. 创建虚拟DOM的两种方式"></a>1.2.3. 创建虚拟DOM的两种方式</h4><ol>
+<li><p>  纯JS方式(一般不用)</p>
+</li>
+<li><p>  JSX方式</p>
+</li>
+</ol>
+<h4 id="1-2-4-虚拟DOM与真实DOM"><a href="#1-2-4-虚拟DOM与真实DOM" class="headerlink" title="1.2.4. 虚拟DOM与真实DOM"></a>1.2.4. 虚拟DOM与真实DOM</h4><ol>
+<li><p>React提供了一些API来创建一种 “特别” 的一般js对象</p>
+<p>下面创建的就是一个简单的虚拟DOM对象</p>
+</li>
+</ol>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> <span class="token constant">VDOM</span> <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'xx'</span><span class="token punctuation">,</span><span class="token punctuation">{</span>id<span class="token operator">:</span><span class="token string">'xx'</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token string">'xx'</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<ol start="2">
+<li><p>虚拟DOM对象最终都会被React转换为真实的DOM</p>
+</li>
+<li><p>我们编码时基本只需要操作react的虚拟DOM相关数据, react会转换为真实DOM变化而更新界。</p>
+</li>
+</ol>
+<h3 id="1-3-React-JSX"><a href="#1-3-React-JSX" class="headerlink" title="1.3. React JSX"></a>1.3. React JSX</h3><h4 id="1-3-1-效果"><a href="#1-3-1-效果" class="headerlink" title="1.3.1. 效果"></a>1.3.1. 效果</h4><p> <img src="%E5%B0%9A%E7%A1%85%E8%B0%B7react%E5%85%A8%E5%AE%B6%E6%A1%B6.assets/image-20210324203850805.png" alt="image-20210324203850805"></p>
+<h4 id="1-3-2-JSX"><a href="#1-3-2-JSX" class="headerlink" title="1.3.2. JSX"></a>1.3.2. JSX</h4><ol>
+<li><p>全称: JavaScript XML</p>
+</li>
+<li><p>react定义的一种类似于XML的JS扩展语法: JS + XML本质是<code>React.createElement(component, props, ...children)</code>方法的语法糖</p>
+</li>
+<li><p>作用: 用来简化创建虚拟DOM </p>
+<ol>
+<li>写法：<code>var ele = &lt;h1&gt;Hello JSX!&lt;/h1&gt;</code></li>
+<li>注意1：它不是字符串, 也不是HTML/XML标签</li>
+<li>注意2：它最终产生的就是一个JS对象</li>
+</ol>
+</li>
+<li><p>标签名任意: HTML标签或其它标签</p>
+</li>
+<li><p>标签属性任意: HTML标签属性或其它</p>
+</li>
+<li><p>基本语法规则</p>
+<ol>
+<li>遇到 &lt;开头的代码, 以标签的语法解析: html同名标签转换为html同名元素, 其它标签需要特别解析</li>
+<li>遇到以 { 开头的代码，以JS语法解析: 标签中的js表达式必须用{ }包含</li>
+</ol>
+</li>
+<li><p>babel.js的作用</p>
+<ol>
+<li>浏览器不能直接解析JSX代码, 需要babel转译为纯JS的代码才能运行</li>
+<li>只要用了JSX，都要加上type=”text/babel”, 声明需要babel来处理</li>
+</ol>
+</li>
+</ol>
+<h4 id="1-3-3-渲染虚拟DOM-元素"><a href="#1-3-3-渲染虚拟DOM-元素" class="headerlink" title="1.3.3. 渲染虚拟DOM(元素)"></a>1.3.3. 渲染虚拟DOM(元素)</h4><ol>
+<li><p>语法: <code>ReactDOM.render(virtualDOM, containerDOM)</code></p>
+</li>
+<li><p>作用: 将虚拟DOM元素渲染到页面中的真实容器DOM中显示</p>
+</li>
+<li><p>参数说明</p>
+<ol>
+<li>参数一: 纯js或jsx创建的虚拟dom对象</li>
+<li>参数二: 用来包含虚拟DOM元素的真实dom元素对象(一般是一个div)</li>
+</ol>
+</li>
+</ol>
+<h4 id="1-3-4-JSX练习"><a href="#1-3-4-JSX练习" class="headerlink" title="1.3.4. JSX练习"></a>1.3.4. JSX练习</h4><p>需求: 动态展示如下列表</p>
+<p><img src="%E5%B0%9A%E7%A1%85%E8%B0%B7react%E5%85%A8%E5%AE%B6%E6%A1%B6.assets/image-20210324204221160.png" alt="image-20210324204221160"></p>
+<h3 id="1-4-模块与组件、模块化与组件化的理解"><a href="#1-4-模块与组件、模块化与组件化的理解" class="headerlink" title="1.4. 模块与组件、模块化与组件化的理解"></a>1.4. 模块与组件、模块化与组件化的理解</h3><h4 id="1-4-1-模块"><a href="#1-4-1-模块" class="headerlink" title="1.4.1. 模块"></a>1.4.1. 模块</h4><ol>
+<li><p>理解：向外提供特定功能的js程序, 一般就是一个js文件</p>
+</li>
+<li><p>为什么要拆成模块：随着业务逻辑增加，代码越来越多且复杂。</p>
+</li>
+<li><p>作用：复用js, 简化js的编写, 提高js运行效率</p>
+</li>
+</ol>
+<h4 id="1-4-2-组件"><a href="#1-4-2-组件" class="headerlink" title="1.4.2. 组件"></a>1.4.2. 组件</h4><ol>
+<li><p>理解：用来实现局部功能效果的代码和资源的集合(html/css/js/image等等)</p>
+</li>
+<li><p>为什么要用组件： 一个界面的功能更复杂</p>
+</li>
+<li><p>作用：复用编码, 简化项目编码, 提高运行效率</p>
+</li>
+</ol>
+<h4 id="1-4-3-模块化"><a href="#1-4-3-模块化" class="headerlink" title="1.4.3. 模块化"></a>1.4.3. 模块化</h4><p>当应用的js都以模块来编写的, 这个应用就是一个模块化的应用</p>
+<h4 id="1-4-4-组件化"><a href="#1-4-4-组件化" class="headerlink" title="1.4.4. 组件化"></a>1.4.4. 组件化</h4><p>当应用是以多组件的方式实现, 这个应用就是一个组件化的应用</p>
+<p> <img src="%E5%B0%9A%E7%A1%85%E8%B0%B7react%E5%85%A8%E5%AE%B6%E6%A1%B6.assets/image-20210324204311374.png" alt="image-20210324204311374"></p>
+<h2 id="第2章：React面向组件编程"><a href="#第2章：React面向组件编程" class="headerlink" title="第2章：React面向组件编程"></a>第2章：React面向组件编程</h2><h3 id="2-1-基本理解和使用"><a href="#2-1-基本理解和使用" class="headerlink" title="2.1. 基本理解和使用"></a>2.1. 基本理解和使用</h3><h4 id="2-1-1-使用React开发者工具调试"><a href="#2-1-1-使用React开发者工具调试" class="headerlink" title="2.1.1. 使用React开发者工具调试"></a>2.1.1. 使用React开发者工具调试</h4><p> <img src="%E5%B0%9A%E7%A1%85%E8%B0%B7react%E5%85%A8%E5%AE%B6%E6%A1%B6.assets/image-20210324204323209.png" alt="image-20210324204323209"></p>
+<h4 id="2-1-2-效果"><a href="#2-1-2-效果" class="headerlink" title="2.1.2. 效果"></a>2.1.2. 效果</h4><p>函数式组件：</p>
+<p>  <img src="%E5%B0%9A%E7%A1%85%E8%B0%B7react%E5%85%A8%E5%AE%B6%E6%A1%B6.assets/image-20210324204327791.png" alt="image-20210324204327791"></p>
+<p>类式组件：</p>
+<p>  <img src="%E5%B0%9A%E7%A1%85%E8%B0%B7react%E5%85%A8%E5%AE%B6%E6%A1%B6.assets/image-20210324204343836.png" alt="image-20210324204343836"></p>
+<h4 id="2-1-3-注意"><a href="#2-1-3-注意" class="headerlink" title="2.1.3. 注意"></a>2.1.3. 注意</h4><ol>
+<li><p>组件名必须首字母大写</p>
+</li>
+<li><p>虚拟DOM元素只能有一个根元素</p>
+</li>
+<li><p>虚拟DOM元素必须有结束标签</p>
+</li>
+</ol>
+<h4 id="2-1-4-渲染类组件标签的基本流程"><a href="#2-1-4-渲染类组件标签的基本流程" class="headerlink" title="2.1.4. 渲染类组件标签的基本流程"></a>2.1.4. 渲染类组件标签的基本流程</h4><ol>
+<li><p>React内部会创建组件实例对象</p>
+</li>
+<li><p>调用render()得到虚拟DOM, 并解析为真实DOM</p>
+</li>
+<li><p>插入到指定的页面元素内部</p>
+</li>
+</ol>
+<h3 id="2-2-组件三大核心属性1-state"><a href="#2-2-组件三大核心属性1-state" class="headerlink" title="2.2. 组件三大核心属性1: state"></a>2.2. 组件三大核心属性1: state</h3><h4 id="2-2-1-效果"><a href="#2-2-1-效果" class="headerlink" title="2.2.1. 效果"></a>2.2.1. 效果</h4><p><em>需求: 定义一个展示天气信息的组件</em></p>
+<ol>
+<li><p><em>默认展示天气炎热 或 凉爽</em></p>
+</li>
+<li><p><em>点击文字切换天气</em></p>
+<p><img src="%E5%B0%9A%E7%A1%85%E8%B0%B7react%E5%85%A8%E5%AE%B6%E6%A1%B6.assets/Weather%E7%BB%84%E4%BB%B6.gif" alt="Weather组件"></p>
+</li>
+</ol>
+<h4 id="2-2-2-理解"><a href="#2-2-2-理解" class="headerlink" title="2.2.2. 理解"></a>2.2.2. 理解</h4><ol>
+<li><p>state是组件对象最重要的属性, 值是对象(可以包含多个key-value的组合)</p>
+</li>
+<li><p>组件被称为”状态机”, 通过更新组件的state来更新对应的页面显示(重新渲染组件)</p>
+</li>
+</ol>
+<h4 id="2-2-3-强烈注意"><a href="#2-2-3-强烈注意" class="headerlink" title="2.2.3. 强烈注意"></a>2.2.3. 强烈注意</h4><ol>
+<li><p>组件中render方法中的this为组件实例对象</p>
+</li>
+<li><p>组件自定义的方法中this为undefined，如何解决？</p>
+<ol>
+<li>强制绑定this: 通过函数对象的bind()</li>
+<li>箭头函数</li>
+</ol>
+</li>
+<li><p>状态数据，不能直接修改或更新</p>
+</li>
+</ol>
+<h3 id="2-3-组件三大核心属性2-props"><a href="#2-3-组件三大核心属性2-props" class="headerlink" title="2.3. 组件三大核心属性2: props"></a>2.3. 组件三大核心属性2: props</h3><h4 id="2-3-1-效果"><a href="#2-3-1-效果" class="headerlink" title="2.3.1. 效果"></a>2.3.1. 效果</h4><p><em>需求:自定义用来显示一个人员信息的组件</em></p>
+<ol>
+<li><p><em>姓名必须指定，且为字符串类型；</em></p>
+</li>
+<li><p><em>性别为字符串类型，如果性别没有指定，默认为男</em></p>
+</li>
+<li><p><em>年龄为字符串类型，且为数字类型，默认值为18</em></p>
+<p><img src="%E5%B0%9A%E7%A1%85%E8%B0%B7react%E5%85%A8%E5%AE%B6%E6%A1%B6.assets/image-20210324204829800.png" alt="image-20210324204829800"></p>
+</li>
+</ol>
+<h4 id="2-3-2-理解"><a href="#2-3-2-理解" class="headerlink" title="2.3.2. 理解"></a>2.3.2. 理解</h4><ol>
+<li><p>每个组件对象都会有props(properties的简写)属性</p>
+</li>
+<li><p>组件标签的所有属性都保存在props中</p>
+</li>
+</ol>
+<h4 id="2-3-3-作用"><a href="#2-3-3-作用" class="headerlink" title="2.3.3. 作用"></a>2.3.3. 作用</h4><ol>
+<li><p>通过标签属性从组件外向组件内传递变化的数据</p>
+</li>
+<li><p>注意: 组件内部不要修改props数据</p>
+</li>
+</ol>
+<h4 id="2-3-4-编码操作"><a href="#2-3-4-编码操作" class="headerlink" title="2.3.4. 编码操作"></a>2.3.4. 编码操作</h4><ol>
+<li><p>内部读取某个属性值<code>this.props.name</code></p>
+</li>
+<li><p>对props中的属性值进行类型限制和必要性限制</p>
+<p>第一种方式（React v15.5 开始已弃用）：       </p>
+<p>第二种方式（新）：使用prop-types库进限制（需要引入prop-types库）</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">Person<span class="token punctuation">.</span>propTypes <span class="token operator">=</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>string<span class="token punctuation">.</span>isRequired<span class="token punctuation">,</span>
+  age<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>number<span class="token punctuation">.</span> 
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+</li>
+</ol>
+<ol start="3">
+<li><p>扩展属性: 将对象的所有属性通过props传递</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">&lt;</span>Person <span class="token punctuation">{</span><span class="token operator">...</span>person<span class="token punctuation">}</span><span class="token operator">/</span><span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>默认属性值：</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">Person<span class="token punctuation">.</span>defaultProps <span class="token operator">=</span> <span class="token punctuation">{</span>
+  age<span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+  sex<span class="token operator">:</span><span class="token string">'男'</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>组件类的构造函数</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token comment">//打印所有属性</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-4-组件三大核心属性3-refs与事件处理"><a href="#2-4-组件三大核心属性3-refs与事件处理" class="headerlink" title="2.4. 组件三大核心属性3: refs与事件处理"></a>2.4. 组件三大核心属性3: refs与事件处理</h3></li>
+</ol>
+<h4 id="2-4-1-效果"><a href="#2-4-1-效果" class="headerlink" title="2.4.1. 效果"></a>2.4.1. 效果</h4><p><em>需求:自定义组件,功能说明如下:</em></p>
+<ol>
+<li><p><em>点击按钮,提示第一个输入框中的值</em></p>
+</li>
+<li><p><em>当第2个输入框失去焦点时,提示这个输入框中的值</em></p>
+</li>
+</ol>
+<p>效果如下：</p>
+<p> ![props_event](尚硅谷react全家桶.assets/props_event .gif)</p>
+<h4 id="2-4-2-理解"><a href="#2-4-2-理解" class="headerlink" title="2.4.2. 理解"></a>2.4.2. 理解</h4><p>组件内的标签可以定义ref属性来标识自己</p>
+<h4 id="2-4-3-编码"><a href="#2-4-3-编码" class="headerlink" title="2.4.3. 编码"></a>2.4.3. 编码</h4><ol>
+<li><p>字符串形式的ref</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">&lt;inputref="input1"/&gt;        <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>回调形式的ref</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">&lt;input ref={(c)=&gt;{this.input1 = c}}    <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>createRef创建ref容器</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">myRef=React.createRef()
+&lt;inputref={this.myRef}/&gt;        <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="2-4-4-事件处理"><a href="#2-4-4-事件处理" class="headerlink" title="2.4.4. 事件处理"></a>2.4.4. 事件处理</h4></li>
+<li><p>通过onXxx属性指定事件处理函数(注意大小写)</p>
+<ol>
+<li><p>  React使用的是自定义(合成)事件, 而不是使用的原生DOM事件</p>
+</li>
+<li><p>  React中的事件是通过事件委托方式处理的(委托给组件最外层的元素)</p>
+</li>
+</ol>
+</li>
+<li><p>通过event.target得到发生事件的DOM元素对象</p>
+</li>
+</ol>
+<h3 id="2-5-收集表单数据"><a href="#2-5-收集表单数据" class="headerlink" title="2.5. 收集表单数据"></a>2.5. 收集表单数据</h3><h4 id="2-5-1-效果"><a href="#2-5-1-效果" class="headerlink" title="2.5.1. 效果"></a>2.5.1. 效果</h4><p><em>需求:定义一个包含表单的组件</em></p>
+<p><em>输入用户名密码后,点击登录提示输入信息</em></p>
+<p>  <img src="%E5%B0%9A%E7%A1%85%E8%B0%B7react%E5%85%A8%E5%AE%B6%E6%A1%B6.assets/%E6%94%B6%E9%9B%86%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE.gif"></p>
+<h4 id="2-5-2-理解"><a href="#2-5-2-理解" class="headerlink" title="2.5.2. 理解"></a>2.5.2. 理解</h4><p>包含表单的组件分类</p>
+<ol>
+<li><p>受控组件</p>
+</li>
+<li><p>非受控组件</p>
+</li>
+</ol>
+<h3 id="2-6-组件的生命周期"><a href="#2-6-组件的生命周期" class="headerlink" title="2.6. 组件的生命周期"></a>2.6. 组件的生命周期</h3><h4 id="2-6-1-效果"><a href="#2-6-1-效果" class="headerlink" title="2.6.1. 效果"></a>2.6.1. 效果</h4><p><em>需求:定义组件实现以下功能：</em></p>
+<ol>
+<li><p><em>让指定的文本做显示/隐藏的渐变动画</em></p>
+</li>
+<li><p><em>从完全可见，到彻底消失，耗时2S</em></p>
+</li>
+<li><p><em>点击“不活了”按钮从界面中卸载组件</em></p>
+<p>![](尚硅谷react全家桶.assets/component 生命周期.gif)</p>
+</li>
+</ol>
+<h4 id="2-6-2-理解"><a href="#2-6-2-理解" class="headerlink" title="2.6.2. 理解"></a>2.6.2. 理解</h4><ol>
+<li><p>组件从创建到死亡它会经历一些特定的阶段。</p>
+</li>
+<li><p>React组件中包含一系列勾子函数(生命周期回调函数), 会在特定的时刻调用。</p>
+</li>
+<li><p>我们在定义组件时，会在特定的生命周期回调函数中，做特定的工作。</p>
+</li>
+</ol>
+<h4 id="2-6-3-生命周期流程图-旧"><a href="#2-6-3-生命周期流程图-旧" class="headerlink" title="2.6.3. 生命周期流程图(旧)"></a>2.6.3. 生命周期流程图(旧)</h4><h4 id=""><a href="#" class="headerlink" title=""></a><img src="%E5%B0%9A%E7%A1%85%E8%B0%B7react%E5%85%A8%E5%AE%B6%E6%A1%B6.assets/image-20210324210533013.png" alt="image-20210324210533013"></h4><p>生命周期的三个阶段（旧）</p>
+<ol>
+<li><p><strong>初始化阶段</strong>: 由ReactDOM.render()触发—初次渲染</p>
+<p>a. constructor()</p>
+<p>b. componentWillMount()</p>
+<p>c. render()</p>
+<p>d. componentDidMount()</p>
+</li>
+<li><p><strong>更新阶段</strong>: 由组件内部this.setSate()或父组件重新render触发</p>
+<p>a. shouldComponentUpdate()</p>
+<p>b. componentWillUpdate()</p>
+<p>c. render()</p>
+<p>d. componentDidUpdate()</p>
+</li>
+<li><p><strong>卸载组件</strong>: 由ReactDOM.unmountComponentAtNode()触发</p>
+<p>a. componentWillUnmount()</p>
+</li>
+</ol>
+<h4 id="2-6-4-生命周期流程图-新"><a href="#2-6-4-生命周期流程图-新" class="headerlink" title="2.6.4. 生命周期流程图(新)"></a>2.6.4. 生命周期流程图(新)</h4><p> <img src="%E5%B0%9A%E7%A1%85%E8%B0%B7react%E5%85%A8%E5%AE%B6%E6%A1%B6.assets/image-20210324210811284.png" alt="image-20210324210811284"></p>
+<p>生命周期的三个阶段（新）</p>
+<p>1.初始化阶段: 由ReactDOM.render()触发—初次渲染</p>
+<p>.   constructor()</p>
+<ol start="2">
+<li>  getDerivedStateFromProps </li>
+</ol>
+<p>.   render()</p>
+<p>.   componentDidMount()</p>
+<p>   2.更新阶段: 由组件内部this.setSate()或父组件重新render触发</p>
+<ol>
+<li>  getDerivedStateFromProps</li>
+</ol>
+<p>.   shouldComponentUpdate()</p>
+<p>.   render()</p>
+<ol start="4">
+<li>  getSnapshotBeforeUpdate</li>
+</ol>
+<p>\5.   componentDidUpdate()</p>
+<p>   3.卸载组件: 由ReactDOM.unmountComponentAtNode()触发</p>
+<p>.   componentWillUnmount()</p>
+<h4 id="2-6-5-重要的勾子"><a href="#2-6-5-重要的勾子" class="headerlink" title="2.6.5. 重要的勾子"></a>2.6.5. 重要的勾子</h4><p>.   render：初始化渲染或更新渲染调用</p>
+<p>.   componentDidMount：开启监听, 发送ajax请求</p>
+<p>.   componentWillUnmount：做一些收尾工作, 如: 清理定时器</p>
+<h4 id="2-6-6-即将废弃的勾子"><a href="#2-6-6-即将废弃的勾子" class="headerlink" title="2.6.6. 即将废弃的勾子"></a>2.6.6. 即将废弃的勾子</h4><p>.   componentWillMount</p>
+<p>.   componentWillReceiveProps</p>
+<p>.   componentWillUpdate</p>
+<p>现在使用会出现警告，下一个大版本需要加上UNSAFE_前缀才能使用，以后可能会被彻底废弃，不建议使用。</p>
+<h3 id="2-7-虚拟DOM与DOM-Diffing算法"><a href="#2-7-虚拟DOM与DOM-Diffing算法" class="headerlink" title="2.7. 虚拟DOM与DOM Diffing算法"></a>2.7. 虚拟DOM与DOM Diffing算法</h3><h4 id="2-7-1-效果"><a href="#2-7-1-效果" class="headerlink" title="2.7.1. 效果"></a>2.7.1. 效果</h4><p>需求：验证虚拟DOM Diffing算法的存在</p>
+<h4 id="2-7-2-基本原理图"><a href="#2-7-2-基本原理图" class="headerlink" title="2.7.2. 基本原理图"></a>2.7.2. 基本原理图</h4><p>第3章：React应用(基于React脚手架)</p>
+<h3 id="3-1-使用create-react-app创建react应用"><a href="#3-1-使用create-react-app创建react应用" class="headerlink" title="3.1. 使用create-react-app创建react应用"></a>3.1. 使用create-react-app创建react应用</h3><h4 id="3-1-1-react脚手架"><a href="#3-1-1-react脚手架" class="headerlink" title="3.1.1. react脚手架"></a>3.1.1. react脚手架</h4><p>.   xxx脚手架: 用来帮助程序员快速创建一个基于xxx库的模板项目</p>
+<p>.   包含了所有需要的配置（语法检查、jsx编译、devServer…）</p>
+<p>.   下载好了所有相关的依赖</p>
+<p>.   可以直接运行一个简单效果</p>
+<p>.   react提供了一个用于创建react项目的脚手架库: create-react-app</p>
+<p>.   项目的整体技术架构为: react + webpack + es6 + eslint</p>
+<p>.   使用脚手架开发的项目的特点: 模块化, 组件化, 工程化</p>
+<h4 id="3-1-2-创建项目并启动"><a href="#3-1-2-创建项目并启动" class="headerlink" title="3.1.2. 创建项目并启动"></a>3.1.2. 创建项目并启动</h4><p>第一步，全局安装：npm i -g create-react-app</p>
+<p>第二步，切换到想创项目的目录，使用命令：create-react-app hello-react</p>
+<p>第三步，进入项目文件夹：cd hello-react</p>
+<p>第四步，启动项目：npm start</p>
+<h4 id="3-1-3-react脚手架项目结构"><a href="#3-1-3-react脚手架项目结构" class="headerlink" title="3.1.3. react脚手架项目结构"></a>3.1.3. react脚手架项目结构</h4><p> public —- 静态资源文件夹</p>
+<pre><code>       favicon.icon ------ 网站页签图标
+
+       index.html --------主页面
+
+       logo192.png ------- logo图
+
+       logo512.png ------- logo图
+
+       manifest.json ----- 应用加壳的配置文件
+
+       robots.txt -------- 爬虫协议文件</code></pre>
+<p>src —- 源码文件夹</p>
+<pre><code>       App.css -------- App组件的样式
+
+       App.js --------- App组件
+
+       App.test.js ---- 用于给App做测试
+
+       index.css ------ 样式
+
+       index.js -------入口文件
+
+       logo.svg ------- logo图
+
+       reportWebVitals.js
+
+             --- 页面性能分析文件(需要web-vitals库的支持)
+
+       setupTests.js
+
+             ---- 组件单元测试的文件(需要jest-dom库的支持)</code></pre>
+<h4 id="3-1-4-功能界面的组件化编码流程（通用）"><a href="#3-1-4-功能界面的组件化编码流程（通用）" class="headerlink" title="3.1.4. 功能界面的组件化编码流程（通用）"></a>3.1.4. 功能界面的组件化编码流程（通用）</h4><p>. 拆分组件: 拆分界面,抽取组件</p>
+<p>. 实现静态组件: 使用组件实现静态页面效果</p>
+<p>. 实现动态组件</p>
+<p>3.1 动态显示初始化数据</p>
+<p>3.1.1 数据类型</p>
+<p>3.1.2 数据名称</p>
+<p>3.1.2 保存在哪个组件?</p>
+<p>3.2 交互(从绑定事件监听开始)</p>
+<h3 id="3-2-组件的组合使用-TodoList"><a href="#3-2-组件的组合使用-TodoList" class="headerlink" title="3.2. 组件的组合使用-TodoList"></a>3.2. 组件的组合使用-TodoList</h3><p>功能:组件化实现此功能</p>
+<p> 1.显示所有todo列表</p>
+<p> 2.输入文本,点击按钮显示到列表的首位,并清除输入的文本</p>
+<p>第4章：React ajax</p>
+<h3 id="4-1-理解"><a href="#4-1-理解" class="headerlink" title="4.1. 理解"></a>4.1. 理解</h3><h4 id="4-1-1-前置说明"><a href="#4-1-1-前置说明" class="headerlink" title="4.1.1. 前置说明"></a>4.1.1. 前置说明</h4><p>.   React本身只关注于界面, 并不包含发送ajax请求的代码</p>
+<p>.   前端应用需要通过ajax请求与后台进行交互(json数据)</p>
+<p>.   react应用中需要集成第三方ajax库(或自己封装)</p>
+<h4 id="4-1-2-常用的ajax请求库"><a href="#4-1-2-常用的ajax请求库" class="headerlink" title="4.1.2. 常用的ajax请求库"></a>4.1.2. 常用的ajax请求库</h4><p>.   jQuery: 比较重, 如果需要另外引入不建议使用</p>
+<p>.   axios: 轻量级, 建议使用</p>
+<ol>
+<li><p>  封装XmlHttpRequest对象的ajax</p>
+</li>
+<li><p>   promise风格</p>
+</li>
+<li><p>  可以用在浏览器端和node服务器端</p>
+</li>
+</ol>
+<h3 id="4-2-axios"><a href="#4-2-axios" class="headerlink" title="4.2. axios"></a>4.2. axios</h3><h4 id="4-2-1-文档"><a href="#4-2-1-文档" class="headerlink" title="4.2.1. 文档"></a>4.2.1. 文档</h4><p><a target="_blank" rel="noopener" href="https://github.com/axios/axios">https://github.com/axios/axios</a></p>
+<h4 id="4-2-2-相关API"><a href="#4-2-2-相关API" class="headerlink" title="4.2.2. 相关API"></a>4.2.2. 相关API</h4><ol>
+<li><p>GET请求</p>
+<p>axios.get(‘/user?ID=12345’)   .then(function (response) {    console.log(response.data);   })   .catch(function (error) {    console.log(error);   });     axios.get(‘/user’, {    params: {     ID: 12345    }   })   .then(function (response) {    console.log(response);   })   .catch(function (error) {    console.log(error);   });  </p>
+</li>
+</ol>
+<ol start="2">
+<li><p>POST请求</p>
+<p>axios.post(‘/user’, {   firstName: ‘Fred’,   lastName: ‘Flintstone’  })  .then(function (response) {  console.log(response);  })  .catch(function (error) {  console.log(error);  });  </p>
+</li>
+</ol>
+<h3 id="4-3-案例—github用户搜索"><a href="#4-3-案例—github用户搜索" class="headerlink" title="4.3. 案例—github用户搜索"></a>4.3. 案例—github用户搜索</h3><h4 id="4-3-1-效果"><a href="#4-3-1-效果" class="headerlink" title="4.3.1. 效果"></a>4.3.1. 效果</h4><p>请求地址: <a target="_blank" rel="noopener" href="https://api.github.com/search/users?q=xxxxxx">https://api.github.com/search/users?q=xxxxxx</a></p>
+<h3 id="4-4-消息订阅-发布机制"><a href="#4-4-消息订阅-发布机制" class="headerlink" title="4.4. 消息订阅-发布机制"></a>4.4. 消息订阅-发布机制</h3><p>.   工具库: PubSubJS</p>
+<p>.   下载: npm install pubsub-js –save</p>
+<p>.   使用: </p>
+<ol>
+<li><p>  import PubSub from ‘pubsub-js’ //引入</p>
+</li>
+<li><p>  PubSub.subscribe(‘delete’, function(data){ }); //订阅</p>
+</li>
+<li><p>  PubSub.publish(‘delete’, data) //发布消息</p>
+</li>
+</ol>
+<h3 id="4-5-扩展：Fetch"><a href="#4-5-扩展：Fetch" class="headerlink" title="4.5. 扩展：Fetch"></a>4.5. 扩展：Fetch</h3><h4 id="4-5-1-文档"><a href="#4-5-1-文档" class="headerlink" title="4.5.1. 文档"></a>4.5.1. 文档</h4><p>.   <a target="_blank" rel="noopener" href="https://github.github.io/fetch/">https://github.github.io/fetch/</a></p>
+<p>.   <a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000003810652">https://segmentfault.com/a/1190000003810652</a></p>
+<h4 id="4-5-2-特点"><a href="#4-5-2-特点" class="headerlink" title="4.5.2. 特点"></a>4.5.2. 特点</h4><p>.   fetch: 原生函数，不再使用XmlHttpRequest对象提交ajax请求</p>
+<p>.   老版本浏览器可能不支持</p>
+<h4 id="4-5-3-相关API"><a href="#4-5-3-相关API" class="headerlink" title="4.5.3. 相关API"></a>4.5.3. 相关API</h4><ol>
+<li><p>GET请求</p>
+<p>fetch(url).then(function(response) {    return response.json()   }).then(function(data) {    console.log(data)   }).catch(function(e) {    console.log(e)   });  </p>
+</li>
+</ol>
+<ol start="2">
+<li><p>POST请求</p>
+<p>fetch(url, {    method: “POST”,    body: JSON.stringify(data),   }).then(function(data) {    console.log(data)   }).catch(function(e) {    console.log(e)   })  </p>
+</li>
+</ol>
+<p>第5章：React路由</p>
+<h3 id="5-1-相关理解"><a href="#5-1-相关理解" class="headerlink" title="5.1. 相关理解"></a>5.1. 相关理解</h3><h4 id="5-1-1-SPA的理解"><a href="#5-1-1-SPA的理解" class="headerlink" title="5.1.1. SPA的理解"></a>5.1.1. SPA的理解</h4><p>.   单页Web应用（single page web application，SPA）。</p>
+<p>.   整个应用只有一个完整的页面。</p>
+<p>.   点击页面中的链接不会刷新页面，只会做页面的局部更新。</p>
+<p>.   数据都需要通过ajax请求获取, 并在前端异步展现。</p>
+<h4 id="5-1-2-路由的理解"><a href="#5-1-2-路由的理解" class="headerlink" title="5.1.2. 路由的理解"></a>5.1.2. 路由的理解</h4><ol>
+<li>  什么是路由?</li>
+</ol>
+<p>.   一个路由就是一个映射关系(key:value)</p>
+<p>.   key为路径, value可能是function或component</p>
+<ol start="2">
+<li>  路由分类</li>
+</ol>
+<p>.   后端路由：</p>
+<ol>
+<li><p>  理解： value是function, 用来处理客户端提交的请求。</p>
+</li>
+<li><p>  注册路由： router.get(path, function(req, res))</p>
+</li>
+<li><p>  工作过程：当node接收到一个请求时, 根据请求路径找到匹配的路由, 调用路由中的函数来处理请求, 返回响应数据</p>
+</li>
+</ol>
+<p>.   前端路由：</p>
+<ol>
+<li><p>  浏览器端路由，value是component，用于展示页面内容。</p>
+</li>
+<li><p>  注册路由: <route path="/test" component="{Test}"></route></p>
+</li>
+<li><p>  工作过程：当浏览器的path变为/test时, 当前路由组件就会变为Test组件</p>
+</li>
+</ol>
+<h4 id="5-1-3-react-router-dom的理解"><a href="#5-1-3-react-router-dom的理解" class="headerlink" title="5.1.3. react-router-dom的理解"></a>5.1.3. react-router-dom的理解</h4><p>.   react的一个插件库。</p>
+<p>.   专门用来实现一个SPA应用。</p>
+<p>.   基于react的项目基本都会用到此库。</p>
+<h3 id="5-2-react-router-dom相关API"><a href="#5-2-react-router-dom相关API" class="headerlink" title="5.2. react-router-dom相关API"></a>5.2. react-router-dom相关API</h3><h4 id="5-2-1-内置组件"><a href="#5-2-1-内置组件" class="headerlink" title="5.2.1. 内置组件"></a>5.2.1. 内置组件</h4><p>.   <browserrouter></browserrouter></p>
+<p>.   <hashrouter></hashrouter></p>
+<p>.   <route></route></p>
+<p>.   <redirect></redirect></p>
+<p>\5.   <link></p>
+<p>\6.   <navlink></navlink></p>
+<p>\7.   <switch></switch></p>
+<h4 id="5-2-2-其它"><a href="#5-2-2-其它" class="headerlink" title="5.2.2. 其它"></a>5.2.2. 其它</h4><p>.   history对象</p>
+<p>.   match对象</p>
+<p>.   withRouter函数</p>
+<h3 id="5-3-基本路由使用"><a href="#5-3-基本路由使用" class="headerlink" title="5.3. 基本路由使用"></a>5.3. 基本路由使用</h3><h4 id="5-3-1-效果"><a href="#5-3-1-效果" class="headerlink" title="5.3.1. 效果"></a>5.3.1. 效果</h4><h4 id="5-3-2-准备"><a href="#5-3-2-准备" class="headerlink" title="5.3.2. 准备"></a>5.3.2. 准备</h4><p>.   下载react-router-dom: npm install –save react-router-dom</p>
+<p>.   引入bootstrap.css: <link rel="stylesheet" href="/css/bootstrap.css"></p>
+<h3 id="5-4-嵌套路由使用"><a href="#5-4-嵌套路由使用" class="headerlink" title="5.4. 嵌套路由使用"></a>5.4. 嵌套路由使用</h3><h4 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h4><h3 id="5-5-向路由组件传递参数数据"><a href="#5-5-向路由组件传递参数数据" class="headerlink" title="5.5. 向路由组件传递参数数据"></a>5.5. 向路由组件传递参数数据</h3><h4 id="效果-1"><a href="#效果-1" class="headerlink" title="效果"></a>效果</h4><h3 id="5-6-多种路由跳转方式"><a href="#5-6-多种路由跳转方式" class="headerlink" title="5.6. 多种路由跳转方式"></a>5.6. 多种路由跳转方式</h3><h4 id="效果-2"><a href="#效果-2" class="headerlink" title="效果"></a>效果</h4><p>第6章：React UI组件库</p>
+<h3 id="6-1-流行的开源React-UI组件库"><a href="#6-1-流行的开源React-UI组件库" class="headerlink" title="6.1.流行的开源React UI组件库"></a>6.1.流行的开源React UI组件库</h3><h4 id="6-1-1-material-ui-国外"><a href="#6-1-1-material-ui-国外" class="headerlink" title="6.1.1. material-ui(国外)"></a>6.1.1. material-ui(国外)</h4><p>.   官网: <a target="_blank" rel="noopener" href="http://www.material-ui.com/#/">http://www.material-ui.com/#/</a></p>
+<p>.   github: <a target="_blank" rel="noopener" href="https://github.com/callemall/material-ui">https://github.com/callemall/material-ui</a></p>
+<h4 id="6-1-2-ant-design-国内蚂蚁金服"><a href="#6-1-2-ant-design-国内蚂蚁金服" class="headerlink" title="6.1.2. ant-design(国内蚂蚁金服)"></a>6.1.2. ant-design(国内蚂蚁金服)</h4><p>.   官网: <a target="_blank" rel="noopener" href="https://ant.design/index-cn">https://ant.design/index-cn</a></p>
+<p>.   Github: <a target="_blank" rel="noopener" href="https://github.com/ant-design/ant-design/">https://github.com/ant-design/ant-design/</a></p>
+<p>第7章：redux</p>
+<h3 id="7-1-redux理解"><a href="#7-1-redux理解" class="headerlink" title="7.1. redux理解"></a>7.1. redux理解</h3><h4 id="7-1-1-学习文档"><a href="#7-1-1-学习文档" class="headerlink" title="7.1.1. 学习文档"></a>7.1.1. 学习文档</h4><p>.   英文文档: <a target="_blank" rel="noopener" href="https://redux.js.org/">https://redux.js.org/</a></p>
+<p>.   中文文档: <a target="_blank" rel="noopener" href="http://www.redux.org.cn/">http://www.redux.org.cn/</a></p>
+<p>.   Github: <a target="_blank" rel="noopener" href="https://github.com/reactjs/redux">https://github.com/reactjs/redux</a></p>
+<h4 id="7-1-2-redux是什么"><a href="#7-1-2-redux是什么" class="headerlink" title="7.1.2. redux是什么"></a>7.1.2. redux是什么</h4><p>.   redux是一个专门用于做状态管理的JS库(不是react插件库)。</p>
+<p>.   它可以用在react, angular, vue等项目中, 但基本与react配合使用。</p>
+<p>.   作用: 集中式管理react应用中多个组件共享的状态。</p>
+<h4 id="7-1-3-什么情况下需要使用redux"><a href="#7-1-3-什么情况下需要使用redux" class="headerlink" title="7.1.3. 什么情况下需要使用redux"></a>7.1.3. 什么情况下需要使用redux</h4><p>.   某个组件的状态，需要让其他组件可以随时拿到（共享）。</p>
+<p>.   一个组件需要改变另一个组件的状态（通信）。</p>
+<p>.   总体原则：能不用就不用, 如果不用比较吃力才考虑使用。</p>
+<h4 id="7-1-4-redux工作流程"><a href="#7-1-4-redux工作流程" class="headerlink" title="7.1.4. redux工作流程"></a>7.1.4. redux工作流程</h4><h3 id="7-2-redux的三个核心概念"><a href="#7-2-redux的三个核心概念" class="headerlink" title="7.2. redux的三个核心概念"></a>7.2. redux的三个核心概念</h3><h4 id="7-2-1-action"><a href="#7-2-1-action" class="headerlink" title="7.2.1. action"></a>7.2.1. action</h4><p>.   动作的对象</p>
+<p>.   包含2个属性</p>
+<p>l type：标识属性, 值为字符串, 唯一, 必要属性</p>
+<p>l data：数据属性, 值类型任意, 可选属性</p>
+<p>.   例子：{ type: ‘ADD_STUDENT’,data:{name: ‘tom’,age:18} }</p>
+<h4 id="7-2-2-reducer"><a href="#7-2-2-reducer" class="headerlink" title="7.2.2. reducer"></a>7.2.2. reducer</h4><p>.   用于初始化状态、加工状态。</p>
+<p>.   加工时，根据旧的state和action， 产生新的state的纯函数。</p>
+<h4 id="7-2-3-store"><a href="#7-2-3-store" class="headerlink" title="7.2.3. store"></a>7.2.3. store</h4><p>.   将state、action、reducer联系在一起的对象</p>
+<p>.   如何得到此对象?</p>
+<ol>
+<li><p>  import {createStore} from ‘redux’</p>
+</li>
+<li><p>  import reducer from ‘./reducers’</p>
+</li>
+<li><p>  const store = createStore(reducer)</p>
+</li>
+</ol>
+<p>.   此对象的功能?</p>
+<ol>
+<li><p>  getState(): 得到state</p>
+</li>
+<li><p>  dispatch(action): 分发action, 触发reducer调用, 产生新的state</p>
+</li>
+<li><p>  subscribe(listener): 注册监听, 当产生了新的state时, 自动调用</p>
+</li>
+</ol>
+<h3 id="7-3-redux的核心API"><a href="#7-3-redux的核心API" class="headerlink" title="7.3. redux的核心API"></a>7.3. redux的核心API</h3><h4 id="7-3-1-createstore"><a href="#7-3-1-createstore" class="headerlink" title="7.3.1. createstore()"></a>7.3.1. createstore()</h4><p>作用：创建包含指定reducer的store对象</p>
+<h4 id="7-3-2-store对象"><a href="#7-3-2-store对象" class="headerlink" title="7.3.2. store对象"></a>7.3.2. store对象</h4><p>.   作用: redux库最核心的管理对象</p>
+<p>.   它内部维护着:</p>
+<ol>
+<li><p>  state</p>
+</li>
+<li><p>  reducer</p>
+</li>
+</ol>
+<p>.   核心方法:</p>
+<ol>
+<li><p>  getState()</p>
+</li>
+<li><p>  dispatch(action)</p>
+</li>
+<li><p>  subscribe(listener)</p>
+</li>
+</ol>
+<p>.   具体编码:</p>
+<ol>
+<li><p>  store.getState()</p>
+</li>
+<li><p>  store.dispatch({type:’INCREMENT’, number})</p>
+</li>
+<li><p>  store.subscribe(render)</p>
+</li>
+</ol>
+<h4 id="7-3-3-applyMiddleware"><a href="#7-3-3-applyMiddleware" class="headerlink" title="7.3.3. applyMiddleware()"></a>7.3.3. applyMiddleware()</h4><p>作用：应用上基于redux的中间件(插件库)</p>
+<h4 id="7-3-4-combineReducers"><a href="#7-3-4-combineReducers" class="headerlink" title="7.3.4. combineReducers()"></a>7.3.4. combineReducers()</h4><p>作用：合并多个reducer函数</p>
+<h3 id="7-4-使用redux编写应用"><a href="#7-4-使用redux编写应用" class="headerlink" title="7.4. 使用redux编写应用"></a>7.4. 使用redux编写应用</h3><p>  效果</p>
+<h3 id="7-5-redux异步编程"><a href="#7-5-redux异步编程" class="headerlink" title="7.5. redux异步编程"></a>7.5. redux异步编程</h3><h4 id="7-5-1理解："><a href="#7-5-1理解：" class="headerlink" title="7.5.1理解："></a>7.5.1理解：</h4><p>.   redux默认是不能进行异步处理的,</p>
+<p>.   某些时候应用中需要在redux中执行异步任务(ajax, 定时器)</p>
+<h4 id="7-5-2-使用异步中间件"><a href="#7-5-2-使用异步中间件" class="headerlink" title="7.5.2. 使用异步中间件"></a>7.5.2. 使用异步中间件</h4><p>npm install –save redux-thunk</p>
+<h3 id="7-6-react-redux"><a href="#7-6-react-redux" class="headerlink" title="7.6. react-redux"></a>7.6. react-redux</h3><h4 id="7-6-1-理解"><a href="#7-6-1-理解" class="headerlink" title="7.6.1. 理解"></a>7.6.1. 理解</h4><p>.   一个react插件库</p>
+<p>.   专门用来简化react应用中使用redux</p>
+<h4 id="7-6-2-react-Redux将所有组件分成两大类"><a href="#7-6-2-react-Redux将所有组件分成两大类" class="headerlink" title="7.6.2. react-Redux将所有组件分成两大类"></a>7.6.2. react-Redux将所有组件分成两大类</h4><p>.   UI组件</p>
+<ol>
+<li><p>  只负责 UI 的呈现，不带有任何业务逻辑</p>
+</li>
+<li><p>  通过props接收数据(一般数据和函数)</p>
+</li>
+<li><p>  不使用任何 Redux 的 API</p>
+</li>
+<li><p>  一般保存在components文件夹下</p>
+</li>
+</ol>
+<p>.   容器组件</p>
+<ol>
+<li><p>  负责管理数据和业务逻辑，不负责UI的呈现</p>
+</li>
+<li><p>  使用 Redux 的 API</p>
+</li>
+<li><p>  一般保存在containers文件夹下</p>
+</li>
+</ol>
+<h4 id="7-6-3-相关API"><a href="#7-6-3-相关API" class="headerlink" title="7.6.3. 相关API"></a>7.6.3. 相关API</h4><p>.   Provider：让所有组件都可以得到state数据</p>
+<p>​     </p>
+<pre><code>    &lt;Providerstore={store}&gt;     &lt;App/&gt;    &lt;/Provider&gt;        </code></pre>
+<p>.   connect：用于包装 UI 组件生成容器组件</p>
+<p>​     </p>
+<pre><code>    import{connect}from'react-redux'     connect(      mapStateToprops,      mapDispatchToProps     )(Counter)        </code></pre>
+<p>.   mapStateToprops：将外部的数据（即state对象）转换为UI组件的标签属性</p>
+<p>​     </p>
+<pre><code>    constmapStateToprops=function(state) {     return{      value:state     }    }        </code></pre>
+<p>.   mapDispatchToProps：将分发action的函数转换为UI组件的标签属性</p>
+<h3 id="7-7-使用上redux调试工具"><a href="#7-7-使用上redux调试工具" class="headerlink" title="7.7. 使用上redux调试工具"></a>7.7. 使用上redux调试工具</h3><h4 id="7-7-1-安装chrome浏览器插件"><a href="#7-7-1-安装chrome浏览器插件" class="headerlink" title="7.7.1. 安装chrome浏览器插件"></a>7.7.1. 安装chrome浏览器插件</h4><h4 id="7-7-2-下载工具依赖包"><a href="#7-7-2-下载工具依赖包" class="headerlink" title="7.7.2. 下载工具依赖包"></a>7.7.2. 下载工具依赖包</h4><pre class="line-numbers language-none"><code class="language-none">npm install --save-dev redux-devtools-extension
+ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="7-8-纯函数和高阶函数"><a href="#7-8-纯函数和高阶函数" class="headerlink" title="7.8. 纯函数和高阶函数"></a>7.8. 纯函数和高阶函数</h3><h4 id="7-8-1-纯函数"><a href="#7-8-1-纯函数" class="headerlink" title="7.8.1. 纯函数"></a>7.8.1. 纯函数</h4><p>.   一类特别的函数: 只要是同样的输入(实参)，必定得到同样的输出(返回)</p>
+<p>.   必须遵守以下一些约束 </p>
+<ol>
+<li><p>  不得改写参数数据</p>
+</li>
+<li><p>  不会产生任何副作用，例如网络请求，输入和输出设备</p>
+</li>
+<li><p>  不能调用Date.now()或者Math.random()等不纯的方法 </p>
+</li>
+</ol>
+<p>.   redux的reducer函数必须是一个纯函数</p>
+<h4 id="7-8-2-高阶函数"><a href="#7-8-2-高阶函数" class="headerlink" title="7.8.2. 高阶函数"></a>7.8.2. 高阶函数</h4><p>.   理解: 一类特别的函数</p>
+<ol>
+<li><p>  情况1: 参数是函数</p>
+</li>
+<li><p>  情况2: 返回是函数</p>
+</li>
+</ol>
+<p>.   常见的高阶函数: </p>
+<ol>
+<li><p>  定时器设置函数</p>
+</li>
+<li><p>  数组的forEach()/map()/filter()/reduce()/find()/bind()</p>
+</li>
+<li><p>  promise</p>
+</li>
+<li><p>  react-redux中的connect函数</p>
+</li>
+</ol>
+<p>.   作用: 能实现更加动态, 更加可扩展的功能</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">durex</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://chenzehui008.gitee.io/2021/03/24/shang-huo-gu-react-quan-jia-tong/">https://chenzehui008.gitee.io/2021/03/24/shang-huo-gu-react-quan-jia-tong/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">durex</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E5%B0%9A%E7%A1%85%E8%B0%B7%E5%89%8D%E7%AB%AF%E5%AD%A6%E7%A7%91-%E9%AB%98%E7%BA%A7%E6%8A%80%E6%9C%AF/">
+                                    <span class="chip bg-color">尚硅谷前端学科--高级技术</span>
+                                </a>
+                            
+                                <a href="/tags/React%E5%85%A8%E5%AE%B6%E6%A1%B6-%E6%8A%80%E6%9C%AF%E6%A0%88/">
+                                    <span class="chip bg-color">React全家桶(技术栈)</span>
+                                </a>
+                            
+                                <a href="/tags/React/">
+                                    <span class="chip bg-color">React</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2021/03/24/shang-huo-gu-react-quan-jia-tong/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="尚硅谷react全家桶">
+                        
+                        <span class="card-title">尚硅谷react全家桶</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-24
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%B0%9A%E7%A1%85%E8%B0%B7%E5%89%8D%E7%AB%AF%E5%AD%A6%E7%A7%91%E5%85%A8%E5%A5%97%E6%95%99%E7%A8%8B/" class="post-category">
+                                    尚硅谷前端学科全套教程
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%B0%9A%E7%A1%85%E8%B0%B7%E5%89%8D%E7%AB%AF%E5%AD%A6%E7%A7%91-%E9%AB%98%E7%BA%A7%E6%8A%80%E6%9C%AF/">
+                        <span class="chip bg-color">尚硅谷前端学科--高级技术</span>
+                    </a>
+                    
+                    <a href="/tags/React%E5%85%A8%E5%AE%B6%E6%A1%B6-%E6%8A%80%E6%9C%AF%E6%A0%88/">
+                        <span class="chip bg-color">React全家桶(技术栈)</span>
+                    </a>
+                    
+                    <a href="/tags/React/">
+                        <span class="chip bg-color">React</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/03/14/tan-hua-jiao-you-5-react-navigation/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/17.png" class="responsive-img" alt="探花交友(5) - react-navigation">
+                        
+                        <span class="card-title">探花交友(5) - react-navigation</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-14
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%8E%A2%E8%8A%B1%E4%BA%A4%E5%8F%8B/" class="post-category">
+                                    探花交友
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
+                    </a>
+                    
+                    <a href="/tags/React-Native/">
+                        <span class="chip bg-color">React Native</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%8E%A2%E8%8A%B1%E4%BA%A4%E5%8F%8B/">
+                        <span class="chip bg-color">探花交友</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                        <span class="chip bg-color">前端</span>
+                    </a>
+                    
+                    <a href="/tags/react-navigation/">
+                        <span class="chip bg-color">react-navigation</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="5227009419"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">durex</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">692k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2021";
+                    var startMonth = "1";
+                    var startDate = "08";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
