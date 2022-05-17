@@ -1,0 +1,2228 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="MySQL(02), 薛定谔的腿毛">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>MySQL(02) | 薛定谔的腿毛</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="薛定谔的腿毛" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">薛定谔的腿毛</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">薛定谔的腿毛</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/41.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">MySQL(02)</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">笔记</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                                <span class="chip bg-color">数据库</span>
+                            </a>
+                        
+                            <a href="/tags/MySQL/">
+                                <span class="chip bg-color">MySQL</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%A4%8D%E6%9D%82%E6%9F%A5%E8%AF%A2/">
+                                <span class="chip bg-color">复杂查询</span>
+                            </a>
+                        
+                            <a href="/tags/DCL/">
+                                <span class="chip bg-color">DCL</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%BA%A6%E6%9D%9F/">
+                                <span class="chip bg-color">约束</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%A1%A8%E5%85%B3%E7%B3%BB/">
+                                <span class="chip bg-color">表关系</span>
+                            </a>
+                        
+                            <a href="/tags/%E4%B8%89%E5%A4%A7%E8%8C%83%E5%BC%8F/">
+                                <span class="chip bg-color">三大范式</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B0/">
+                                <span class="chip bg-color">聚合函数</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
+                                数据库
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-09-18
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2022-05-17
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    8.2k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    31 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="MySQL复杂查询、DCL、约束、表关系"><a href="#MySQL复杂查询、DCL、约束、表关系" class="headerlink" title="MySQL复杂查询、DCL、约束、表关系"></a>MySQL复杂查询、DCL、约束、表关系</h1><h1 id="回顾"><a href="#回顾" class="headerlink" title="回顾"></a>回顾</h1><ol>
+<li><p>能够使用SQL语句建库、建表</p>
+<p>建库: CREATE DATABASE 数据库名;</p>
+<p>建表:  CREATE TABLE 表名 (字段名1 字段类型1, 字段名2 字段类型2);</p>
+</li>
+<li><p>能够使用SQL语句进行数据的添删改查操作</p>
+<p>增: INSERT INTO 表名 (字段名1, 字段名2, …) VALUES (值1, 值2, …);</p>
+<p>删: DELETE FROM 表名;</p>
+<p>改: UPDATE 表名 SET 字段名1=值1, 字段名2=值2;</p>
+<p>查: SELECT * FROM 表名;</p>
+</li>
+<li><p>能够使用SQL语句进行排序</p>
+<p>SELECT * FROM 表名 ORDER BY 字段名 [ASC|DESC];</p>
+<p>默认是升序</p>
+</li>
+</ol>
+<h1 id="学习目标"><a href="#学习目标" class="headerlink" title="学习目标"></a>学习目标</h1><ol>
+<li>能够使用SQL语句添加主键、外键、唯一、非空约束</li>
+<li>能够使用聚合函数</li>
+<li>能够使用SQL语句进行分组查询</li>
+<li>能够理解三大范式</li>
+</ol>
+<h2 id="DQL查询语句-聚合函数-重要"><a href="#DQL查询语句-聚合函数-重要" class="headerlink" title="DQL查询语句-聚合函数(重要)"></a>DQL查询语句-聚合函数(重要)</h2><h3 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h3><p>学习五个聚合函数的使用</p>
+<h4 id="讲解"><a href="#讲解" class="headerlink" title="讲解"></a>讲解</h4><p>之前我们做的查询都是横向查询，它们都是根据条件一行一行的进行判断，而使用聚合函数查询是纵向查询，它是对一列的值进行计算，然后返回一个结果值。另外聚合函数会忽略空值NULL。</p>
+<p>五个聚合函数：<br><code>COUNT</code>： 统计指定列记录数，记录为NULL的不统计<br><code>SUM</code>： 计算指定列的数值和，如果不是数值类型，那么计算结果为0<br><code>MAX</code>： 计算指定列的最大值<br><code>MIN</code>： 计算指定列的最小值<br><code>AVG</code>： 计算指定列的平均值 average</p>
+<p>聚合函数的使用：写在 SQL语句<code>SELECT</code>后 <code>字段名</code>的地方</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> 字段名 <span class="token keyword">FROM</span> 表名<span class="token punctuation">;</span>
+
+<span class="token keyword">SELECT</span> 聚合函数<span class="token punctuation">(</span>字段名<span class="token punctuation">)</span> <span class="token keyword">FROM</span> 表名<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>具体操作：</p>
+<ul>
+<li>查询学生总数</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token function">COUNT</span><span class="token punctuation">(</span>english<span class="token punctuation">)</span> <span class="token keyword">FROM</span> student3<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B001.png"><br>我们发现对于NULL的记录不会统计</p>
+<p>统计数量常用:</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">FROM</span> student3<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B002.png"></p>
+<ul>
+<li>查询年龄大于40的总数</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">FROM</span> student3 <span class="token keyword">WHERE</span> age<span class="token operator">&gt;</span><span class="token number">40</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B003.png"></p>
+<ul>
+<li>查询数学成绩总分</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token function">SUM</span><span class="token punctuation">(</span>math<span class="token punctuation">)</span> <span class="token keyword">FROM</span> student3<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B004.png"></p>
+<ul>
+<li>查询数学成绩最高分</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token function">MAX</span><span class="token punctuation">(</span>math<span class="token punctuation">)</span> <span class="token keyword">FROM</span> student3<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B006.png"></p>
+<ul>
+<li>查询数学成绩最低分</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token function">MIN</span><span class="token punctuation">(</span>math<span class="token punctuation">)</span> <span class="token keyword">FROM</span> student3<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B007.png"></p>
+<ul>
+<li>查询数学成绩平均分</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token function">AVG</span><span class="token punctuation">(</span>math<span class="token punctuation">)</span> <span class="token keyword">FROM</span> student3<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B005.png"></p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>聚合函数是以列为单位操作</p>
+<table>
+<thead>
+<tr>
+<th><strong>函数</strong></th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>SUM(列名)</strong></td>
+<td>求这列的总和</td>
+</tr>
+<tr>
+<td><strong>COUNT(列名)</strong></td>
+<td>求这列的总数量</td>
+</tr>
+<tr>
+<td><strong>MAX(列名)</strong></td>
+<td>求这列的最大值</td>
+</tr>
+<tr>
+<td><strong>MIN(列名)</strong></td>
+<td>求这列的最小值</td>
+</tr>
+<tr>
+<td><strong>AVG(列名)</strong></td>
+<td>求这列的平均值</td>
+</tr>
+</tbody></table>
+<h2 id="DQL查询语句-分组-重要"><a href="#DQL查询语句-分组-重要" class="headerlink" title="DQL查询语句-分组(重要)"></a>DQL查询语句-分组(重要)</h2><h3 id="目标-1"><a href="#目标-1" class="headerlink" title="目标"></a>目标</h3><p>学习对查询后的结果进行分组</p>
+<p><img src="MySQL-02.assets/%E5%88%86%E7%BB%8410.png"></p>
+<h4 id="讲解-1"><a href="#讲解-1" class="headerlink" title="讲解"></a>讲解</h4><p>分组查询是指使用 <code>GROUP BY</code>语句对查询信息进行分组</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> 表名 <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> 字段名<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color="red"><strong>GROUP BY原理:</strong></font><br><font color="red"><strong>将分组字段结果中相同内容作为一组</strong></font></p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student3 <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> sex<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这句话会将sex相同的数据作为一组<br><img src="MySQL-02.assets/%E5%88%86%E7%BB%8401.png"></p>
+<p><code>GROUP BY</code>将分组字段的相同值作为一组，并且返回每组的第一条数据，所以单独分组没什么用处。分组的目的就是为了统计，一般分组会跟聚合函数一起使用。</p>
+<p>分组后聚合函数的作用？不是操作所有数据，而是<font color="red">分别操作每组数据</font>。</p>
+<pre class="line-numbers language-none"><code class="language-none">SELECT SUM(math), sex FROM student3 GROUP BY sex;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>效果如下：<br><img src="MySQL-02.assets/%E5%88%86%E7%BB%8402.png"></p>
+<p>实际上是将每组的math进行求和，返回每组统计的结果<br><img src="MySQL-02.assets/%E5%88%86%E7%BB%8403.png"></p>
+<blockquote>
+<p>注意事项：当我们使用某个字段分组,在查询的时候也需要将这个字段查询出来,否则看不到数据属于哪组的</p>
+<ul>
+<li>查询的时候没有查询出分组字段<br><img src="MySQL-02.assets/%E5%88%86%E7%BB%8404.png"></li>
+<li>查询的时候查询出分组字段<br><img src="MySQL-02.assets/%E5%88%86%E7%BB%8405.png"></li>
+</ul>
+</blockquote>
+<p>具体步骤：</p>
+<ul>
+<li>按性别分组</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> sex <span class="token keyword">FROM</span> student3 <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> sex<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E5%88%86%E7%BB%8406.png"></p>
+<ul>
+<li>查询男女各多少人</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token number">1.</span>查询所有数据<span class="token punctuation">,</span>按性别分组
+<span class="token number">2.</span>统计每组人数
+<span class="token keyword">SELECT</span> sex<span class="token punctuation">,</span> <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">FROM</span> student3 <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> sex<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E5%88%86%E7%BB%8406.png"></p>
+<ul>
+<li>查询年龄大于25岁的人,按性别分组,统计每组的人数</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token number">1.</span>先过滤掉年龄小于<span class="token number">25</span>岁的人
+<span class="token number">2.</span>再分组
+<span class="token number">3.</span>最后统计每组的人数
+<span class="token keyword">SELECT</span> sex<span class="token punctuation">,</span> <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">FROM</span> student3 <span class="token keyword">WHERE</span> age <span class="token operator">&gt;</span> <span class="token number">25</span> <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> sex<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E5%88%86%E7%BB%8408.png"></p>
+<ul>
+<li><p>查询年龄大于25岁的人,按性别分组,统计每组的人数,并只显示性别人数大于2的数据<br>有很多同学可能会将SQL语句写出这样:</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> sex<span class="token punctuation">,</span> <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">FROM</span> student3 <span class="token keyword">WHERE</span> age <span class="token operator">&gt;</span> <span class="token number">25</span> <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> sex <span class="token keyword">WHERE</span> <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span><span class="token number">2</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>注意: 并只显示性别人数&gt;2的数据属于分组后的条件,对于分组后的条件需要使用<code>having</code>子句</p>
+</blockquote>
+</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> sex<span class="token punctuation">,</span> <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">FROM</span> student3 <span class="token keyword">WHERE</span> age <span class="token operator">&gt;</span> <span class="token number">25</span> <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> sex <span class="token keyword">HAVING</span> <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span><span class="token number">2</span><span class="token punctuation">;</span>
+只有分组后人数大于<span class="token number">2</span>的<span class="token punctuation">`</span>男<span class="token punctuation">`</span>这组数据显示出来<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E5%88%86%E7%BB%8409.png"></p>
+<blockquote>
+<p>having与where的区别</p>
+<ul>
+<li>having是在分组后对数据进行过滤</li>
+<li>where是在分组前对数据进行过滤</li>
+<li>having后面可以使用聚合函数</li>
+<li>where后面不可以使用聚合函数</li>
+</ul>
+</blockquote>
+<h3 id="小结-1"><a href="#小结-1" class="headerlink" title="小结"></a>小结</h3><ol>
+<li><p>分组的语法格式？</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> 字段名 <span class="token keyword">FROM</span> 表名 <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> 字段名<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+</li>
+</ol>
+<ol start="2">
+<li><p>分组的原理？</p>
+<pre class="line-numbers language-none"><code class="language-none">将字段值相同的数据作为一组,并且返回每组的第一条数据
+
+通常分组和聚合函数组合使用<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+</li>
+</ol>
+<ol start="3">
+<li>where和having的区别？</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">- having是在分组后对数据进行过滤
+- where是在分组前对数据进行过滤
+- having后面可以使用聚合函数
+- where后面不可以使用聚合函数<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<h2 id="DQL查询语句-LIMIT语句-重要"><a href="#DQL查询语句-LIMIT语句-重要" class="headerlink" title="DQL查询语句-LIMIT语句(重要)"></a>DQL查询语句-LIMIT语句(重要)</h2><h3 id="目标-2"><a href="#目标-2" class="headerlink" title="目标"></a>目标</h3><p>能够掌握limit语句的使用</p>
+<p><img src="MySQL-02.assets/limit02.png"></p>
+<h4 id="准备数据"><a href="#准备数据" class="headerlink" title="准备数据"></a>准备数据</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student3<span class="token punctuation">(</span>id<span class="token punctuation">,</span>NAME<span class="token punctuation">,</span>age<span class="token punctuation">,</span>sex<span class="token punctuation">,</span>address<span class="token punctuation">,</span>math<span class="token punctuation">,</span>english<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> 
+<span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token string">'唐僧'</span><span class="token punctuation">,</span><span class="token number">25</span><span class="token punctuation">,</span><span class="token string">'男'</span><span class="token punctuation">,</span><span class="token string">'长安'</span><span class="token punctuation">,</span><span class="token number">87</span><span class="token punctuation">,</span><span class="token number">78</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token string">'孙悟空'</span><span class="token punctuation">,</span><span class="token number">18</span><span class="token punctuation">,</span><span class="token string">'男'</span><span class="token punctuation">,</span><span class="token string">'花果山'</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token number">66</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">,</span><span class="token string">'猪八戒'</span><span class="token punctuation">,</span><span class="token number">22</span><span class="token punctuation">,</span><span class="token string">'男'</span><span class="token punctuation">,</span><span class="token string">'高老庄'</span><span class="token punctuation">,</span><span class="token number">58</span><span class="token punctuation">,</span><span class="token number">78</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">,</span><span class="token string">'沙僧'</span><span class="token punctuation">,</span><span class="token number">50</span><span class="token punctuation">,</span><span class="token string">'男'</span><span class="token punctuation">,</span><span class="token string">'流沙河'</span><span class="token punctuation">,</span><span class="token number">77</span><span class="token punctuation">,</span><span class="token number">88</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">(</span><span class="token number">13</span><span class="token punctuation">,</span><span class="token string">'白骨精'</span><span class="token punctuation">,</span><span class="token number">22</span><span class="token punctuation">,</span><span class="token string">'女'</span><span class="token punctuation">,</span><span class="token string">'白虎岭'</span><span class="token punctuation">,</span><span class="token number">66</span><span class="token punctuation">,</span><span class="token number">66</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">(</span><span class="token number">14</span><span class="token punctuation">,</span><span class="token string">'蜘蛛精'</span><span class="token punctuation">,</span><span class="token number">23</span><span class="token punctuation">,</span><span class="token string">'女'</span><span class="token punctuation">,</span><span class="token string">'盘丝洞'</span><span class="token punctuation">,</span><span class="token number">88</span><span class="token punctuation">,</span><span class="token number">88</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><code>LIMIT</code>是<code>限制</code>的意思，所以<code>LIMIT</code>的作用就是限制查询记录的条数。</p>
+<h4 id="LIMIT语句格式"><a href="#LIMIT语句格式" class="headerlink" title="LIMIT语句格式"></a>LIMIT语句格式</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> 表名 <span class="token keyword">LIMIT</span> <span class="token keyword">offset</span><span class="token punctuation">,</span> length<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><code>offset</code>是指偏移量，可以认为是跳过的记录数量，不写则默认为0。<br><code>length</code>是指需要显示的总记录数</p>
+<p>具体步骤：</p>
+<ul>
+<li><p>查询学生表中数据，跳过前面2条，显示6条</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">我们可以认为跳过前面<span class="token number">2</span>条，取<span class="token number">6</span>条数据
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student3 <span class="token keyword">LIMIT</span> <span class="token number">2</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/limit02.png"></p>
+</li>
+</ul>
+<h4 id="LIMIT的使用场景"><a href="#LIMIT的使用场景" class="headerlink" title="LIMIT的使用场景"></a>LIMIT的使用场景</h4><p>分页</p>
+<p>比如我们登录京东，淘宝，返回的商品信息可能有几万条，不是一次全部显示出来。是一页显示固定的条数。假设我们一每页显示5条记录的方式来分页。</p>
+<p><img src="MySQL-02.assets/limit04.png"></p>
+<p>假设我们一每页显示5条记录的方式来分页，SQL语句如下：</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 每页显示5条</span>
+<span class="token comment">-- 第一页： LIMIT 0,5;	跳过0条，显示5条</span>
+<span class="token comment">-- 第二页： LIMIT 5,5;  跳过5条，显示5条</span>
+<span class="token comment">-- 第三页： LIMIT 10,5; 跳过10条，显示5条</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student3 <span class="token keyword">LIMIT</span> <span class="token number">0</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student3 <span class="token keyword">LIMIT</span> <span class="token number">5</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student3 <span class="token keyword">LIMIT</span> <span class="token number">10</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/limit03.png"></p>
+<blockquote>
+<p><strong>注意</strong>：</p>
+<ul>
+<li>如果第一个参数是0可以简写：<br><code>SELECT * FROM student3 LIMIT 0,5;</code><br><code>SELECT * FROM student3 LIMIT 5;</code></li>
+<li>LIMIT 10，5; – 不够5条，有多少显示多少</li>
+</ul>
+</blockquote>
+<h3 id="小结-2"><a href="#小结-2" class="headerlink" title="小结"></a>小结</h3><ol>
+<li><p>LIMIT语句的使用格式？</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> 表名 <span class="token keyword">LIMIT</span> 跳过的条数<span class="token punctuation">,</span> 显示的条数<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>```sql<br>SELECT 字段名 FROM 表名 WHERE 条件 GROUP BY 分组列名 HAVING 条件 ORDER BY 排序列名 LIMIT 跳过行数, 返回行数;</p>
+<pre class="line-numbers language-none"><code class="language-none">
+![1600393785747](MySQL-02.assets/1600393785747.png)
+
+
+## DCL创建用户，给用户授权，撤销授权(了解)
+
+### 目标
+
+学习DCL创建用户，给用户授权，撤销授权
+
+
+
+我们现在默认使用的都是root用户，超级管理员，拥有全部的权限。但是，一个公司里面的数据库服务器上面可能同时运行着很多个项目的数据库。所以，我们应该可以根据不同的项目建立不同的用户，分配不同的权限来管理和维护数据库。
+![](MySQL-02.assets/DCL01.png)
+
+#### 创建用户
+
+```sql
+CREATE USER '用户名'@'主机名' IDENTIFIED BY '密码';<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ol>
+<p><strong>关键字说明：</strong></p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token number">1.</span><span class="token punctuation">`</span>用户名<span class="token punctuation">`</span>：将创建的用户名
+<span class="token number">2.</span><span class="token punctuation">`</span>主机名<span class="token punctuation">`</span>：指定该用户在哪个主机上可以登陆，如果是本地用户可用localhost，如果想让该用户可以从任意远程主机登陆，可以使用通配符<span class="token operator">%</span>
+<span class="token number">3.</span><span class="token punctuation">`</span>密码<span class="token punctuation">`</span>：该用户的登陆密码，密码可以为空，如果为空则该用户可以不需要密码登陆服务器<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p><strong>具体操作：</strong></p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- user1用户只能在localhost这个IP登录mysql服务器</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">USER</span> <span class="token string">'user1'</span><span class="token variable">@'localhost'</span> IDENTIFIED <span class="token keyword">BY</span> <span class="token string">'123'</span><span class="token punctuation">;</span>
+<span class="token comment">-- user2用户可以在任何电脑上登录mysql服务器</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">USER</span> <span class="token string">'user2'</span><span class="token variable">@'%'</span> IDENTIFIED <span class="token keyword">BY</span> <span class="token string">'123'</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="授权用户"><a href="#授权用户" class="headerlink" title="授权用户"></a>授权用户</h4><p>用户创建之后，基本没什么权限！需要给用户授权<br><img src="MySQL-02.assets/DCL02.png"></p>
+<p><strong>授权格式</strong></p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">GRANT</span> 权限<span class="token number">1</span><span class="token punctuation">,</span> 权限<span class="token number">2.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token keyword">ON</span> 数据库名<span class="token punctuation">.</span>表名 <span class="token keyword">TO</span> <span class="token string">'用户名'</span><span class="token variable">@'主机名'</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>关键字说明</strong></p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token number">1.</span><span class="token punctuation">`</span><span class="token keyword">GRANT</span><span class="token punctuation">`</span> 授权关键字
+<span class="token number">2.</span>授予用户的权限，如<span class="token punctuation">`</span><span class="token keyword">SELECT</span><span class="token punctuation">`</span>，<span class="token punctuation">`</span><span class="token keyword">INSERT</span><span class="token punctuation">`</span>，<span class="token punctuation">`</span><span class="token keyword">UPDATE</span><span class="token punctuation">`</span>等。如果要授予所的权限则使用<span class="token punctuation">`</span><span class="token keyword">ALL</span><span class="token punctuation">`</span>
+<span class="token number">3.</span><span class="token punctuation">`</span>数据库名<span class="token punctuation">.</span>表名<span class="token punctuation">`</span>：该用户可以操作哪个数据库的哪些表。如果要授予该用户对所有数据库和表的相应操作权限则可用<span class="token operator">*</span>表示，如<span class="token punctuation">`</span><span class="token operator">*</span><span class="token punctuation">.</span><span class="token operator">*</span><span class="token punctuation">`</span>
+<span class="token number">4.</span><span class="token punctuation">`</span><span class="token string">'用户名'</span><span class="token variable">@'主机名'</span><span class="token punctuation">`</span>: 给哪个用户授权<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>具体操作</strong></p>
+<ol>
+<li><p>给user1用户分配对test这个数据库操作的权限</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">GRANT</span> <span class="token keyword">CREATE</span><span class="token punctuation">,</span><span class="token keyword">ALTER</span><span class="token punctuation">,</span><span class="token keyword">DROP</span><span class="token punctuation">,</span><span class="token keyword">INSERT</span><span class="token punctuation">,</span><span class="token keyword">UPDATE</span><span class="token punctuation">,</span><span class="token keyword">DELETE</span><span class="token punctuation">,</span><span class="token keyword">SELECT</span> <span class="token keyword">ON</span> test<span class="token punctuation">.</span><span class="token operator">*</span> <span class="token keyword">TO</span> <span class="token string">'user1'</span><span class="token variable">@'localhost'</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/DCL03.png"></p>
+</li>
+<li><p>给user2用户分配对所有数据库操作的权限</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">GRANT</span> <span class="token keyword">ALL</span> <span class="token keyword">ON</span> <span class="token operator">*</span><span class="token punctuation">.</span><span class="token operator">*</span> <span class="token keyword">TO</span> <span class="token string">'user2'</span><span class="token variable">@'%'</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/DCL04.png"></p>
+</li>
+</ol>
+<h4 id="撤销授权"><a href="#撤销授权" class="headerlink" title="撤销授权"></a>撤销授权</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">REVOKE</span> 权限<span class="token number">1</span><span class="token punctuation">,</span> 权限<span class="token number">2.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token keyword">ON</span> 数据库名<span class="token punctuation">.</span>表名 <span class="token keyword">FROM</span> <span class="token string">'用户名'</span><span class="token variable">@'主机名'</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>具体操作：</strong></p>
+<ul>
+<li><p>撤销user1用户对test操作的权限</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">REVOKE</span> <span class="token keyword">ALL</span> <span class="token keyword">ON</span> test<span class="token punctuation">.</span><span class="token operator">*</span> <span class="token keyword">FROM</span> <span class="token string">'user1'</span><span class="token variable">@'localhost'</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/DCL05.png"></p>
+</li>
+</ul>
+<h4 id="查看权限"><a href="#查看权限" class="headerlink" title="查看权限"></a>查看权限</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SHOW</span> GRANTS <span class="token keyword">FOR</span> <span class="token string">'用户名'</span><span class="token variable">@'主机名'</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>具体操作：</strong></p>
+<ul>
+<li><p>查看user1用户的权限</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SHOW</span> GRANTS <span class="token keyword">FOR</span> <span class="token string">'user1'</span><span class="token variable">@'localhost'</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/DCL06.png"></p>
+</li>
+</ul>
+<h3 id="小结-3"><a href="#小结-3" class="headerlink" title="小结"></a>小结</h3><ol>
+<li><p>创建用户</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">USER</span> <span class="token string">'用户名'</span><span class="token variable">@'主机名'</span> IDENTIFIED <span class="token keyword">BY</span> <span class="token string">'密码'</span><span class="token punctuation">;</span>
+
+主机名: localhost<span class="token punctuation">,</span>只能本机登陆<span class="token punctuation">,</span>  <span class="token operator">%</span> 可以远程登录<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+<li><p>添加权限</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">GRANT</span> 权限<span class="token number">1</span><span class="token punctuation">,</span> 权限<span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token keyword">ON</span> 数据库名<span class="token punctuation">.</span>表名 <span class="token keyword">TO</span> <span class="token string">'用户名'</span><span class="token variable">@'主机名'</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>删除权限</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">REVOKE</span> 权限<span class="token number">1</span><span class="token punctuation">,</span> 权限<span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token keyword">ON</span> 数据库名<span class="token punctuation">.</span>表名 <span class="token keyword">FROM</span> <span class="token string">'用户名'</span><span class="token variable">@'主机名'</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+</li>
+</ol>
+<h2 id="DCL删除用户，修改用户密码-了解"><a href="#DCL删除用户，修改用户密码-了解" class="headerlink" title="DCL删除用户，修改用户密码(了解)"></a>DCL删除用户，修改用户密码(了解)</h2><h3 id="目标-3"><a href="#目标-3" class="headerlink" title="目标"></a>目标</h3><p>学习DCL删除用户，修改用户密码</p>
+<h4 id="删除用户"><a href="#删除用户" class="headerlink" title="删除用户"></a>删除用户</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">DROP</span> <span class="token keyword">USER</span> <span class="token string">'用户名'</span><span class="token variable">@'主机名'</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>具体操作：</strong></p>
+<ul>
+<li><p>删除user2</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">DROP</span> <span class="token keyword">USER</span> <span class="token string">'user2'</span><span class="token variable">@'%'</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/DCL07.png"></p>
+</li>
+</ul>
+<h4 id="修改管理员密码"><a href="#修改管理员密码" class="headerlink" title="修改管理员密码"></a>修改管理员密码</h4><blockquote>
+<p>注意：需要在未登陆MySQL的情况下操作。</p>
+</blockquote>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">在DOS命令行:
+mysqladmin <span class="token operator">-</span>uroot <span class="token operator">-</span>p密码 password 新密码  <span class="token comment">-- 新密码不需要加上引号</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><strong>具体操作：</strong></p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">mysqladmin <span class="token operator">-</span>uroot <span class="token operator">-</span>proot password <span class="token number">123456</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>   <img src="MySQL-02.assets/DCL08.png"></p>
+<h3 id="小结-4"><a href="#小结-4" class="headerlink" title="小结"></a>小结</h3><ol>
+<li><p>删除用户？</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">DROP</span> <span class="token keyword">USER</span> <span class="token string">'用户名'</span><span class="token variable">@'主机名'</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>修改root用户密码？</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">在DOS命令行未登陆:
+mysqladmin <span class="token operator">-</span>uroot <span class="token operator">-</span>p密码 password 新密码<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+
+</li>
+</ol>
+<h2 id="数据库备份-重要"><a href="#数据库备份-重要" class="headerlink" title="数据库备份(重要)"></a>数据库备份(重要)</h2><h3 id="目标-4"><a href="#目标-4" class="headerlink" title="目标"></a>目标</h3><ol>
+<li>学习命令行的方式备份和还原表中的数据</li>
+<li>学习图形客户端来备份和还原数据</li>
+</ol>
+<h4 id="备份的应用场景"><a href="#备份的应用场景" class="headerlink" title="备份的应用场景"></a>备份的应用场景</h4><p>在服务器进行数据传输、数据存储和数据交换，就有可能产生数据故障。比如发生意外停机或存储介质损坏。这时，如果没有采取数据备份和数据恢复手段与措施，就会导致数据的丢失，造成的损失是无法弥补与估量的。</p>
+<p><img src="MySQL-02.assets/1551281803999.png" alt="1551281803999"></p>
+<h4 id="DOS命令行方式备份与还原"><a href="#DOS命令行方式备份与还原" class="headerlink" title="DOS命令行方式备份与还原"></a>DOS命令行方式备份与还原</h4><p><strong>备份格式</strong></p>
+<blockquote>
+<p>注意：这个操作不用登录</p>
+</blockquote>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">在DOS命令行:mysqldump <span class="token operator">-</span>u用户名 <span class="token operator">-</span>p密码 数据库 <span class="token operator">&gt;</span> 文件的路径<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>还原格式</strong></p>
+<blockquote>
+<p>注意：还原的时候需要先登录MySQL，并选中对应的数据库</p>
+</blockquote>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SOURCE 导入文件的路径<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>具体操作</strong></p>
+<ul>
+<li>备份day22数据库中的数据</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">mysqldump <span class="token operator">-</span>uroot <span class="token operator">-</span>proot day22 <span class="token operator">&gt;</span> C:\<span class="token keyword">work</span>\code\bak<span class="token punctuation">.</span><span class="token keyword">sql</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%BC%E5%87%BA01.png"></p>
+<p><strong>数据库中的所有表和数据都会导出成SQL语句</strong><br><img src="MySQL-02.assets/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%BC%E5%87%BA02.png"></p>
+<ul>
+<li><p>还原day22数据库中的数据</p>
+<ul>
+<li>删除day22数据库中的所有表<br><img src="MySQL-02.assets/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%BC%E5%87%BA08.png"></li>
+<li>登录MySQL</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">mysql <span class="token operator">-</span>uroot <span class="token operator">-</span>proot<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<ul>
+<li>选中数据库</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">use</span> day22<span class="token punctuation">;</span>
+<span class="token keyword">select</span> <span class="token keyword">database</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%BC%E5%87%BA03.png"></p>
+<ul>
+<li>使用SOURCE命令还原数据</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">source C:\<span class="token keyword">work</span>\课改\MYSQL课改资料\Day02<span class="token operator">-</span>MYSQL多表查询\code\bak<span class="token punctuation">.</span><span class="token keyword">sql</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%BC%E5%87%BA04.png"></p>
+</li>
+</ul>
+<h4 id="图形化界面备份与还原"><a href="#图形化界面备份与还原" class="headerlink" title="图形化界面备份与还原"></a>图形化界面备份与还原</h4><ul>
+<li>备份day22数据库中的数据<br> ​     选中数据库，右键 ”备份/导出”，指定导出路径，保存成.sql文件即可。<br> ​     <img src="MySQL-02.assets/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%BC%E5%87%BA05.png"><br> ​     <img src="MySQL-02.assets/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%BC%E5%87%BA06.png"><br> ​     </li>
+<li><strong>包含创建数据库的语句</strong><br>  ​     <img src="MySQL-02.assets/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%BC%E5%87%BA07.png"></li>
+<li>还原day22数据库中的数据<ul>
+<li>删除day22数据库</li>
+<li>数据库列表区域右键“执行SQL脚本”， 指定要执行的SQL文件，执行即可<br><img src="MySQL-02.assets/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%BC%E5%87%BA09.png"><br><img src="MySQL-02.assets/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%BC%E5%87%BA10.png"></li>
+</ul>
+</li>
+</ul>
+<h3 id="小结-5"><a href="#小结-5" class="headerlink" title="小结"></a>小结</h3><ol>
+<li><p>使用命令行的方式备份和还原表中的数据<br>备份: 不需要登陆,在DOS命令行输入: mysqldump -u账号 -p密码 数据库 &gt; 文件路径<br>还原: 要登陆,选中数据库: source 文件路径</p>
+</li>
+<li><p>使用图形客户端来备份和还原数据</p>
+<p>右键</p>
+</li>
+</ol>
+<h2 id="数据库的三大范式"><a href="#数据库的三大范式" class="headerlink" title="数据库的三大范式"></a>数据库的三大范式</h2><h3 id="目标-5"><a href="#目标-5" class="headerlink" title="目标"></a>目标</h3><p>学习数据库中三大范式</p>
+<p><img src="MySQL-02.assets/1564575498099.png" alt="1564575498099"></p>
+<h4 id="什么是范式"><a href="#什么是范式" class="headerlink" title="什么是范式"></a>什么是范式</h4><p><strong>范式是指</strong>: 设计数据库表的规则(Normal Form)<br>好的数据库设计对数据的存储性能和后期的程序开发，都会产生重要的影响。建立科学的，规范的数据库就需要满足一些规则来优化数据的设计和存储</p>
+<h4 id="范式的基本分类"><a href="#范式的基本分类" class="headerlink" title="范式的基本分类"></a>范式的基本分类</h4><p>目前关系数据库有六种范式：第一范式（1NF）、第二范式（2NF）、第三范式（3NF）、巴斯-科德范式（BCNF）、第四范式(4NF）和第五范式（5NF，又称完美范式）。满足最低要求的范式是第一范式（1NF）。在第一范式的基础上进一步满足更多规范要求的称为第二范式（2NF），其余范式以次类推。<font color="red"><strong>一般说来，数据库只需满足第三范式(3NF）就行了。</strong></font></p>
+<h4 id="第一范式"><a href="#第一范式" class="headerlink" title="第一范式"></a>第一范式</h4><p>​        即数据库表的每一列都是不可分割的原子数据项，而不能是集合、数组、记录等非原子数据项。即实体中的某个属性有多个值时，必须拆分为不同的属性。在符合第一范式（1NF）表中每个列的值只能是表的一个属性或一个属性的一部分。简而言之，第一范式每一列不可再拆分，称为原子性。<br><strong>第一范式</strong>：<font color="red"><strong>表中每一个字段不需要再拆分，可以直接使用</strong></font><br><img src="MySQL-02.assets/%E8%8C%83%E5%BC%8F01.png"></p>
+<h4 id="第二范式"><a href="#第二范式" class="headerlink" title="第二范式"></a>第二范式</h4><p>​        第二范式（2NF）要求数据库表中的每个实例或记录必须可以被唯一地区分。选取一个能区分每个实体的属性或属性组，作为实体的唯一标识。例如在员工表中的身份证号码即可实现每个员工的区分，该身份证号码即为候选键，任何一个候选键都可以被选作主键。在找不到候选键时，可额外增加属性以实现区分。<br>​        第二范式（2NF）要求实体的属性完全依赖于主关键字。所谓完全依赖是指不能存在仅依赖主关键字一部分的属性。如果存在，那么这个属性和主关键字的这一部分应该分离出来形成一个新的实体，新实体与原实体之间是一对多的关系。为实现区分通常需要为表加上一个列，以存储各个实例的唯一标识。简而言之，第二范式就是在第一范式的基础上属性完全依赖于主键。</p>
+<p><strong>第二范式</strong>：</p>
+<ol>
+<li><font color="red"><strong>一张表只描述一件事情（一个实体）</strong></font></li>
+<li><font color="red"><strong>表中的每一个字段都依赖于主键</strong></font><br><img src="MySQL-02.assets/%E8%8C%83%E5%BC%8F03.png"></li>
+</ol>
+<h4 id="第三范式"><a href="#第三范式" class="headerlink" title="第三范式"></a>第三范式</h4><p>​        在2NF基础上，任何非主属性不依赖于其它非主属性（在2NF基础上消除传递依赖）<br>满足第三范式（3NF）必须先满足第二范式（2NF）。简而言之，第三范式（3NF）要求一个关系中不包含已在其它关系已包含的非主关键字信息。</p>
+<p><strong>第三范式</strong>：<font color="red"><strong>一张表的字段必须引用另一张表的主键</strong></font><br><img src="MySQL-02.assets/1578488192043.png" alt="1564640929790"></p>
+<h3 id="小结-6"><a href="#小结-6" class="headerlink" title="小结"></a>小结</h3><p>第一范式要求?  </p>
+<p>表中的字段要不需要再拆分,直接使用</p>
+<p>第二范式要求? </p>
+<ol>
+<li>一张表只描述一件事情或一个实体</li>
+<li>每张表要添加主键</li>
+</ol>
+<p>第三范式要求? </p>
+<p> 表中的字段引用其他表的主键</p>
+<h2 id="数据库约束的概述"><a href="#数据库约束的概述" class="headerlink" title="数据库约束的概述"></a>数据库约束的概述</h2><p>目前根据字段的类型可以对数据进行限制，但是这个限制不够全面。</p>
+<h3 id="目标-6"><a href="#目标-6" class="headerlink" title="目标"></a>目标</h3><p>学习数据库约束的作用</p>
+<h4 id="数据库约束的作用"><a href="#数据库约束的作用" class="headerlink" title="数据库约束的作用"></a>数据库约束的作用</h4><p>对表中的数据进行进一步的限制，保证数据的<strong>正确性</strong>、<strong>有效性</strong>和<strong>完整性</strong>。</p>
+<h4 id="约束种类"><a href="#约束种类" class="headerlink" title="约束种类"></a>约束种类</h4><ul>
+<li><code>PRIMARY KEY</code>:  主键约束</li>
+<li><code>UNIQUE</code>:  唯一约束</li>
+<li><code>NOT NULL</code>:  非空约束</li>
+<li><code>DEFAULT</code>:  默认值约束</li>
+<li><code>FOREIGN KEY</code>:  外键约束</li>
+</ul>
+<h3 id="小结-7"><a href="#小结-7" class="headerlink" title="小结"></a>小结</h3><ol>
+<li><p>数据库约束的作用？</p>
+<p>对表中的数据进行进一步的限制，保证数据的<strong>正确性</strong>、<strong>有效性</strong>和<strong>完整性</strong>。</p>
+</li>
+</ol>
+<h2 id="主键约束-重要"><a href="#主键约束-重要" class="headerlink" title="主键约束(重要)"></a>主键约束(重要)</h2><h3 id="目标-7"><a href="#目标-7" class="headerlink" title="目标"></a>目标</h3><ol>
+<li>学习主键约束的作用</li>
+<li>学习添加和删除主键约束</li>
+</ol>
+<h4 id="为什么需要主键约束"><a href="#为什么需要主键约束" class="headerlink" title="为什么需要主键约束"></a>为什么需要主键约束</h4><p>有些记录的 name，age，score 字段的值都一样时，那么就没法区分这些数据,造成数据库的记录不唯一，这样就不方便管理数据。</p>
+<p><img src="MySQL-02.assets/%E4%B8%BB%E9%94%AE01.png"></p>
+<p><img src="MySQL-02.assets/%E4%B8%BB%E9%94%AE02.png"></p>
+<p>每张表都应该有一个主键，并且每张表只能有一个主键。</p>
+<h4 id="主键的作用"><a href="#主键的作用" class="headerlink" title="主键的作用"></a>主键的作用</h4><p>用来区分表中的数据</p>
+<h4 id="哪个字段作为表的主键"><a href="#哪个字段作为表的主键" class="headerlink" title="哪个字段作为表的主键"></a>哪个字段作为表的主键</h4><p>通常不用业务字段作为主键，单独给每张表设计一个id的字段，把id作为主键。主键是给数据库和程序使用的，不是给最终的客户使用的。所以主键有没有含义没有关系，只要不重复，非空就行。</p>
+<p><img src="MySQL-02.assets/1564533291054.png" alt="1564533291054"></p>
+<h4 id="创建主键"><a href="#创建主键" class="headerlink" title="创建主键"></a>创建主键</h4><p>主键：<strong>PRIMARY KEY</strong><br><strong>主键的特点</strong>：</p>
+<ul>
+<li>主键必须唯一的值</li>
+<li>主键不能包含NULL值</li>
+</ul>
+<p><strong>创建主键方式</strong></p>
+<ol>
+<li><p><strong>在创建表的时候给字段添加主键</strong></p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> 表名 <span class="token punctuation">(</span>
+	字段名 字段类型 <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span>
+	字段名 字段类型
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p><strong>在已有表中添加主键</strong>(不常用)</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名 <span class="token keyword">ADD</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>字段名<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>具体操作：</p>
+</li>
+</ol>
+<ul>
+<li>创建表学生表st5, 包含字段(id, name, age)将id做为主键</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> st5 <span class="token punctuation">(</span>
+	id <span class="token keyword">INT</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span> <span class="token comment">-- id是主键</span>
+	NAME <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+	age <span class="token keyword">INT</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E4%B8%BB%E9%94%AE03.png"></p>
+<ul>
+<li>添加数据</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st5 <span class="token punctuation">(</span>id<span class="token punctuation">,</span> NAME<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'唐伯虎'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st5 <span class="token punctuation">(</span>id<span class="token punctuation">,</span> NAME<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'周文宾'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st5 <span class="token punctuation">(</span>id<span class="token punctuation">,</span> NAME<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">'祝枝山'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st5 <span class="token punctuation">(</span>id<span class="token punctuation">,</span> NAME<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token string">'文征明'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>插入重复的主键值</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 主键是唯一的不能重复：Duplicate entry '1' for key 'PRIMARY'</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st5 <span class="token punctuation">(</span>id<span class="token punctuation">,</span> NAME<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'文征明2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<ul>
+<li>插入NULL的主键值</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 主键是不能为空的：Column 'id' cannot be null</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st5 <span class="token punctuation">(</span>id<span class="token punctuation">,</span> NAME<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token boolean">NULL</span><span class="token punctuation">,</span> <span class="token string">'文征明3'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="删除主键"><a href="#删除主键" class="headerlink" title="删除主键"></a>删除主键</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名 <span class="token keyword">DROP</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>具体操作：</p>
+<ul>
+<li>删除st5表的主键</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> st5 <span class="token keyword">DROP</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E4%B8%BB%E9%94%AE04.png"></p>
+<h3 id="小结-8"><a href="#小结-8" class="headerlink" title="小结"></a>小结</h3><ol>
+<li><p>说出主键约束的作用？</p>
+<p>用来区分每条数据</p>
+</li>
+<li><p>主键的特点？</p>
+<p>1.唯一</p>
+<p>2.非空</p>
+</li>
+<li><p>添加和删除主键？</p>
+</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">创建表时添加主键
+CREATE TABLE 表名 (
+	字段名 字段类型 PRIMARY KEY,
+	字段名 字段类型
+);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<pre class="line-numbers language-none"><code class="language-none">在已有表上添加主键
+ALTER TABLE 表名 ADD PRIMARY KEY (字段名);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+<pre class="line-numbers language-none"><code class="language-none">删除主键
+ALTER TABLE 表名 DROP PRIMARY KEY;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+<h2 id="主键自增-重要"><a href="#主键自增-重要" class="headerlink" title="主键自增(重要)"></a>主键自增(重要)</h2><h3 id="目标-8"><a href="#目标-8" class="headerlink" title="目标"></a>目标</h3><p>学习主键为自动增长</p>
+<p>主键让我们自己添加很有可能重复，我们通常希望在每次插入新记录时，数据库自动生成主键字段的值</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">字段名 字段类型 <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token keyword">AUTO_INCREMENT</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><code>AUTO_INCREMENT</code> 表示自动增长(<strong>字段类型必须是数值类型</strong>)</p>
+<p>具体操作：</p>
+<ul>
+<li>创建学生表st6, 包含字段(id, name, age)将id做为主键并自动增长</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> st6 <span class="token punctuation">(</span>
+	id <span class="token keyword">INT</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token keyword">AUTO_INCREMENT</span><span class="token punctuation">,</span>
+	NAME <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+	age <span class="token keyword">INT</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>插入数据</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 主键默认从1开始自动增长</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st6 <span class="token punctuation">(</span>NAME<span class="token punctuation">,</span> age<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'唐僧'</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st6 <span class="token punctuation">(</span>NAME<span class="token punctuation">,</span> age<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'孙悟空'</span><span class="token punctuation">,</span> <span class="token number">26</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st6 <span class="token punctuation">(</span>NAME<span class="token punctuation">,</span> age<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'猪八戒'</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st6 <span class="token punctuation">(</span>NAME<span class="token punctuation">,</span> age<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'沙僧'</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E4%B8%BB%E9%94%AE05.png"></p>
+<p>扩展<br>默认地AUTO_INCREMENT 的开始值是1，如果希望修改起始值，请使用下列SQL语法</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> st6 <span class="token keyword">AUTO_INCREMENT</span> <span class="token operator">=</span> <span class="token number">10000</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>DELETE</strong>和<strong>TRUNCATE</strong>的区别</p>
+<ul>
+<li>DELETE 删除表中的数据，但不重置AUTO_INCREMENT的值。<br><img src="MySQL-02.assets/%E4%B8%BB%E9%94%AE06.png"></li>
+<li>TRUNCATE 摧毁表，重建表，AUTO_INCREMENT重置为1<br><img src="MySQL-02.assets/%E4%B8%BB%E9%94%AE07.png"></li>
+</ul>
+<h3 id="小结-9"><a href="#小结-9" class="headerlink" title="小结"></a>小结</h3><ol>
+<li><p>设置主键为自动增长格式？</p>
+<pre class="line-numbers language-none"><code class="language-none">字段名 字段类型 PRIMARY KEY AUTO_INCREMENT<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+</li>
+</ol>
+<h2 id="唯一约束"><a href="#唯一约束" class="headerlink" title="唯一约束"></a>唯一约束</h2><h3 id="目标-9"><a href="#目标-9" class="headerlink" title="目标"></a>目标</h3><ol>
+<li>学习唯一约束的作用</li>
+<li>学习添加唯一约束</li>
+</ol>
+<h4 id="唯一约束的作用"><a href="#唯一约束的作用" class="headerlink" title="唯一约束的作用"></a>唯一约束的作用</h4><p>让字段的值唯一，不能重复</p>
+<h4 id="唯一约束的格式"><a href="#唯一约束的格式" class="headerlink" title="唯一约束的格式"></a>唯一约束的格式</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> 表名 <span class="token punctuation">(</span>
+	字段名 字段类型 <span class="token keyword">UNIQUE</span><span class="token punctuation">,</span>
+	字段名 字段类型
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>具体步骤：</p>
+<ul>
+<li>创建学生表st7, 包含字段(id, name)，name这一列设置唯一约束，不能出现同名的学生</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> st7 <span class="token punctuation">(</span>
+	id <span class="token keyword">INT</span><span class="token punctuation">,</span>
+	NAME <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> <span class="token keyword">UNIQUE</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>添加一些学生</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st7 <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'貂蝉'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st7 <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'西施'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st7 <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">'王昭君'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st7 <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token string">'杨玉环'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 插入相同的名字出现name重复: Duplicate entry '貂蝉' for key 'name'</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st7 <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token string">'貂蝉'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 出现多个null的时候会怎样？因为null是没有值，所以不存在重复的问题</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st3 <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token boolean">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st3 <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token boolean">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<h3 id="小结-10"><a href="#小结-10" class="headerlink" title="小结"></a>小结</h3><ol>
+<li><p>说出唯一约束的作用？</p>
+<pre class="line-numbers language-none"><code class="language-none">这个字段的值不能重复<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+</li>
+</ol>
+<ol start="2">
+<li><p>添加唯一约束格式？</p>
+<pre class="line-numbers language-none"><code class="language-none">CREATE TABLE 表名 (
+	字段名 字段类型 UNIQUE,
+	字段名 字段类型
+);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+</li>
+</ol>
+<h2 id="非空约束"><a href="#非空约束" class="headerlink" title="非空约束"></a>非空约束</h2><h3 id="目标-10"><a href="#目标-10" class="headerlink" title="目标"></a>目标</h3><ol>
+<li>学习非空约束的作用</li>
+<li>学习添加非空约束</li>
+</ol>
+<h4 id="非空约束的作用"><a href="#非空约束的作用" class="headerlink" title="非空约束的作用"></a>非空约束的作用</h4><p>让这个字段的值不能为空</p>
+<h4 id="非空约束的语法格式"><a href="#非空约束的语法格式" class="headerlink" title="非空约束的语法格式"></a>非空约束的语法格式</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> 表名 <span class="token punctuation">(</span>
+	字段名 字段类型 <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+	字段名 字段类型
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>具体操作：</p>
+<ul>
+<li>创建表学生表st8, 包含字段(id,name,gender)其中name不能为NULL</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> st8 <span class="token punctuation">(</span>
+	id <span class="token keyword">INT</span><span class="token punctuation">,</span>
+	NAME <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+	gender <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>添加一些完整的记录</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st8 <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'郭富城'</span><span class="token punctuation">,</span> <span class="token string">'男'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st8 <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'黎明'</span><span class="token punctuation">,</span> <span class="token string">'男'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st8 <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">'张学友'</span><span class="token punctuation">,</span> <span class="token string">'男'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st8 <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token string">'刘德华'</span><span class="token punctuation">,</span> <span class="token string">'男'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 姓名不赋值出现姓名不能为null: Column 'name' cannot be null</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st8 <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span> <span class="token string">'男'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<h3 id="小结-11"><a href="#小结-11" class="headerlink" title="小结"></a>小结</h3><p>非空约束的格式:</p>
+<pre class="line-numbers language-none"><code class="language-none">CREATE TABLE 表名 (
+	字段名 字段类型 NOT NULL,
+	字段名 字段类型
+);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<p>扩展: 主键唯一和非空，普通的字段我们也可以添加唯一和非空,有区别吗?</p>
+<pre class="line-numbers language-none"><code class="language-none">1.一张表中只能有一个主键
+2.一张表中可以有多个唯一和非空普通字段
+3.主键才能自动增长，普通的字段不能自动增长<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+<h2 id="默认值"><a href="#默认值" class="headerlink" title="默认值"></a>默认值</h2><h3 id="目标-11"><a href="#目标-11" class="headerlink" title="目标"></a>目标</h3><ol>
+<li>学习默认值的作用</li>
+<li>学习给字段添加默认值</li>
+</ol>
+<h4 id="默认值的作用"><a href="#默认值的作用" class="headerlink" title="默认值的作用"></a>默认值的作用</h4><p>如果这个字段不设置值，就使用默认值。</p>
+<h4 id="默认值格式"><a href="#默认值格式" class="headerlink" title="默认值格式"></a>默认值格式</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> 表名 <span class="token punctuation">(</span>
+	字段名 字段类型 <span class="token keyword">DEFAULT</span> 值<span class="token punctuation">,</span>
+	字段名 字段类型
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>具体步骤：</p>
+<ul>
+<li>创建一个学生表 st9，包含字段(id,name,address)， 地址默认值是广州</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> st9 <span class="token punctuation">(</span>
+	id <span class="token keyword">INT</span><span class="token punctuation">,</span>
+	NAME <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+	address <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> <span class="token keyword">DEFAULT</span> <span class="token string">'广州'</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>添加一条记录，使用默认地址</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st9 <span class="token punctuation">(</span>id<span class="token punctuation">,</span> NAME<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'刘德华'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E9%BB%98%E8%AE%A4%E5%80%BC.png"></p>
+<ul>
+<li>添加一条记录,不使用默认地址</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> st9 <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'张学友'</span><span class="token punctuation">,</span> <span class="token string">'香港'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+<h3 id="小结-12"><a href="#小结-12" class="headerlink" title="小结"></a>小结</h3><ol>
+<li><p>说出默认值的作用？</p>
+<pre class="line-numbers language-none"><code class="language-none">这个字段不添加值就使用默认值<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+</li>
+</ol>
+<ol start="2">
+<li><p>给字段添加默认值格式？</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> 表名 <span class="token punctuation">(</span>
+	字段名 字段类型 <span class="token keyword">DEFAULT</span> 值<span class="token punctuation">,</span>
+	字段名 字段类型
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+</li>
+</ol>
+<h2 id="外键约束-重要"><a href="#外键约束-重要" class="headerlink" title="外键约束(重要)"></a>外键约束(重要)</h2><h3 id="目标-12"><a href="#目标-12" class="headerlink" title="目标"></a>目标</h3><p>学习外键的概念</p>
+<p>学习创建外键约束</p>
+<p>准备部门表和员工表的数据</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 创建部门表</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> department <span class="token punctuation">(</span>
+	id <span class="token keyword">INT</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token keyword">AUTO_INCREMENT</span><span class="token punctuation">,</span>
+	dep_name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+	dep_location <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 创建员工表</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> employee <span class="token punctuation">(</span>
+	id <span class="token keyword">INT</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token keyword">AUTO_INCREMENT</span><span class="token punctuation">,</span>
+	NAME <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+	age <span class="token keyword">INT</span><span class="token punctuation">,</span>
+	dep_id <span class="token keyword">INT</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 添加2个部门</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> department <span class="token punctuation">(</span>dep_name<span class="token punctuation">,</span> dep_location<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'研发部'</span><span class="token punctuation">,</span> <span class="token string">'广州'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token string">'销售部'</span><span class="token punctuation">,</span> <span class="token string">'深圳'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 添加员工,dep_id表示员工所在的部门</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token punctuation">(</span>NAME<span class="token punctuation">,</span> age<span class="token punctuation">,</span> dep_id<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> 
+<span class="token punctuation">(</span><span class="token string">'张三'</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+<span class="token punctuation">(</span><span class="token string">'李四'</span><span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+<span class="token punctuation">(</span><span class="token string">'王五'</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+<span class="token punctuation">(</span><span class="token string">'老王'</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">(</span><span class="token string">'大王'</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">(</span><span class="token string">'小王'</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>问题</strong>：<br>当我们在employee的dep_id里面输入不存在的部门，数据依然可以添加，但是并没有对应的部门，不能出现这种情况。employee的dep_id中的内容只能是department表中存在的id<br><img src="MySQL-02.assets/%E5%A4%96%E9%94%AE03.png"></p>
+<p><strong>需要达到目的</strong>:需要约束dep_id只能是department表中已经存在id<br><strong>解决方式</strong>: 使用外键约束</p>
+<h4 id="什么是外键"><a href="#什么是外键" class="headerlink" title="什么是外键"></a>什么是外键</h4><p>一个表中的某个字段引用其他表的主键，这个字段称为外键</p>
+<p>主表： 主键所在的表，约束别人的表，将数据给别人用<br>副表/从表： 外键所在的表，被约束的表，使用别人的数据<br><img src="MySQL-02.assets/%E5%A4%96%E9%94%AE04.png"></p>
+<h4 id="创建外键约束"><a href="#创建外键约束" class="headerlink" title="创建外键约束"></a>创建外键约束</h4><ol>
+<li><p><strong>新建表时增加外键约束</strong>：</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> 表名 <span class="token punctuation">(</span>
+	字段名 字段类型<span class="token punctuation">,</span>
+    字段名 字段类型<span class="token punctuation">,</span>
+    <span class="token comment">-- 添加外键约束</span>
+    <span class="token punctuation">[</span><span class="token keyword">CONSTRAINT</span> 外键约束名<span class="token punctuation">]</span> <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span><span class="token punctuation">(</span>外键字段名<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> 主表<span class="token punctuation">(</span>主键字段名<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>关键字解释</strong>：<br>CONSTRAINT:  表示约束</p>
+<p>外键约束名： 给外键约束取个名字,将来通过约束名可以删除这个约束</p>
+<p>FOREIGN KEY(外键字段名):  指定某个字段作为外键</p>
+<p>REFERENCES 主表(主键字段名) :  引用主表的主键的值</p>
+</li>
+<li><p><strong>已有表增加外键约束</strong>：</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 从表 <span class="token keyword">ADD</span> <span class="token keyword">CONSTRAINT</span> 外键约束名称 <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>外键字段名<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> 主表<span class="token punctuation">(</span>主键字段名<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>具体操作：</p>
+</li>
+</ol>
+<ul>
+<li>副表/从表: 被别人约束，表结构添加外键约束</li>
+<li>删除副表/从表 employee</li>
+<li>创建从表 employee 并添加外键约束</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> employee <span class="token punctuation">(</span>
+	id <span class="token keyword">INT</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token keyword">AUTO_INCREMENT</span><span class="token punctuation">,</span>
+	NAME <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+	age <span class="token keyword">INT</span><span class="token punctuation">,</span>
+	dep_id <span class="token keyword">INT</span><span class="token punctuation">,</span>
+	<span class="token comment">-- 添加一个外键</span>
+	<span class="token comment">-- 外键取名公司要求,一般fk结尾</span>
+	<span class="token keyword">CONSTRAINT</span> emp_depid_ref_dep_id_fk <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span><span class="token punctuation">(</span>dep_id<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> department<span class="token punctuation">(</span>id<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>正常添加数据</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token punctuation">(</span>NAME<span class="token punctuation">,</span> age<span class="token punctuation">,</span> dep_id<span class="token punctuation">)</span> <span class="token keyword">VALUES</span>
+<span class="token punctuation">(</span><span class="token string">'张三'</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">(</span><span class="token string">'李四'</span><span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">(</span><span class="token string">'王五'</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">(</span><span class="token string">'老王'</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">(</span><span class="token string">'大王'</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">(</span><span class="token string">'小王'</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>部门错误的数据添加失败</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token punctuation">(</span>NAME<span class="token punctuation">,</span> age<span class="token punctuation">,</span> dep_id<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'二王'</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="删除外键约束"><a href="#删除外键约束" class="headerlink" title="删除外键约束"></a>删除外键约束</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名 <span class="token keyword">DROP</span> <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> 外键约束名<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>具体操作：</p>
+<ul>
+<li>删除employee表的emp_depid_ref_dep_id_fk外键</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> employee <span class="token keyword">DROP</span> <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> emp_depid_ref_dep_id_fk<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<ul>
+<li>在employee表情存在况下添加外键</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> employee <span class="token keyword">ADD</span> <span class="token keyword">CONSTRAINT</span> emp_depid_ref_dep_id_fk <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span><span class="token punctuation">(</span>dep_id<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> department<span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+<h3 id="小结-13"><a href="#小结-13" class="headerlink" title="小结"></a>小结</h3><p>什么是外键?</p>
+<p>表中的字段值引用另一张表的主键的值.,这个字段就是外键</p>
+<p>外键约束有什么好处</p>
+<p>保证这个外键的值不能乱写,必须是引用已经存在的数据</p>
+<ol>
+<li><p>创建外键约束格式？<br>创建表时添加外键约束</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> 表名 <span class="token punctuation">(</span>
+	字段名 字段类型<span class="token punctuation">,</span>
+    字段名 字段类型<span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token keyword">CONSTRAINT</span> 外键约束名<span class="token punctuation">]</span> <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>外键字段名<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> 主表<span class="token punctuation">(</span>主键<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>在已有表基础上增加外键约束</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名 <span class="token keyword">ADD</span> <span class="token punctuation">[</span><span class="token keyword">CONSTRAINT</span> 外键约束名<span class="token punctuation">]</span> <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>外键字段名<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> 主表<span class="token punctuation">(</span>主键<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>删除外键约束格式？</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名 <span class="token keyword">DROP</span> <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> 外键约束名<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+</li>
+</ol>
+<h2 id="外键的级联"><a href="#外键的级联" class="headerlink" title="外键的级联"></a>外键的级联</h2><h3 id="目标-13"><a href="#目标-13" class="headerlink" title="目标"></a>目标</h3><p>了解外键的级联操作</p>
+<h4 id="有了外键约束后能直接修改和删除数据吗"><a href="#有了外键约束后能直接修改和删除数据吗" class="headerlink" title="有了外键约束后能直接修改和删除数据吗?"></a>有了外键约束后能直接修改和删除数据吗?</h4><p>要把部门表中的id值2，改成5，能不能直接修改呢？</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">UPDATE</span> department <span class="token keyword">SET</span> id<span class="token operator">=</span><span class="token number">5</span> <span class="token keyword">WHERE</span> id<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>不能直接修改:Cannot delete or update a parent row: a foreign key constraint fails 如果副表(员工表)中有引用的数据，不能直接修改主表(部门表)主键</p>
+<p>要删除部门id等于1的部门, 能不能直接删除呢？</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> department <span class="token keyword">WHERE</span> id <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>不能直接删除:Cannot delete or update a parent row: a foreign key constraint fails 如果副表(员工表)中有引用的数据，不能直接删除主表(部门表)数据</p>
+<h4 id="什么是级联操作"><a href="#什么是级联操作" class="headerlink" title="什么是级联操作"></a>什么是级联操作</h4><p>在修改和删除主表的主键时，同时更新或删除从表的外键值，称为级联操作<br><code>ON UPDATE CASCADE</code> ：级联更新 主表主键修改后，从表的数据也跟着修改<br><code>ON DELETE CASCADE</code> ：级联删除 主表主键删除后，从表数据也跟着删除</p>
+<p>具体操作：</p>
+<ul>
+<li>删除employee表</li>
+<li>重新创建employee表，添加级联更新和级联删除</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> employee <span class="token punctuation">(</span>
+	id <span class="token keyword">INT</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token keyword">AUTO_INCREMENT</span><span class="token punctuation">,</span>
+	NAME <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+	age <span class="token keyword">INT</span><span class="token punctuation">,</span>
+	dep_id <span class="token keyword">INT</span><span class="token punctuation">,</span>
+	<span class="token comment">-- 添加外键约束,并且添加级联更新和级联删除</span>
+	<span class="token keyword">CONSTRAINT</span> employee_dep_fk <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>dep_id<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> department<span class="token punctuation">(</span>id<span class="token punctuation">)</span> <span class="token keyword">ON</span> <span class="token keyword">UPDATE</span> <span class="token keyword">CASCADE</span> <span class="token keyword">ON</span> <span class="token keyword">DELETE</span> <span class="token keyword">CASCADE</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>再次添加数据到员工表和部门表</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token punctuation">(</span>NAME<span class="token punctuation">,</span> age<span class="token punctuation">,</span> dep_id<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'张三'</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token punctuation">(</span>NAME<span class="token punctuation">,</span> age<span class="token punctuation">,</span> dep_id<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'李四'</span><span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token punctuation">(</span>NAME<span class="token punctuation">,</span> age<span class="token punctuation">,</span> dep_id<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'王五'</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token punctuation">(</span>NAME<span class="token punctuation">,</span> age<span class="token punctuation">,</span> dep_id<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'老王'</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token punctuation">(</span>NAME<span class="token punctuation">,</span> age<span class="token punctuation">,</span> dep_id<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'大王'</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token punctuation">(</span>NAME<span class="token punctuation">,</span> age<span class="token punctuation">,</span> dep_id<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'小王'</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>把部门表中id等于1的部门改成id等于10</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">UPDATE</span> department <span class="token keyword">SET</span> id<span class="token operator">=</span><span class="token number">10</span> <span class="token keyword">WHERE</span> id<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E7%BA%A7%E8%81%94%E6%93%8D%E4%BD%9C01.png"></p>
+<ul>
+<li>删除部门号是2的部门</li>
+</ul>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> department <span class="token keyword">WHERE</span> id<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="MySQL-02.assets/%E7%BA%A7%E8%81%94%E6%93%8D%E4%BD%9C02.png"></p>
+<h3 id="小结-14"><a href="#小结-14" class="headerlink" title="小结"></a>小结</h3><p>级联更新：ON UPDATE CASCADE 当主表的主键更新时,从表的外键值跟着更新</p>
+<p>级联删除：ON DELETE CASCADE 当主表的主键删除时,从表的数据跟着删除</p>
+<h2 id="表关系的概念"><a href="#表关系的概念" class="headerlink" title="表关系的概念"></a>表关系的概念</h2><h3 id="目标-14"><a href="#目标-14" class="headerlink" title="目标"></a>目标</h3><p>学习表之间的3种关系</p>
+<p>现实生活中，实体与实体之间肯定是有关系的，比如：老公和老婆，部门和员工，老师和学生等。那么我们在设计表的时候，就应该体现出表与表之间的这种关系！分成三种：</p>
+<ol>
+<li>一对一</li>
+<li>一对多</li>
+<li>多对多</li>
+</ol>
+<h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><h5 id="一对多"><a href="#一对多" class="headerlink" title="一对多"></a>一对多</h5><p>例如：班级和学生，部门和员工，客户和订单<br>一对多建表原则: 在从表(多方)创建一个字段，字段作为外键指向主表(一方)的主键<br><img src="MySQL-02.assets/%E4%B8%80%E5%AF%B9%E5%A4%9A.png"></p>
+<h5 id="多对多"><a href="#多对多" class="headerlink" title="多对多"></a>多对多</h5><p>例如：老师和学生，学生和课程<br>多对多关系建表原则: 需要创建第三张表，中间表中至少两个字段，这两个字段分别作为外键指向各自一方的主键。<br><img src="MySQL-02.assets/%E5%A4%9A%E5%AF%B9%E5%A4%9A.png"></p>
+<h5 id="一对一"><a href="#一对一" class="headerlink" title="一对一"></a>一对一</h5><p>在实际的开发中应用不多，因为一对一可以创建成一张表。<br>两种建表原则：</p>
+<ul>
+<li>外键唯一：主表的主键和从表的外键（唯一），形成主外键关系，外键唯一<code>UNIQUE</code></li>
+<li>外键是主键：主表的主键和从表的主键，形成主外键关系</li>
+</ul>
+<p><img src="MySQL-02.assets/1596871660144.png" alt="1596871660144"></p>
+<p><img src="MySQL-02.assets/1596871665673.png" alt="1596871665673"></p>
+<h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4><h5 id="一对一-1"><a href="#一对一-1" class="headerlink" title="一对一"></a>一对一</h5><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> stu <span class="token punctuation">(</span>
+   id <span class="token keyword">INT</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span>
+   NAME <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 创建个人信息表：从表</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> info <span class="token punctuation">(</span>
+    id <span class="token keyword">INT</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span>  <span class="token comment">-- 主键</span>
+    address <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    use_name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    weight <span class="token keyword">DOUBLE</span><span class="token punctuation">,</span>
+    <span class="token comment">-- 创建外键约束 </span>
+    <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>id<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> stu<span class="token punctuation">(</span>id<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>效果图</p>
+<p><img src="MySQL-02.assets/1596872283287.png" alt="1596872283287"></p>
+<h5 id="一对多-1"><a href="#一对多-1" class="headerlink" title="一对多"></a>一对多</h5><p>需求：一个旅游线路分类中有多个旅游线路</p>
+<p><img src="MySQL-02.assets/1596872301046.png" alt="1596872301046"></p>
+<p>表与表的关系</p>
+<p><img src="MySQL-02.assets/1596872314649.png" alt="1596872314649"></p>
+<p><img src="MySQL-02.assets/1596872321640.png" alt="1596872321640"></p>
+<p>具体操作</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 创建旅游线路分类表tab_category</span>
+<span class="token comment">/* 
+cid 旅游线路分类主键，自动增长
+cname 旅游线路分类名称非空，唯一，字符串100
+*/</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> tab_category <span class="token punctuation">(</span>
+  cid <span class="token keyword">INT</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token keyword">AUTO_INCREMENT</span><span class="token punctuation">,</span>
+  cname <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">UNIQUE</span> 
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 创建旅游线路表tab_route</span>
+<span class="token comment">/*
+rid 旅游线路主键，自动增长
+rname 旅游线路名称非空，唯一，字符串100
+price 价格
+rdate 上架时间，日期类型
+cid 外键，所属分类
+*/</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> tab_route <span class="token punctuation">(</span>
+   rid <span class="token keyword">INT</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token keyword">AUTO_INCREMENT</span><span class="token punctuation">,</span>
+   rname <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">UNIQUE</span><span class="token punctuation">,</span>
+   price <span class="token keyword">DOUBLE</span><span class="token punctuation">,</span>
+   rdate <span class="token keyword">DATE</span><span class="token punctuation">,</span>
+   cid <span class="token keyword">INT</span><span class="token punctuation">,</span>  <span class="token comment">-- 外键</span>
+   <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>cid<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> tab_category<span class="token punctuation">(</span>cid<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<h5 id="多对多-1"><a href="#多对多-1" class="headerlink" title="多对多"></a>多对多</h5><p>需求：一个用户收藏多个线路，一个线路被多个用户收藏</p>
+<p><img src="MySQL-02.assets/1596872378984.png" alt="1596872378984"></p>
+<p><img src="MySQL-02.assets/1596872385524.png" alt="1596872385524"></p>
+<p>对于多对多的关系我们需要增加一张中间表来维护他们之间个关系</p>
+<p><img src="MySQL-02.assets/1596872398598.png" alt="1596872398598"></p>
+<p>具体操作</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">/*
+创建用户表tab_user
+uid用户主键，自增长
+username用户名长度100，唯一，非空
+password密码长度30，非空
+name真实姓名长度100
+birthday生日
+sex性别，定长字符串1
+telephone手机号，字符串11
+email邮箱，字符串长度100
+*/</span>
+<span class="token keyword">create</span> <span class="token keyword">table</span> tab_user<span class="token punctuation">(</span>
+   uid <span class="token keyword">int</span> <span class="token keyword">primary</span> <span class="token keyword">key</span> <span class="token keyword">auto_increment</span><span class="token punctuation">,</span>
+   username <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> <span class="token keyword">unique</span> <span class="token operator">not</span> <span class="token boolean">null</span><span class="token punctuation">,</span>
+   password <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span> <span class="token operator">not</span> <span class="token boolean">null</span><span class="token punctuation">,</span>
+   name <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+   birthday <span class="token keyword">date</span><span class="token punctuation">,</span>
+   sex <span class="token keyword">char</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+   telephone <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+   email <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/* 
+创建收藏表tab_favorite
+rid 旅游线路id，外键
+date 收藏时间
+uid用户id，外键
+rid和uid不能重复，设置复合主键，同一个用户不能收藏同一个线路两次
+*/</span>
+<span class="token keyword">create</span> <span class="token keyword">table</span> tab_favorite<span class="token punctuation">(</span>
+   rid <span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token comment">-- 线路外键</span>
+   <span class="token punctuation">`</span><span class="token keyword">date</span><span class="token punctuation">`</span> <span class="token keyword">date</span><span class="token punctuation">,</span>
+   uid <span class="token keyword">int</span><span class="token punctuation">,</span>  <span class="token comment">-- 用户外键</span>
+   <span class="token keyword">primary</span> <span class="token keyword">key</span><span class="token punctuation">(</span>rid<span class="token punctuation">,</span>uid<span class="token punctuation">)</span><span class="token punctuation">,</span>  <span class="token comment">-- 创建复合主键</span>
+   <span class="token keyword">foreign</span> <span class="token keyword">key</span> <span class="token punctuation">(</span>rid<span class="token punctuation">)</span> <span class="token keyword">references</span> tab_route<span class="token punctuation">(</span>rid<span class="token punctuation">)</span><span class="token punctuation">,</span>
+   <span class="token keyword">foreign</span> <span class="token keyword">key</span> <span class="token punctuation">(</span>uid<span class="token punctuation">)</span> <span class="token keyword">references</span> tab_user<span class="token punctuation">(</span>uid<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<h3 id="小结-15"><a href="#小结-15" class="headerlink" title="小结"></a>小结</h3><p>多表之间的3种关系</p>
+<p>一对多:  部门和员工,一个部门对应多个员工</p>
+<p>多对多: 学生和课程  一个学生对应多个课程,一个课程会对应多个学生</p>
+<p>一对一:  学生和个人信息, 一个学生对应一个个人信息</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
+<li><p>能够使用SQL语句添加主键、外键、唯一、非空约束</p>
+<p>主键: 字段名 字段类型 PRIMARY KEY AUTO_INCREMENT</p>
+<p>唯一: 字段名 字段类型 UNIQUE</p>
+<p>非空约束: NOT NULL</p>
+<p>外键: [CONSTRAINT 外键约束名] FOREIGN KEY(外键字段名) REFERENCES 主表(主键)</p>
+</li>
+<li><p>能够使用聚合函数</p>
+<p>COUNT: 统计这列数量</p>
+<p>SUM: 统计这列总和</p>
+<p>MAX: 统计这列最大值</p>
+<p>MIN: 统计这列最小值</p>
+<p>AVG: 统计这列平均值</p>
+</li>
+<li><p>能够使用SQL语句进行分组查询</p>
+<p>SELECT 字段名 FROM 表名 GROUP BY 字段名;</p>
+</li>
+<li><p>能够理解三大范式</p>
+<p>第一范式: 表中的字段不需要再拆分,可以直接使用</p>
+<p>第二范式: 1.一张表描述一个实体   2.每张表要添加主键</p>
+<p>第三范式: 表中的字段要引用其他表的主键(外键)</p>
+</li>
+</ol>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">durex</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://chenliren9527.github.io/2020/09/18/mysql-02/">https://chenliren9527.github.io/2020/09/18/mysql-02/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">durex</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">笔记</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                                    <span class="chip bg-color">数据库</span>
+                                </a>
+                            
+                                <a href="/tags/MySQL/">
+                                    <span class="chip bg-color">MySQL</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%A4%8D%E6%9D%82%E6%9F%A5%E8%AF%A2/">
+                                    <span class="chip bg-color">复杂查询</span>
+                                </a>
+                            
+                                <a href="/tags/DCL/">
+                                    <span class="chip bg-color">DCL</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%BA%A6%E6%9D%9F/">
+                                    <span class="chip bg-color">约束</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%A1%A8%E5%85%B3%E7%B3%BB/">
+                                    <span class="chip bg-color">表关系</span>
+                                </a>
+                            
+                                <a href="/tags/%E4%B8%89%E5%A4%A7%E8%8C%83%E5%BC%8F/">
+                                    <span class="chip bg-color">三大范式</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B0/">
+                                    <span class="chip bg-color">聚合函数</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2020/09/20/mysql-03/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/72.jpg" class="responsive-img" alt="MySQL(03)">
+                        
+                        <span class="card-title">MySQL(03)</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-20
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
+                                    数据库
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                        <span class="chip bg-color">数据库</span>
+                    </a>
+                    
+                    <a href="/tags/MySQL/">
+                        <span class="chip bg-color">MySQL</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2/">
+                        <span class="chip bg-color">多表查询</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%B4%A2%E5%BC%95/">
+                        <span class="chip bg-color">索引</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/09/17/mysql-01/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="MySQL(01)">
+                        
+                        <span class="card-title">MySQL(01)</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
+                                    数据库
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                        <span class="chip bg-color">数据库</span>
+                    </a>
+                    
+                    <a href="/tags/MySQL/">
+                        <span class="chip bg-color">MySQL</span>
+                    </a>
+                    
+                    <a href="/tags/MySQL%E5%9F%BA%E7%A1%80/">
+                        <span class="chip bg-color">MySQL基础</span>
+                    </a>
+                    
+                    <a href="/tags/SQL/">
+                        <span class="chip bg-color">SQL</span>
+                    </a>
+                    
+                    <a href="/tags/SQL%E5%BB%BA%E5%BA%93%E3%80%81%E5%BB%BA%E8%A1%A8/">
+                        <span class="chip bg-color">SQL建库、建表</span>
+                    </a>
+                    
+                    <a href="/tags/SQL%E6%B7%BB%E5%88%A0%E6%94%B9%E6%9F%A5/">
+                        <span class="chip bg-color">SQL添删改查</span>
+                    </a>
+                    
+                    <a href="/tags/SQL%E6%8E%92%E5%BA%8F/">
+                        <span class="chip bg-color">SQL排序</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2022</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">durex</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">896.5k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2021";
+                    var startMonth = "1";
+                    var startDate = "08";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,1818 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="linux基础, 薛定谔的腿毛">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>linux基础 | 薛定谔的腿毛</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="薛定谔的腿毛" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">薛定谔的腿毛</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">薛定谔的腿毛</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/73.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">linux基础</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">笔记</span>
+                            </a>
+                        
+                            <a href="/tags/linux/">
+                                <span class="chip bg-color">linux</span>
+                            </a>
+                        
+                            <a href="/tags/crontab%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/">
+                                <span class="chip bg-color">crontab定时任务</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/linux/" class="post-category">
+                                linux
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-11-02
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2022-05-17
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    5.5k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    19 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="01-学习目标"><a href="#01-学习目标" class="headerlink" title="01.学习目标"></a>01.学习目标</h2><h3 id="学习目标"><a href="#学习目标" class="headerlink" title="学习目标"></a>学习目标</h3><ol>
+<li> 能够独立搭建 Linux 环境</li>
+<li> 能够使用 Linux 进行目录操作的命令</li>
+<li> 能够使用 Linux 进行文件操作的命令</li>
+<li> 能够使用 Linux 进行目录文件压缩和解压的命令</li>
+<li> 能够使用 Linux 进行目录文件权限的命令</li>
+<li> 能够使用其它常用的 Linux 命令</li>
+<li> 能够使用客户端工具连接 Linux 系统</li>
+<li> 能够使用 Linux 中的 crontab 命令</li>
+<li> 能够使用 linux 中的服务管理命令</li>
+</ol>
+<h2 id="02-linux基础：linux系统介绍【理解】"><a href="#02-linux基础：linux系统介绍【理解】" class="headerlink" title="02.linux基础：linux系统介绍【理解】"></a>02.linux基础：linux系统介绍【理解】</h2><h3 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h3><pre class="line-numbers language-none"><code class="language-none">1. 掌握linux的优势
+2. 掌握Linux的不同版本<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+<h3 id="linux的概述"><a href="#linux的概述" class="headerlink" title="linux的概述"></a>linux的概述</h3><p>linux是一个操作系统，windows也是一个操作系统</p>
+<p>Linux(linux is not unix),Linux是一套免费使用和自由传播的Unix操作系统。</p>
+<blockquote>
+<p>1、linux系统免费开源，unix不开源<br>2、linux可以运行在多种硬件平台上（兼容性更好），unix系统要与对应的硬件配套（兼容性差）</p>
+</blockquote>
+<h3 id="linux的优势"><a href="#linux的优势" class="headerlink" title="linux的优势"></a>linux的优势</h3><ol>
+<li><p>Windows系统的不足</p>
+<pre class="line-numbers language-none"><code class="language-none">1)Windows是需要花钱去购买
+2)内存释放工作不是太过于完美,长时间运行，安装多了软件，系统越来越慢，越来越不稳定。
+3)window漏洞较多，容易受到攻击<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+<li><p>Linux系统的优势</p>
+<pre class="line-numbers language-none"><code class="language-none">1)Linux系统是免费，很多还是开源的。
+2)长时间运行，很稳定的，几乎成为程序代码运行的最佳系统环境。(服务器的操作系统我们几乎都使用linux)
+3)比较安全<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+</li>
+</ol>
+<h3 id="linux的应用场景"><a href="#linux的应用场景" class="headerlink" title="linux的应用场景"></a>linux的应用场景</h3><p>作为服务器的操作系统</p>
+<h3 id="linux的分类"><a href="#linux的分类" class="headerlink" title="linux的分类"></a>linux的分类</h3><ul>
+<li><p>按照市场的需求不同分为<strong>图形界面</strong>和<strong>字符界面</strong>操作系统</p>
+<ol>
+<li><p>图形界面</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560818912570.png" alt="1560818912570">&nbsp;</p>
+<blockquote>
+<p>手机方面安卓系统使用就是linux系统</p>
+</blockquote>
+<p>2.字符界面(推荐)，特点：性能最优</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560819011219.png" alt="1560819011219">&nbsp;</p>
+</li>
+</ol>
+</li>
+<li><p>按照原生程度不同</p>
+<p>内核版，linux之父（托瓦兹）团队开发， 完全免费的</p>
+<blockquote>
+<p>特点：内核版专门用于操作硬件的的系统平台</p>
+</blockquote>
+<p>发行版，是由第三方个人或组织在内核版本基础上进行包装开发出来的版本</p>
+<blockquote>
+<p>特点： 里面有很多很好用的应用软件，更高效率使用系统</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1563546751459.png" alt="1563546751459"></p>
+<h3 id="常见的发行版linux系统"><a href="#常见的发行版linux系统" class="headerlink" title="常见的发行版linux系统"></a>常见的发行版linux系统</h3><p>  <img src="linux%E5%9F%BA%E7%A1%80.assets/1560819436151.png" alt="1560819436151"></p>
+<h3 id="注意常见发行版如下："><a href="#注意常见发行版如下：" class="headerlink" title="注意常见发行版如下："></a><font color="red">注意常见发行版如下：</font></h3><table>
+<thead>
+<tr>
+<th>系统</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ubuntu</td>
+<td>是一个以图形界面桌面应用为主的开源linux系统，2014与国产魅族联姻成为智能手机操作系统</td>
+</tr>
+<tr>
+<td>redhat</td>
+<td>分为社区开源版和企业服务器版，企业服务器版是收费的</td>
+</tr>
+<tr>
+<td>centos</td>
+<td>（中小型市场占有率最高） 是根据redhat的企业版反编译过来的，性能与redhat企业版一样，完全免费。但是如果有问题，可以去官方反馈，官方有可能会在下个版本解决问题。</td>
+</tr>
+</tbody></table>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><ol>
+<li><p><strong>linux分类</strong></p>
+<ul>
+<li>按照市场需求划分<ul>
+<li>图形界面版本</li>
+<li>字符版本</li>
+</ul>
+</li>
+<li>按照原生程度划分<ul>
+<li>内核版</li>
+<li>发行版</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>为什么使用linux?</strong></p>
+<ul>
+<li>运行效率比较稳定，比较安全，所以一般服务器都使用linux作为操作系统 </li>
+</ul>
+</li>
+</ol>
+<ol start="3">
+<li><p><strong>常见发行版</strong></p>
+<ul>
+<li>ubuntu </li>
+<li>centos</li>
+<li>redhat</li>
+<li>红旗</li>
+<li>中标麒麟</li>
+</ul>
+</li>
+</ol>
+<h2 id="03-linux基础：安装【应用】"><a href="#03-linux基础：安装【应用】" class="headerlink" title="03.linux基础：安装【应用】"></a>03.linux基础：安装【应用】</h2><h3 id="目标-1"><a href="#目标-1" class="headerlink" title="目标"></a>目标</h3><pre class="line-numbers language-none"><code class="language-none">掌握linux系统安装<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+<h3 id="linux操作系统的安装方式"><a href="#linux操作系统的安装方式" class="headerlink" title="linux操作系统的安装方式"></a>linux操作系统的安装方式</h3><pre class="line-numbers language-none"><code class="language-none">1.单系统独立安装
+  一台电脑只装一个linux系统，企业的服务器
+2.双系统安装
+  一台电脑即安装了windows系统，又可以安装linux系统，就是双系统安装运行
+3.虚拟机安装【开发学习推荐】
+  虚拟机一个windows系统上的软件， 这个软件可以模拟出一个真实PC的环境，模拟出内存条，硬盘，cpu，光驱，usb，网卡等等。在这个模拟环境中安装linux系统。好处： 简单，不用单独安装系统，一个软件搞定所有<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><font color="red">注意： 不推荐使用双系统安装，因为不稳定，一个系统很大可能不小心删除了另一个系统的核心文件，导致另一个系统无法使用</font></p>
+<p>虚拟机就是一个软件，使用一个软件模拟一台机器。 </p>
+<h3 id="常见虚拟机软件"><a href="#常见虚拟机软件" class="headerlink" title="常见虚拟机软件"></a>常见虚拟机软件</h3><pre class="line-numbers language-none"><code class="language-none">VMWare 软件,威睿公司，收费的（推荐使用，可以试用），根据提供的文档进行安装
+VirtualBox软件，免费的，  最开始是sun公司，由于被oracle收购了，所以目前属于oracle<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+<h3 id="安装VMWare虚拟机"><a href="#安装VMWare虚拟机" class="headerlink" title="安装VMWare虚拟机"></a>安装VMWare虚拟机</h3><p>VMWare软件安装</p>
+<blockquote>
+<p>根据《资料\01_虚拟机VMware安装\新版（推荐）\虚拟机VMware安装步骤.docx》安装</p>
+<p>注意：必须使用管理员权限运行安装</p>
+</blockquote>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200307094508104.png" alt="image-20200307094508104"></p>
+<p>新建虚拟电脑</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200624092103833.png" alt="image-20200624092103833"> </p>
+<p>itheima137就是新创建的虚拟电脑</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200722092836375.png" alt="image-20200722092836375"></p>
+<h3 id="安装linux的centos系统"><a href="#安装linux的centos系统" class="headerlink" title="安装linux的centos系统"></a>安装linux的centos系统</h3><p>根据《资料\02_centOS7系统安装\使用VMware虚拟机安装centOS7步骤.doc》安装，具体操作</p>
+<p>根据centos7系统镜像文件安装linux系统</p>
+<blockquote>
+<p>系统镜像文件位置</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200624092706771.png" alt="image-20200624092706771"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200624092816242.png" alt="image-20200624092816242"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200624092841442.png" alt="image-20200624092841442"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200624093129348.png" alt="image-20200624093129348"></p>
+<p>耐心等待,估计1分钟左右, 启动进行引导界面,如下</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200624093312082.png" alt="image-20200624093312082"></p>
+<p>选中中文-&gt;简体中文,  点击继续</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200624093438215.png" alt="image-20200624093438215"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200624093641824.png" alt="image-20200624093641824"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200624093724491.png" alt="image-20200624093724491"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200624093741394.png" alt="image-20200624093741394"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200624093806688.png" alt="image-20200624093806688"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200624093938791.png" alt="image-20200624093938791"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200624094003107.png" alt="image-20200624094003107"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200624094206932.png"></p>
+<p>设置后, 点击上面完成2次就可以进入安装了, 安装成功的效果</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200307100940583.png" alt="image-20200307100940583"></p>
+<p>点击重启, 等待系统引导进入如下界面</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560821626279.png" alt="1560821626279"></p>
+<p>输入用户名root, 密码root 登录即可, 登录后效果</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200624100310854.png" alt="image-20200624100310854">    </p>
+</blockquote>
+<h3 id="VMWare虚拟机安装失败第一个坑"><a href="#VMWare虚拟机安装失败第一个坑" class="headerlink" title="VMWare虚拟机安装失败第一个坑"></a>VMWare虚拟机安装失败第一个坑</h3><h4 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h4><p>这个软件需要VC++2017的环境，如果没有回安装失败</p>
+<h4 id="检查自己电脑环境是否有VC-2017"><a href="#检查自己电脑环境是否有VC-2017" class="headerlink" title="检查自己电脑环境是否有VC++2017"></a>检查自己电脑环境是否有VC++2017</h4><p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200817095136339.png" alt="image-20200817095136339"></p>
+<h4 id="如果没有VC-2017需要根据素材进行安装如下软件"><a href="#如果没有VC-2017需要根据素材进行安装如下软件" class="headerlink" title="如果没有VC++2017需要根据素材进行安装如下软件"></a>如果没有VC++2017需要根据素材进行安装如下软件</h4><p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200817095228108.png" alt="image-20200817095228108"></p>
+<p>只需要双击，下一步下一步安装即可，安装完成后需要重启电脑，最后再进行安装VMWare虚拟机软件即可</p>
+<h3 id="VMWare虚拟机安装失败第二个坑"><a href="#VMWare虚拟机安装失败第二个坑" class="headerlink" title="VMWare虚拟机安装失败第二个坑"></a>VMWare虚拟机安装失败第二个坑</h3><h4 id="问题描述-1"><a href="#问题描述-1" class="headerlink" title="问题描述"></a>问题描述</h4><p>VMWare软件由于安装失败或其它原因需要重新安装，需要彻底卸载VMWarte软件</p>
+<h4 id="卸载软件"><a href="#卸载软件" class="headerlink" title="卸载软件"></a>卸载软件</h4><p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200817095631494.png" alt="image-20200817095631494"></p>
+<h4 id="彻底清除注册表"><a href="#彻底清除注册表" class="headerlink" title="彻底清除注册表"></a>彻底清除注册表</h4><p>安装CCLear</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200817095738622.png" alt="image-20200817095738622"></p>
+<p>以管理员身份运行安装， 下一步下一步安装完成，打开软件</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200624081728683.png" alt="image-20200624081728683"></p>
+<p>如下图点击扫描</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200624081943196.png" alt="image-20200624081943196"></p>
+<p>扫描后， 点击“Fix selected Issues”按钮进行处理所有注册表垃圾信息，到此彻底的卸载了VMWare虚拟机软件</p>
+<p>之后，重新以管理员省份运行安装VMWare软件</p>
+<h3 id="VMWare启动失败第三个坑"><a href="#VMWare启动失败第三个坑" class="headerlink" title="VMWare启动失败第三个坑"></a>VMWare启动失败第三个坑</h3><h4 id="实现现象"><a href="#实现现象" class="headerlink" title="实现现象"></a>实现现象</h4><p>打开虚拟机启动虚拟电脑弹框报错：VMware Workstation 无法连接到虚拟机。请确保您有权运行该程序、访问该程序使用的所有目录以及访问所有临时文件目录。 VMX 进程已提前退出。</p>
+<h4 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h4><p>解决方法：检查所有虚拟机的服务是否都已经开启，如果没有开启这手动开启</p>
+<p>第一步：windons+R打开windows服务列表，输入命令：services.msc</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200307105655010.png" alt="image-20200307105655010">&amp;nbpsp;</p>
+<p>第二步：找到VMWare所有服务，并确保所有服务都已经正常运行</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200817100857714.png" alt="image-20200817100857714"></p>
+<p>如果有任何一个服务没有启动需要手动开启，如果手动开启失败，需要重启电脑继续尝试</p>
+<p>第三步：再次重新启动虚拟机使用</p>
+<h3 id="Centos系统安装失败第一个坑"><a href="#Centos系统安装失败第一个坑" class="headerlink" title="Centos系统安装失败第一个坑"></a>Centos系统安装失败第一个坑</h3><h4 id="失败现象"><a href="#失败现象" class="headerlink" title="失败现象"></a>失败现象</h4><p>失败情况1:  在安装过程中出现无法选择centos7 64位,  而是只能选择32位</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200817100257816.png" alt="image-20200817100257816"> </p>
+<p>失败情况2: 失败消息如下</p>
+<pre class="line-numbers language-none"><code class="language-none">会提示虚拟化不支持，或不支持Vx-T，或virtualization或SVM 等这些错误<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="错误原因"><a href="#错误原因" class="headerlink" title="错误原因"></a>错误原因</h4><p>==说明windows主机没有开启虚拟化支持，需要操作bios开启虚拟化支持==</p>
+<blockquote>
+<p>部分电脑默认有开启,  部分默认没有开启</p>
+</blockquote>
+<h4 id="开启操作系统bios虚拟化支持的步骤"><a href="#开启操作系统bios虚拟化支持的步骤" class="headerlink" title="开启操作系统bios虚拟化支持的步骤"></a>开启操作系统bios虚拟化支持的步骤</h4><blockquote>
+<p><font color="red">注意: 开启虚拟化支持，不同的电脑操作不一样，但是标准步骤如下：</font></p>
+</blockquote>
+<p>1.重启电脑，使用快捷键进入bios(平台硬件设置)，不同的电脑快捷键不一样（F2,F4,F12,Del…）</p>
+<p>​    如果以上快捷键都不可以，需要百度搜索自己的电脑型号搜索如何进入bios的方法</p>
+<p> 如果成功进入bios截图</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560821846228.png" alt="1560821846228">&nbsp;</p>
+<p> 找到如下信息，将Intel(R) virtualization Technology /Vx-T中的disabled修改为Enabled</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560821875596.png" alt="1560821875596">&nbsp;</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560821884406.png" alt="1560821884406">&nbsp;</p>
+<p>设置完成后使用F10保存与退出重启电脑，成功开启虚拟化支持。</p>
+<p>接下来重新安装centos7操作系统就不会报错了。</p>
+<h3 id="成功安装系统后登陆linux系统"><a href="#成功安装系统后登陆linux系统" class="headerlink" title="成功安装系统后登陆linux系统"></a>成功安装系统后登陆linux系统</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560822052650.png" alt="1560822052650"></p>
+<p>登陆成功的效果</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560822064018.png" alt="1560822064018"></p>
+<p>介绍</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1569117719121.png" alt="1569117719121"></p>
+<h3 id="小结-1"><a href="#小结-1" class="headerlink" title="小结"></a>小结</h3><ol>
+<li><p>个人电脑开发学习的情况，安装linux操作系统推荐电脑双系统运行还是虚拟机安装？</p>
+<pre class="line-numbers language-none"><code class="language-none">虚拟机安装<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+</li>
+</ol>
+<ol start="2">
+<li><p>虚拟机安装linux系统注意什么？</p>
+<pre class="line-numbers language-none"><code class="language-none">开启windows主机的虚拟化支持<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+</li>
+</ol>
+<h2 id="04-linux基础：查看ip【应用】"><a href="#04-linux基础：查看ip【应用】" class="headerlink" title="04.linux基础：查看ip【应用】"></a>04.linux基础：查看ip【应用】</h2><h3 id="目标-2"><a href="#目标-2" class="headerlink" title="目标"></a>目标</h3><p>1.掌握linux系统查看ip地址命令<br>2.掌握windows系统查看ip地址命令</p>
+<h3 id="linux系统查看ip命令"><a href="#linux系统查看ip命令" class="headerlink" title="linux系统查看ip命令"></a>linux系统查看ip命令</h3><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ifconfig</td>
+<td>linux系统用于查看ip地址信息</td>
+</tr>
+<tr>
+<td>ip addr</td>
+<td>linux系统用于查看ip地址信息</td>
+</tr>
+</tbody></table>
+<h3 id="命令演示效果"><a href="#命令演示效果" class="headerlink" title="命令演示效果"></a>命令演示效果</h3><p>ifconfig</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200817101415428.png" alt="image-20200817101415428"></p>
+<p>ip addr</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200817101458415.png" alt="image-20200817101458415"></p>
+<h3 id="windows系统查看ip命令"><a href="#windows系统查看ip命令" class="headerlink" title="windows系统查看ip命令"></a>windows系统查看ip命令</h3><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ipconfig</td>
+<td>windows系统用于查看ip地址信息</td>
+</tr>
+</tbody></table>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1604281294705.png" alt="1604281294705"></p>
+<h3 id="命令演示效果-1"><a href="#命令演示效果-1" class="headerlink" title="命令演示效果"></a>命令演示效果</h3><h3 id="windows主机连接远程linux虚拟机系统测试"><a href="#windows主机连接远程linux虚拟机系统测试" class="headerlink" title="windows主机连接远程linux虚拟机系统测试"></a>windows主机连接远程linux虚拟机系统测试</h3><blockquote>
+<p>不同电脑之间进行测试连接是否联通命令:  ping ip</p>
+<p>短连接测试:  ping ip</p>
+<p>长连接测试:  ping ip -t</p>
+</blockquote>
+<p><strong>linux测试网络</strong></p>
+<ol>
+<li>测试linux是否与windows是否可以通讯</li>
+</ol>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1604281522562.png" alt="1604281522562"></p>
+<ol start="2">
+<li><p>测试linux是否可以上外网</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1604281615161.png" alt="1604281615161"></p>
+<ol start="3">
+<li><p>测试windows是否可以拼通linux</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1604281661804.png" alt="1604281661804"></p>
+</li>
+</ol>
+</li>
+</ol>
+<ol start="4">
+<li><p>防止同学们玩坏系统，建议都马上拍照</p>
+<p>==拍照)(系统备份)==</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1604281731644.png" alt="1604281731644"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1604281821773.png" alt="1604281821773"></p>
+<p>==快照还原==</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1604281901370.png" alt="1604281901370"></p>
+</li>
+</ol>
+<h3 id="小结-2"><a href="#小结-2" class="headerlink" title="小结"></a>小结</h3><ol>
+<li><p>linux系统查看ip命令？</p>
+<pre class="line-numbers language-none"><code class="language-none">ifconfigip addr<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>查看windows系统ip的dos命令：   ipconfig</p>
+</blockquote>
+</li>
+<li><p>windows连接远程系统测试dos命令？</p>
+<pre class="line-numbers language-none"><code class="language-none">ipconfig<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+
+</li>
+</ol>
+<h2 id="05-linux基础：客户端工具介绍【应用】"><a href="#05-linux基础：客户端工具介绍【应用】" class="headerlink" title="05.linux基础：客户端工具介绍【应用】"></a>05.linux基础：客户端工具介绍【应用】</h2><h3 id="目标-3"><a href="#目标-3" class="headerlink" title="目标"></a>目标</h3><p>1、能够使用客户端软件连接远程linux服务器进行操作</p>
+<p>2、理解客户端软件的好处</p>
+<p>以后我们进入企业工作，每个开发人员都是通过客户端软件连接公司的服务器， 所以我们需要使用客户端</p>
+<p>客户端操作效果非常好</p>
+<h3 id="虚拟机操作linux系统的问题"><a href="#虚拟机操作linux系统的问题" class="headerlink" title="虚拟机操作linux系统的问题"></a>虚拟机操作linux系统的问题</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200307111407483.png" alt="image-20200307111407483"></p>
+<h3 id="常见的客户端软件"><a href="#常见的客户端软件" class="headerlink" title="常见的客户端软件"></a>常见的客户端软件</h3><pre class="line-numbers language-none"><code class="language-none">1.SecureCRT(操作客户端命令)，SecureFx（用于传输文件）2.XShell(操作客户端命令),XFtp（用于传输文件）3.ModaXterm软件（简单好用，推荐使用）上面的软件根据文档安装（《资料\03_使用客户端连接工具连接linux系统操作\客户端软件3_MobaXterm(推荐)》）<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200624104955796.png" alt="image-20200624104955796"></p>
+<p>进入目录, 下一步下一步安装即可</p>
+<h3 id="ModaXterm软件的使用"><a href="#ModaXterm软件的使用" class="headerlink" title="ModaXterm软件的使用"></a>ModaXterm软件的使用</h3><p>1.建立连接服务器linux的会话</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1566960724291.png" alt="1566960724291"></p>
+<p>使用界面</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200307111840210.png" alt="image-20200307111840210"></p>
+<h3 id="客户端的好处"><a href="#客户端的好处" class="headerlink" title="客户端的好处"></a>客户端的好处</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200307112116600.png" alt="image-20200307112116600"></p>
+<h3 id="传递文件"><a href="#传递文件" class="headerlink" title="传递文件"></a>传递文件</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200307112316971.png" alt="image-20200307112316971"></p>
+<h3 id="小结-3"><a href="#小结-3" class="headerlink" title="小结"></a>小结</h3><p>为什么我们需要使用linux的客户端软件？</p>
+<pre><code>- 在企业中你们是没有机会接触服务器的，我们只能使用客户端软件去远程链接- 客户端软件上传下载文件非常方便，提高我们的工作效率</code></pre>
+<h2 id="07-目录操作1-目录结构【理解】"><a href="#07-目录操作1-目录结构【理解】" class="headerlink" title="07.目录操作1-目录结构【理解】"></a>07.目录操作1-目录结构【理解】</h2><h3 id="目标-4"><a href="#目标-4" class="headerlink" title="目标"></a>目标</h3><p>​    操作linux系统的目录进行增、删、改、查</p>
+<h3 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h3><p>​    注意：linux系统没有盘符，一切从根目录/开始，如下图</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560824223866.png" alt="1560824223866"></p>
+<p>根目录下所有子目录</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1566962293353.png" alt="1566962293353"></p>
+<p>学习常见的根目录的主要子目录</p>
+<table>
+<thead>
+<tr>
+<th>目录</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>bin目    录</td>
+<td>存放着所有linux系统的可执行文件命令</td>
+</tr>
+<tr>
+<td>root目录</td>
+<td>超级管理员root用户的主目录</td>
+</tr>
+<tr>
+<td>home目录</td>
+<td>存放所有普通用户主目录的位置</td>
+</tr>
+<tr>
+<td>usr目录</td>
+<td>（unix shared resources）资源共享目录，所有用户都可以操作的目录，以后我们安装软件就安装到这里usr/local,安装到这里所有用户都可以使用软件</td>
+</tr>
+<tr>
+<td>etc目录</td>
+<td>存储配置文件的目录，以后网卡配置文件，权限配置文件都在这里</td>
+</tr>
+</tbody></table>
+<h3 id="小结-4"><a href="#小结-4" class="headerlink" title="小结"></a>小结</h3><p><strong>1.linux系统有没有盘符</strong>？ </p>
+<p>​        没有，只有一个根目录  /</p>
+<p><strong>2.常见的根目录下的子目录？</strong></p>
+<pre><code>- bin   可执行文件- root    超级管理员主目录（放个人的资料）- home  其他普通用户的主目录- etc     配置文件，到时候可以用于修改网卡配置- usr    用户共享资源的目录，用于存放软件的安装包</code></pre>
+<h2 id="08-目录操作2-切换—创建—查看【应用】"><a href="#08-目录操作2-切换—创建—查看【应用】" class="headerlink" title="08.目录操作2-切换—创建—查看【应用】"></a>08.目录操作2-切换—创建—查看【应用】</h2><h3 id="目标-5"><a href="#目标-5" class="headerlink" title="目标"></a>目标</h3><p>操作目录切换，创建，查看</p>
+<h3 id="目录切换"><a href="#目录切换" class="headerlink" title="目录切换"></a>目录切换</h3><h6 id="命令语法"><a href="#命令语法" class="headerlink" title="命令语法"></a>命令语法</h6><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560825285611.png" alt="1560825285611"></p>
+<h6 id="实现演示"><a href="#实现演示" class="headerlink" title="实现演示"></a>实现演示</h6><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560825817012.png" alt="1560825817012"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200722110748269.png" alt="image-20200722110748269"></p>
+<h3 id="目录创建"><a href="#目录创建" class="headerlink" title="目录创建"></a>目录创建</h3><h6 id="命令语法-1"><a href="#命令语法-1" class="headerlink" title="命令语法"></a>命令语法</h6><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560824879655.png" alt="1560824879655"></p>
+<p>mkdir -p 父目录名/子目录名</p>
+<blockquote>
+<p>-p，  如果创建多级目录则需要加上-p参数，如果创建是单级目录则不需要。</p>
+</blockquote>
+<h6 id="实现演示-1"><a href="#实现演示-1" class="headerlink" title="实现演示"></a>实现演示</h6><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560825996275.png" alt="1560825996275"></p>
+<h3 id="目录查看"><a href="#目录查看" class="headerlink" title="目录查看"></a>目录查看</h3><h6 id="命令语法-2"><a href="#命令语法-2" class="headerlink" title="命令语法"></a>命令语法</h6><p>ls=list  查看当前目录下所有子目录与子文件列表</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560826068809.png" alt="1560826068809"></p>
+<h6 id="实现演示-2"><a href="#实现演示-2" class="headerlink" title="实现演示"></a>实现演示</h6><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560826334230.png" alt="1560826334230"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200307115652697.png" alt="image-20200307115652697"></p>
+<h3 id="小结-5"><a href="#小结-5" class="headerlink" title="小结"></a>小结</h3><p>目录切换： cd</p>
+<pre><code>- /   根目录- .    当前目录- ..    上一级目录- ~   当前用户的主目录，root</code></pre>
+<ul>
+<li>-上一次的目录</li>
+</ul>
+<p><strong>目录创建：</strong></p>
+<p>​     mkdir [-p]  目录名称</p>
+<p><strong>目录查看 ：</strong></p>
+<p>​        list</p>
+<p>​            l参数： 列表详细显示</p>
+<p>​            a参数： 显示所有文件与文件夹包含隐藏文件</p>
+<h2 id="09-目录操作3-搜索-重命名-复制-删除【应用】"><a href="#09-目录操作3-搜索-重命名-复制-删除【应用】" class="headerlink" title="09.目录操作3-搜索-重命名-复制-删除【应用】"></a>09.目录操作3-搜索-重命名-复制-删除【应用】</h2><h3 id="目标-6"><a href="#目标-6" class="headerlink" title="目标"></a>目标</h3><p>目录的搜索，重命名，复制，删除</p>
+<h3 id="目录的搜索"><a href="#目录的搜索" class="headerlink" title="目录的搜索"></a>目录的搜索</h3><h6 id="命令语法-3"><a href="#命令语法-3" class="headerlink" title="命令语法"></a>命令语法</h6><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560826932255.png" alt="1560826932255"></p>
+<h6 id="实现演示-3"><a href="#实现演示-3" class="headerlink" title="实现演示"></a>实现演示</h6><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560827218751.png" alt="1560827218751"></p>
+<h3 id="重命名与移动"><a href="#重命名与移动" class="headerlink" title="重命名与移动"></a>重命名与移动</h3><p>格式：</p>
+<p>​        mv   原文件   目标文件</p>
+<h6 id="重命名语法命令"><a href="#重命名语法命令" class="headerlink" title="重命名语法命令"></a>重命名语法命令</h6><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560827269917.png" alt="1560827269917"></p>
+<h6 id="实现演示-4"><a href="#实现演示-4" class="headerlink" title="实现演示"></a>实现演示</h6><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560827341201.png" alt="1560827341201"></p>
+<h3 id="移动（剪切）命令语法"><a href="#移动（剪切）命令语法" class="headerlink" title="移动（剪切）命令语法"></a>移动（剪切）命令语法</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560827379632.png" alt="1560827379632"></p>
+<h6 id="实现演示-5"><a href="#实现演示-5" class="headerlink" title="实现演示"></a>实现演示</h6><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560827536607.png" alt="1560827536607"></p>
+<p><font color="red">注意：mv既可以实现重命名与移动剪切，就看目标是否存在，目标存在是移动，否则是重命名</font></p>
+<h3 id="复制并粘贴"><a href="#复制并粘贴" class="headerlink" title="复制并粘贴"></a>复制并粘贴</h3><p>语法格式：</p>
+<p>​        cp  [-r] 原文件   目标路径（包括文件名）  注意： 如果拷贝是一个目录则需要添加-r参数</p>
+<h6 id="命令语法-4"><a href="#命令语法-4" class="headerlink" title="命令语法"></a>命令语法</h6><p>copy</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560827608739.png" alt="1560827608739"></p>
+<h6 id="实现演示-6"><a href="#实现演示-6" class="headerlink" title="实现演示"></a>实现演示</h6><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560827886176.png" alt="1560827886176"></p>
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><h6 id="命令语法-5"><a href="#命令语法-5" class="headerlink" title="命令语法"></a>命令语法</h6><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560827929252.png" alt="1560827929252"></p>
+<p>force</p>
+<h6 id="实现演示-7"><a href="#实现演示-7" class="headerlink" title="实现演示"></a>实现演示</h6><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560828149982.png" alt="1560828149982"></p>
+<p>注意：千万不要rm -rf /*  会导致删除所有的文件或目录，导致系统崩溃了</p>
+<h3 id="小结-6"><a href="#小结-6" class="headerlink" title="小结"></a>小结</h3><p>目录查找命令：find 搜索的目录的路径 -name  搜索的字符串</p>
+<p>重命名与移动：mv  原文件  目标文件</p>
+<p>复制：cp  [-r] 原文件  目标路径（包含文件名）</p>
+<p>删除： rm  [-rf]  文件|目录</p>
+<h2 id="10-文件操作1-创建文件与查看文件内容【应用】"><a href="#10-文件操作1-创建文件与查看文件内容【应用】" class="headerlink" title="10.文件操作1-创建文件与查看文件内容【应用】"></a>10.文件操作1-创建文件与查看文件内容【应用】</h2><h3 id="目标-7"><a href="#目标-7" class="headerlink" title="目标"></a>目标</h3><p>会创建文件，并查看文件内容</p>
+<h3 id="创建语法"><a href="#创建语法" class="headerlink" title="创建语法"></a>创建语法</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560828705018.png" alt="1560828705018"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1604221440217.png" alt="1604221440217"></p>
+<h5 id="疑问："><a href="#疑问：" class="headerlink" title="疑问："></a>疑问：</h5><ul>
+<li><p>如何知道是文件还是目录呢？</p>
+<p>答：看如下图</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560826422411.png" alt="1560826422411"></p>
+</li>
+</ul>
+<h3 id="查看文件内容语法"><a href="#查看文件内容语法" class="headerlink" title="查看文件内容语法"></a>查看文件内容语法</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560828694792.png" alt="1560828694792"></p>
+<h3 id="实现演示-8"><a href="#实现演示-8" class="headerlink" title="实现演示"></a>实现演示</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560829155339.png" alt="1560829155339"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560829217308.png" alt="1560829217308"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560829281772.png" alt="1560829281772"></p>
+<p>less -mN  (m参数：显示内容百分比，N是显示行号)</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560829437754.png" alt="1560829437754"></p>
+<p>但是有时候在secure有时候好使，有时候不好使</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560829685871.png" alt="1560829685871"></p>
+<h3 id="小结-7"><a href="#小结-7" class="headerlink" title="小结"></a>小结</h3><p>创建文件： touch </p>
+<p>查看文件</p>
+<pre><code>- 查看所有  ： cat 文件名- 分页查看： more  文件名   - 从头看起：  head  -n  查看的行数 文件名 - 从尾看起：tail   -n  查看的行数 文件名 - 上下方向键查看： less 文件名  </code></pre>
+<h2 id="11-文件操作2-编辑文件内容【应用】"><a href="#11-文件操作2-编辑文件内容【应用】" class="headerlink" title="11.文件操作2-编辑文件内容【应用】"></a>11.文件操作2-编辑文件内容【应用】</h2><h3 id="目标-8"><a href="#目标-8" class="headerlink" title="目标"></a>目标</h3><p>会使用vim编辑文件</p>
+<h3 id="vim介绍"><a href="#vim介绍" class="headerlink" title="vim介绍"></a>vim介绍</h3><p>编辑已存在文件的内容，我们在Linux中，通常使用vi/vim工具来修改文件内容。</p>
+<p>vi(vim)是上Linux常用的编辑器，很多Linux发行版都默认安装了vi(vim)。vi是“Visual Interface”的缩写，vim是 (增强版的vi)。在一般的系统管理维护中vi就够用，如果想使用代码加亮的话可以使用vim。</p>
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560828767770.png" alt="1560828767770"></p>
+<p>vim根据三种模式编辑文件</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560828774193.png" alt="1560828774193"></p>
+<p>vim—&gt;命令模式（搜索内容，不可编辑）——&gt;按下i（insert）——&gt;编辑模式(可以修改内容)———&gt;按下esc， 按下：shift+:—–&gt;底行模式—–输入：（wq(写入并退出)， q!(强制退出)）</p>
+<h3 id="三种模式切换"><a href="#三种模式切换" class="headerlink" title="三种模式切换"></a>三种模式切换</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/image-20200722151424744.png" alt="image-20200722151424744"></p>
+<p>命令模式下命令：</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1604035282677.png" alt="1604035282677"></p>
+<p>​    g  光标定位到文件头部首字符位置</p>
+<p>   G  光标定位到文件尾部首字符位置</p>
+<h3 id="实现演示-9"><a href="#实现演示-9" class="headerlink" title="实现演示"></a>实现演示</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560829997985.png" alt="1560829997985"></p>
+<h3 id="小结-8"><a href="#小结-8" class="headerlink" title="小结"></a>小结</h3><p><strong>vim命令的使用流程：</strong></p>
+<p>​                vim —–》命令模式（只能搜索，不可编辑）——–&gt;按下i（编辑模式）——-&gt;按下esc，按下shit+：—-&gt;底行模式——输入wq！（保存并退出） q!(退出)</p>
+<h2 id="12-压缩与解压【应用】"><a href="#12-压缩与解压【应用】" class="headerlink" title="12.压缩与解压【应用】"></a>12.压缩与解压【应用】</h2><h3 id="目标-9"><a href="#目标-9" class="headerlink" title="目标"></a>目标</h3><p>会对文件进行压缩与解压</p>
+<h3 id="压缩文件扩展名说明"><a href="#压缩文件扩展名说明" class="headerlink" title="压缩文件扩展名说明"></a>压缩文件扩展名说明</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560830503738.png" alt="1560830503738">&nbsp;</p>
+<h3 id="压缩语法"><a href="#压缩语法" class="headerlink" title="压缩语法"></a>压缩语法</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560830528179.png" alt="1560830528179"></p>
+<p>c,  create 创建, 用于创建打包文件</p>
+<p>v, verbose 信息, 用于显示信息过程</p>
+<p>z, gzip, 压缩文件格式</p>
+<p>f, file, 文件, 用于设置压缩文件名字</p>
+<h3 id="解压语法"><a href="#解压语法" class="headerlink" title="解压语法"></a>解压语法</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560830865057.png" alt="1560830865057"></p>
+<p>x, extract 提取, 用于从压缩包中解压文件</p>
+<p>C, change 切换导致指定目录下解压</p>
+<h3 id="实现演示-10"><a href="#实现演示-10" class="headerlink" title="实现演示"></a>实现演示</h3><p>压缩</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560830792145.png" alt="1560830792145"></p>
+<p>解压</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560831014090.png" alt="1560831014090"></p>
+<h3 id="小结-9"><a href="#小结-9" class="headerlink" title="小结"></a>小结</h3><p><strong>压缩：</strong></p>
+<p>​        tar   -cvzf  压缩包名称    文件|文件夹</p>
+<p><strong>解压：</strong></p>
+<p>​        tar  -xvf     压缩包名称  -C  解压路径</p>
+<h2 id="13-其他命令1-工作目录-进程-内存-杀进程【应用】"><a href="#13-其他命令1-工作目录-进程-内存-杀进程【应用】" class="headerlink" title="13.其他命令1-工作目录-进程-内存-杀进程【应用】"></a>13.其他命令1-工作目录-进程-内存-杀进程【应用】</h2><h3 id="目标-10"><a href="#目标-10" class="headerlink" title="目标"></a>目标</h3><p>掌握常用命令查看工作目录位置，查看进程，内存耗用，杀死进程</p>
+<h3 id="查看工作目录位置"><a href="#查看工作目录位置" class="headerlink" title="查看工作目录位置"></a>查看工作目录位置</h3><h6 id=""><a href="#" class="headerlink" title=""></a><img src="linux%E5%9F%BA%E7%A1%80.assets/1560831383876.png" alt="1560831383876"></h6><h3 id="查看进程ps-process"><a href="#查看进程ps-process" class="headerlink" title="查看进程ps(process)"></a>查看进程ps(process)</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560831399292.png" alt="1560831399292"></p>
+<p>常用命令查看所有用户启动和系统启动的进程详细信息</p>
+<pre class="line-numbers language-none"><code class="language-none">ps -aux<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1563594852552.png" alt="1563594852552"></p>
+<p>介绍</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560831675855.png" alt="1560831675855"></p>
+<h3 id="杀死进程"><a href="#杀死进程" class="headerlink" title="杀死进程"></a>杀死进程</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560831861340.png" alt="1560831861340"></p>
+<h5 id="实现演示-11"><a href="#实现演示-11" class="headerlink" title="实现演示"></a>实现演示</h5><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560831599092.png" alt="1560831599092"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560831960621.png" alt="1560831960621"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560831830422.png" alt="1560831830422"></p>
+<h3 id="任务管理器：top"><a href="#任务管理器：top" class="headerlink" title="任务管理器：top"></a>任务管理器：top</h3><h4 id="语法格式"><a href="#语法格式" class="headerlink" title="语法格式"></a>语法格式</h4><pre class="line-numbers language-none"><code class="language-none">top top 命令提供了实时的对系统处理器的状态监视，比较像 windows 下的任务管理器按q：才能退出命令<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1604238616041.png" alt="1604238616041"></p>
+<h3 id="小结-10"><a href="#小结-10" class="headerlink" title="小结"></a>小结</h3><p>查看工作目录位置：  pwd </p>
+<p>查看进程： ps -aux </p>
+<p>内存耗用：top </p>
+<p>杀死进程：kill -9  pid</p>
+<h2 id="14-其他命令2-grep外部搜索文件内容【应用】"><a href="#14-其他命令2-grep外部搜索文件内容【应用】" class="headerlink" title="14.其他命令2-grep外部搜索文件内容【应用】"></a>14.其他命令2-grep外部搜索文件内容【应用】</h2><h3 id="目标-11"><a href="#目标-11" class="headerlink" title="目标"></a>目标</h3><p>掌握在文件外部搜索文件内容</p>
+<h3 id="语法-1"><a href="#语法-1" class="headerlink" title="语法"></a>语法</h3><p>grep是一种强大的文本搜索工具（文件内容过滤器），它能使用字符串搜索文本，并把匹配的行和行号打印出来。</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560838751961.png" alt="1560838751961"></p>
+<h3 id="实现演示-12"><a href="#实现演示-12" class="headerlink" title="实现演示"></a>实现演示</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560840575191.png" alt="1560840575191"></p>
+<h3 id="小结-11"><a href="#小结-11" class="headerlink" title="小结"></a>小结</h3><p>​    <strong>grep使用格式与参数说明：</strong></p>
+<p>​        <strong>使用的格式：</strong> grep    【参数】 搜索的内容  文件名  </p>
+<p>​        <strong>参数说明：</strong> </p>
+<pre><code>            - n      行号            - i      忽略大小写            - v    不匹配</code></pre>
+<h2 id="15-其他命令3-管道【应用】"><a href="#15-其他命令3-管道【应用】" class="headerlink" title="15.其他命令3-管道【应用】"></a>15.其他命令3-管道【应用】</h2><h3 id="目标-12"><a href="#目标-12" class="headerlink" title="目标"></a>目标</h3><p>使用管道实现命令之间传递数据</p>
+<h3 id="语法-2"><a href="#语法-2" class="headerlink" title="语法"></a>语法</h3><p>管道就是“|”</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560838865511.png" alt="1560838865511"></p>
+<h3 id="实现演示-13"><a href="#实现演示-13" class="headerlink" title="实现演示"></a>实现演示</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560840821242.png" alt="1560840821242"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560840857720.png" alt="1560840857720"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560840922685.png" alt="1560840922685"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560840960403.png" alt="1560840960403"></p>
+<h3 id="小结-12"><a href="#小结-12" class="headerlink" title="小结"></a>小结</h3><p>管道命令：|</p>
+<p>管道作用：命令之间传递数据</p>
+<h2 id="17-其他命令5-关机与重启【理解】"><a href="#17-其他命令5-关机与重启【理解】" class="headerlink" title="17.其他命令5-关机与重启【理解】"></a>17.其他命令5-关机与重启【理解】</h2><h3 id="目标-13"><a href="#目标-13" class="headerlink" title="目标"></a>目标</h3><p>使用命令操作linux系统关机与重启</p>
+<h3 id="语法-3"><a href="#语法-3" class="headerlink" title="语法"></a>语法</h3><h6 id="linux关机命令"><a href="#linux关机命令" class="headerlink" title="linux关机命令"></a>linux关机命令</h6><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560838952462.png" alt="1560838952462"></p>
+<p>shutdown  now  马上关机</p>
+<p>shutdown -h   +10   10分钟后关机</p>
+<p>shutdown -h 10:01  指定时间关机</p>
+<p>shutdown -c清除定时关机</p>
+<h3 id="重启命令"><a href="#重启命令" class="headerlink" title="重启命令"></a>重启命令</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560839784511.png" alt="1560839784511"></p>
+<p>windows重启：shutdown -r</p>
+<h3 id="小结-13"><a href="#小结-13" class="headerlink" title="小结"></a>小结</h3><p><strong>关机命令：</strong></p>
+<pre><code>- shutdown now 马上关机- shutdown -h +分钟- shutdown -h  时间</code></pre>
+<p><strong>重启命令：</strong></p>
+<p>​        reboot</p>
+<h2 id="18-文件权限【应用】"><a href="#18-文件权限【应用】" class="headerlink" title="18.文件权限【应用】"></a>18.文件权限【应用】</h2><h3 id="目标-14"><a href="#目标-14" class="headerlink" title="目标"></a>目标</h3><p>学习linux系统的文件权限管理，给不同的人设置不同的权限</p>
+<h3 id="linux将用户分为3大类"><a href="#linux将用户分为3大类" class="headerlink" title="linux将用户分为3大类"></a>linux将用户分为3大类</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560841427916.png" alt="1560841427916">&nbsp;</p>
+<p>资源拥有者,又叫属主， 使用u表示给拥有者设置权限</p>
+<p>拥有者所在的组，又叫属组，使用g表示,  通过g给组员设置权限</p>
+<p>其他组其他人，其他用户，使用o标识, 通过o给其他人人员设置权限</p>
+<blockquote>
+<p>使用a表示所有人（包含了上面用户的3大类）</p>
+</blockquote>
+<p>设置权限就是给这3大类人员设置文件的操作权限</p>
+<h3 id="查看资源的权限"><a href="#查看资源的权限" class="headerlink" title="查看资源的权限"></a>查看资源的权限</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560841593669.png" alt="1560841593669"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560841612730.png" alt="1560841612730">&nbsp;</p>
+<p>每一类用户都有3个权限</p>
+<p>r：读取权限， 只读</p>
+<p>w: 写入权限 ， 可以编辑文件</p>
+<p>x:  执行权限， 由于某些文件是可以执行的，如有有执行权限才可以执行</p>
+<h3 id="添加权限语法"><a href="#添加权限语法" class="headerlink" title="添加权限语法"></a>添加权限语法</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560841863778.png" alt="1560841863778"></p>
+<h3 id="删除权限语法"><a href="#删除权限语法" class="headerlink" title="删除权限语法"></a>删除权限语法</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560842211590.png" alt="1560842211590"></p>
+<h3 id="修改权限语法"><a href="#修改权限语法" class="headerlink" title="修改权限语法"></a>修改权限语法</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560842282016.png" alt="1560842282016"></p>
+<h3 id="实现演示-14"><a href="#实现演示-14" class="headerlink" title="实现演示"></a>实现演示</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560842190001.png" alt="1560842190001"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560842265490.png" alt="1560842265490"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560842419697.png" alt="1560842419697"></p>
+<h3 id="数字权限"><a href="#数字权限" class="headerlink" title="数字权限"></a>数字权限</h3><p>r，读取权限可以使用4代表</p>
+<p>w，写入权限可以使用2代表</p>
+<p>x，执行权限可以使用1代表</p>
+<h3 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560842689766.png" alt="1560842689766"></p>
+<blockquote>
+<p>注意：以上所有权限都是对普通用户才有效果，对于超级管理员root没有效果，因为root拥有所有权限</p>
+</blockquote>
+<h3 id="小结-14"><a href="#小结-14" class="headerlink" title="小结"></a>小结</h3><p>添加权限：chmod 用户或组+权限  资源文件或目录</p>
+<p>删除权限：chmod 用户或组-权限  资源文件或目录</p>
+<p>修改权限：chmod 用户或组=权限  资源文件或目录</p>
+<h2 id="19-crontab定时任务1-介绍与演示【应用】"><a href="#19-crontab定时任务1-介绍与演示【应用】" class="headerlink" title="19.crontab定时任务1-介绍与演示【应用】"></a>19.crontab定时任务1-介绍与演示【应用】</h2><h3 id="目标-15"><a href="#目标-15" class="headerlink" title="目标"></a>目标</h3><p>实现linux进行定时任务操作</p>
+<h3 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h3><p>1.学习定时命令crontab的管理，进行定时任务的查看与编辑</p>
+<p>2.编写定时任务执行，要执行的定时任务</p>
+<h3 id="定时命令管理语法"><a href="#定时命令管理语法" class="headerlink" title="定时命令管理语法"></a>定时命令管理语法</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560843600003.png" alt="1560843600003"></p>
+<h3 id="实现演示-15"><a href="#实现演示-15" class="headerlink" title="实现演示"></a>实现演示</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560843768569.png" alt="1560843768569"></p>
+<h3 id="配置定时任务命令"><a href="#配置定时任务命令" class="headerlink" title="配置定时任务命令"></a>配置定时任务命令</h3><p>格式：分 时 日 月 周 命令</p>
+<blockquote>
+<p>crontab定时命令只能最快按照分钟去执行，不能安装毫秒执行，如果需要按照毫秒执行可以使用java</p>
+</blockquote>
+<p>含义：按照指定的时间执行命令， 就是定时任务</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560843881370.png" alt="1560843881370"></p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560844047674.png" alt="1560844047674"></p>
+<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560844183904.png" alt="1560844183904"></p>
+<h3 id="输出系统当前时间命令"><a href="#输出系统当前时间命令" class="headerlink" title="输出系统当前时间命令"></a>输出系统当前时间命令</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560844400258.png" alt="1560844400258"></p>
+<h3 id="案例需求"><a href="#案例需求" class="headerlink" title="案例需求"></a>案例需求</h3><p>每分钟打印系统当前时间输出到/root/mydate.log文件中</p>
+<h5 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h5><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1566983646097.png" alt="1566983646097"></p>
+<h5 id="实现步骤-1"><a href="#实现步骤-1" class="headerlink" title="实现步骤"></a>实现步骤</h5><p>1.使用crontab -e 进入编辑当前用户的定时任务编辑器</p>
+<p>2.编写定时任务命令</p>
+<pre class="line-numbers language-none"><code class="language-none">* * * * * date &gt;&gt; /root/mydate.log<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><code>&gt;&gt;</code>代表追加输出</p>
+<p><code>&gt;</code>代表覆盖输出</p>
+<p>3.观察运行，看是否每分钟进行打印</p>
+<h3 id="小结-15"><a href="#小结-15" class="headerlink" title="小结"></a>小结</h3><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>crontab -l</td>
+<td>查看当前用户的定时任务</td>
+</tr>
+<tr>
+<td>crontab -e</td>
+<td>编辑定时任务</td>
+</tr>
+<tr>
+<td>crontab -r</td>
+<td>删除定时任务</td>
+</tr>
+</tbody></table>
+<p>&nbsp;</p>
+<h2 id="20-服务管理命令语法"><a href="#20-服务管理命令语法" class="headerlink" title="20.服务管理命令语法"></a>20.服务管理命令语法</h2><p><strong>格式：</strong></p>
+<p>​      systemctl  start|stop|status|restart|   服务器名称</p>
+<p><strong>作用：</strong></p>
+<p>​        启动、关闭、重启指定的服务。</p>
+<p>管理服务启动与停止</p>
+<p>crond是定时器服务的名字，用来管理定时器</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560845167762.png" alt="1560845167762"></p>
+<h3 id="服务的自启动命令语法"><a href="#服务的自启动命令语法" class="headerlink" title="服务的自启动命令语法"></a>服务的自启动命令语法</h3><table>
+<thead>
+<tr>
+<th><strong>命令</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>systemctl   list-units *.service</strong></td>
+<td>显示正在执行中服务</td>
+</tr>
+<tr>
+<td><strong>systemctl   enable</strong> <strong>服务名</strong></td>
+<td>将服务设置为开机自启动</td>
+</tr>
+<tr>
+<td><strong>systemctl   disable</strong> <strong>服务名</strong></td>
+<td>关闭开机自启动</td>
+</tr>
+</tbody></table>
+<h3 id="实现演示-16"><a href="#实现演示-16" class="headerlink" title="实现演示"></a>实现演示</h3><p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560845411560.png" alt="1560845411560"></p>
+<p>![15</p>
+<p><img src="linux%E5%9F%BA%E7%A1%80.assets/1560845789773.png" alt="1560845789773"></p>
+<h3 id="小结-16"><a href="#小结-16" class="headerlink" title="小结"></a>小结</h3><p>服务管理的命令：</p>
+<p>​        <strong>开启服务：</strong>systemctl    start   服务名称</p>
+<p>​        <strong>关闭服务：</strong>systemctl    stop服务名称</p>
+<p>​      <strong>查看服务状态：</strong> systemctl    status 服务名称</p>
+<p>**设置服务开机自启： **systemctl  enable  服务名称</p>
+<p><strong>设置服务开机不自启：</strong> systemctl disable  服务名称 </p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">durex</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://chenliren9527.github.io/2020/11/02/linux-ji-chu/">https://chenliren9527.github.io/2020/11/02/linux-ji-chu/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">durex</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">笔记</span>
+                                </a>
+                            
+                                <a href="/tags/linux/">
+                                    <span class="chip bg-color">linux</span>
+                                </a>
+                            
+                                <a href="/tags/crontab%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/">
+                                    <span class="chip bg-color">crontab定时任务</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2020/11/04/linux-gao-ji/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/139.jpg" class="responsive-img" alt="linux高级">
+                        
+                        <span class="card-title">linux高级</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-11-04
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/linux/" class="post-category">
+                                    linux
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
+                    </a>
+                    
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/">
+                        <span class="chip bg-color">项目部署</span>
+                    </a>
+                    
+                    <a href="/tags/mysql%E5%AE%89%E8%A3%85/">
+                        <span class="chip bg-color">mysql安装</span>
+                    </a>
+                    
+                    <a href="/tags/nginx%E5%AE%89%E8%A3%85/">
+                        <span class="chip bg-color">nginx安装</span>
+                    </a>
+                    
+                    <a href="/tags/tomcat%E5%AE%89%E8%A3%85/">
+                        <span class="chip bg-color">tomcat安装</span>
+                    </a>
+                    
+                    <a href="/tags/redis%E5%AE%89%E8%A3%85/">
+                        <span class="chip bg-color">redis安装</span>
+                    </a>
+                    
+                    <a href="/tags/nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/">
+                        <span class="chip bg-color">nginx反向代理</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/10/28/hei-ma-lu-you-04/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/42.jpg" class="responsive-img" alt="黑马旅游(04)">
+                        
+                        <span class="card-title">黑马旅游(04)</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-28
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JavaWeb/" class="post-category">
+                                    JavaWeb
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                        <span class="chip bg-color">数据库</span>
+                    </a>
+                    
+                    <a href="/tags/redis/">
+                        <span class="chip bg-color">redis</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%BB%91%E9%A9%AC%E6%97%85%E6%B8%B8/">
+                        <span class="chip bg-color">黑马旅游</span>
+                    </a>
+                    
+                    <a href="/tags/NOSql/">
+                        <span class="chip bg-color">NOSql</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2022</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">durex</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">896.5k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2021";
+                    var startMonth = "1";
+                    var startDate = "08";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

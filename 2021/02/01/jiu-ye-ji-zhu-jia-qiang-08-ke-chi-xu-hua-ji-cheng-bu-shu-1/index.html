@@ -1,0 +1,1684 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="就业技术加强(08)-可持续化集成部署, 薛定谔的腿毛">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>就业技术加强(08)-可持续化集成部署 | 薛定谔的腿毛</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="薛定谔的腿毛" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">薛定谔的腿毛</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">薛定谔的腿毛</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/101.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">就业技术加强(08)-可持续化集成部署</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">笔记</span>
+                            </a>
+                        
+                            <a href="/tags/Docker/">
+                                <span class="chip bg-color">Docker</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA/">
+                                <span class="chip bg-color">就业技术加强</span>
+                            </a>
+                        
+                            <a href="/tags/Jenkins/">
+                                <span class="chip bg-color">Jenkins</span>
+                            </a>
+                        
+                            <a href="/tags/Docker%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1/">
+                                <span class="chip bg-color">Docker部署微服务</span>
+                            </a>
+                        
+                            <a href="/tags/GitLab/">
+                                <span class="chip bg-color">GitLab</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90Jenkins/">
+                                <span class="chip bg-color">持续集成Jenkins</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%AE%B9%E5%99%A8%E7%AE%A1%E7%90%86Rancher/">
+                                <span class="chip bg-color">容器管理Rancher</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA/" class="post-category">
+                                就业技术加强
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-02-01
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2022-05-17
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    4k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    16 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="0、学习目标"><a href="#0、学习目标" class="headerlink" title="0、学习目标"></a>0、学习目标</h2><p>目标1：掌握Docker部署微服务</p>
+<p>目标2：熟悉GitLab搭建git仓库</p>
+<p>目标3：熟悉持续集成Jenkins</p>
+<p>目标4：熟悉容器管理Rancher</p>
+<h2 id="1、构建服务镜像"><a href="#1、构建服务镜像" class="headerlink" title="1、构建服务镜像"></a>1、构建服务镜像</h2><h3 id="1-1、DockerFile"><a href="#1-1、DockerFile" class="headerlink" title="1.1、DockerFile"></a>1.1、DockerFile</h3><p>Dockerfile可以基于已有镜像构建镜像</p>
+<ul>
+<li><p>Dockerfile其实就是一个文本文件，由一系列命令和参数构成，Docker可以读取Dockerfile文件并根据Dockerfile文件的描述来构建镜像。</p>
+</li>
+<li><p>Dockerfile文件内容一般分为4部分</p>
+<ul>
+<li>基础镜像信息</li>
+<li>维护者信息</li>
+<li>镜像操作指令</li>
+<li>容器启动时执行的指令</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>命令</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FROM image_name:tag</td>
+<td>定义了使用哪个基础镜像启动构建流程</td>
+</tr>
+<tr>
+<td>MAINTAINER user_name</td>
+<td>声明镜像的创建者</td>
+</tr>
+<tr>
+<td>ENV key value</td>
+<td>设置环境变量 (可以写多条)</td>
+</tr>
+<tr>
+<td>RUN command</td>
+<td>是Dockerfile的核心部分(可以写多条)</td>
+</tr>
+<tr>
+<td>ADD source_dir/file dest_dir/file</td>
+<td>将宿主机的文件复制到容器内，如果是一个压缩文件，将会在复制后自动解压</td>
+</tr>
+<tr>
+<td>COPY source_dir/file dest_dir/file</td>
+<td>和ADD相似，但是如果有压缩文件并不能解压</td>
+</tr>
+<tr>
+<td>WORKDIR path_dir</td>
+<td>设置容器工作目录</td>
+</tr>
+</tbody></table>
+<h3 id="1-2、制作JDK镜像"><a href="#1-2、制作JDK镜像" class="headerlink" title="1.2、制作JDK镜像"></a>1.2、制作JDK镜像</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 1、创建目录
+mkdir –p /usr/local/dockerjdk8
+cd /usr/local/dockerjdk8
+      
+# 2、下载jdk-8u202-linux-x64.tar.gz并上传到服务器（虚拟机）中的/usr/local/dockerjdk8目录 
+
+# 3、在/usr/local/dockerjdk8目录下创建Dockerfile文件，文件内容如下：
+vi Dockerfile
+
+FROM centos:7
+MAINTAINER ITCAST
+WORKDIR /usr
+RUN mkdir  /usr/local/java
+ADD jdk-8u202-linux-x64.tar.gz /usr/local/java/
+ENV JAVA_HOME /usr/local/java/jdk1.8.0_202
+ENV JRE_HOME $JAVA_HOME/jre
+ENV CLASSPATH $JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib:$CLASSPATH
+ENV PATH $JAVA_HOME/bin:$PATH
+
+# 4、执行命令构建镜像；不要忘了后面的那个 .
+docker build -t='jdk1.8' .
+
+# 5、查看镜像是否建立完成
+docker images<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/1556181978321-1612172677915.png" alt="1556181978321"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/1556182052304-1612172677916.png" alt="1556182052304"></p>
+<h3 id="1-3、开启Docker远程访问"><a href="#1-3、开启Docker远程访问" class="headerlink" title="1.3、开启Docker远程访问"></a>1.3、开启Docker远程访问</h3><p>1）开启端口2375</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vi /lib/systemd/system/docker.service
+
+# 注释第14行；在第14行加入下面内容
+ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229180824490-1612172677916.png" alt="image-20201229180824490"></p>
+<p>2）保存后，重启Docker</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 重新加载服务的配置文件
+systemctl daemon-reload 
+systemctl restart docker<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>3）检查docker是否监听了2375端口，有监听结果代表启动成功</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">netstat -ano | grep 2375<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229180948239-1612172677916.png" alt="image-20201229180948239"></p>
+<p>4）本地浏览器访问(有结果代表能够远程访问docker): <a target="_blank" rel="noopener" href="http://192.168.12.135:2375/version">http://192.168.12.135:2375/version</a></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229181233561-1612172677916.png" alt="image-20201229181233561"></p>
+<blockquote>
+<p>如果访问不了，可能是防火墙问题，可以关闭防火墙</p>
+<p>systemctl stop firewalld.service<br>systemctl disable firewalld.service</p>
+</blockquote>
+<h3 id="1-4、构建服务镜像"><a href="#1-4、构建服务镜像" class="headerlink" title="1.4、构建服务镜像"></a>1.4、构建服务镜像</h3><p>1）导入 <code>资料\示例工程\spring-boot-docker</code> 到IDEA中；</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229191627317-1612172677916.png" alt="image-20201229191627317"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229191651111-1612172677916.png" alt="image-20201229191651111"></p>
+<p>2）配置 <code>pom.xml</code>文件中 maven插件；（导入的工程中已经配置，不需要再执行这步）</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229191825195-1612172677916.png" alt="image-20201229191825195"></p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>build</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>finalName</span><span class="token punctuation">&gt;</span></span>${project.artifactId}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>finalName</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugins</span><span class="token punctuation">&gt;</span></span>
+            <span class="token comment">&lt;!-- spring-boot-maven-plugin --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugin</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>org.springframework.boot<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>spring-boot-maven-plugin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>plugin</span><span class="token punctuation">&gt;</span></span>
+            <span class="token comment">&lt;!-- docker-maven-plugin --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugin</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>com.spotify<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>docker-maven-plugin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>1.2.2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>configuration</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token comment">&lt;!-- 镜像的名称 --&gt;</span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>imageName</span><span class="token punctuation">&gt;</span></span>${project.artifactId}:${project.version}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>imageName</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token comment">&lt;!-- 基础镜像 --&gt;</span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>baseImage</span><span class="token punctuation">&gt;</span></span>jdk1.8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>baseImage</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>entryPoint</span><span class="token punctuation">&gt;</span></span>["java","-jar","/${project.build.finalName}.jar"]<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>entryPoint</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>resources</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>resource</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>targetPath</span><span class="token punctuation">&gt;</span></span>/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>targetPath</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>directory</span><span class="token punctuation">&gt;</span></span>${project.build.directory}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>directory</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>include</span><span class="token punctuation">&gt;</span></span>${project.build.finalName}.jar<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>include</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>resource</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>resources</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dockerHost</span><span class="token punctuation">&gt;</span></span>http://10.10.10.10:2375<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dockerHost</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>configuration</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>plugin</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>plugins</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>build</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+<p>3）构建服务的Docker镜像</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229191927991-1612172677916.png" alt="image-20201229191927991"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229192133222-1612172677916.png" alt="image-20201229192133222"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229192140962-1612172677917.png" alt="image-20201229192140962"></p>
+<p>上图的命令为： <code>clean package docker:removeImage docker:build</code> 表示对项目进行清除原有编译打包的内容，然后进行编译打包，删除docker中同名镜像，构建镜像。</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229213241317-1612172677916.png" alt="image-20201229213241317"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229213326166-1612172677917.png" alt="image-20201229213326166"></p>
+<p>4）查看镜像</p>
+<p>可以到模拟终端使用 <code>docker images</code> 查看刚刚构建的镜像：</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229213451694-1612172677917.png" alt="image-20201229213451694"></p>
+<p>5）创建容器</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">docker run -di --name=web1 -p 9090:9090 spring-boot-docker:1.0-SNAPSHOT<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229214352765-1612172677917.png" alt="image-20201229214352765"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229214418191-1612172677917.png" alt="image-20201229214418191"></p>
+<h3 id="1-5、IDEA中操作-Docker"><a href="#1-5、IDEA中操作-Docker" class="headerlink" title="1.5、IDEA中操作 Docker"></a>1.5、IDEA中操作 Docker</h3><p>在IDEA中可以通过配置Docker服务地址然后对Docker中的镜像、容器进行操作管理。具体如下：</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229213744167-1612172677917.png" alt="image-20201229213744167"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229214637902-1612172677917.png" alt="image-20201229214637902"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229214724560-1612172677917.png" alt="image-20201229214724560"></p>
+<p>也可以在界面上直接删除镜像，容器，或者基于镜像创建容器：</p>
+<p>删除容器：</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229215542793-1612172677917.png" alt="image-20201229215542793"></p>
+<p>创建容器：</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229215023684-1612172677917.png" alt="image-20201229215023684"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201229220114438-1612172677917.png" alt="image-20201229220114438"></p>
+<h2 id="2、GitLab"><a href="#2、GitLab" class="headerlink" title="2、GitLab"></a>2、GitLab</h2><h3 id="2-1、简介"><a href="#2-1、简介" class="headerlink" title="2.1、简介"></a>2.1、简介</h3><p>基于git实现的代码仓库有很多，像我们熟知的 Gitee、GitHub、GitLab、Gogs等等，都是支持持续集成的，我们把代码推送到git时，git仓库会触发一个webhooks事件通知对应配置的持续集成软件，触发持续集成软件的对应操作。</p>
+<p>GitLab是一个利用 Ruby on Rails开发的开源应用程序，实现一个自托管的Git项目仓库，可通过Web界面进行访问公开的或者私人项目。</p>
+<p>它拥有与Github、码云类似的功能，能够浏览源代码，管理缺陷和注释。可以管理团队对仓库的访问，它非常易于浏览提交过的版本并提供一个文件历史库。它还提供一个代码片段收集功能可以轻松实现代码复用，便于日后有需要的时候进行查找。</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230111224421-1612172677917.png" alt="image-20201230111224421"></p>
+<h3 id="2-2、安装"><a href="#2-2、安装" class="headerlink" title="2.2、安装"></a>2.2、安装</h3><p>1） 拉取镜像</p>
+  <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">docker pull gitlab/gitlab-ce<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>2） 创建gitlab工作目录</p>
+  <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 创建config目录
+mkdir -p /usr/local/gitlab/config
+# 创建logs目录
+mkdir -p /usr/local/gitlab/logs
+# 创建data目录
+mkdir -p /usr/local/gitlab/data<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>3） 创建运行Gitlab容器</p>
+  <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">docker run -d --name=gitlab \
+-p 443:443 -p 80:80 -p 222:22 \
+--restart=always \
+-v /usr/local/gitlab/config:/etc/gitlab \
+-v /usr/local/gitlab/logs:/var/log/gitlab \
+-v /usr/local/gitlab/data:/var/opt/gitlab \
+gitlab/gitlab-ce<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>  <img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230114542328-1612172677917.png" alt="image-20201230114542328"></p>
+<blockquote>
+<p>启动的时候；如果内存占用 2G多的时候差不多就启动完了</p>
+</blockquote>
+<p>4） 修改gitlab.rb配置文件</p>
+<p>  gitlab容器运行没问题，但在gitlab上创建项目的时候，生成项目的URL访问地址是按容器的hostname来生成的，也就是容器的id。作为gitlab服务器，我们需要一个固定的URL访问地址，于是需要配置gitlab.rb（宿主机路径:/usr/local/gitlab/config/gitlab.rb）配置三个参数:</p>
+  <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vi /usr/local/gitlab/config/gitlab.rb
+
+# 在第33行 添中以下内容
+external_url 'http://192.168.12.135'
+gitlab_rails['gitlab_ssh_host'] = '192.168.12.135'
+gitlab_rails['gitlab_shell_ssh_port'] = 222<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230114700451-1612172677917.png" alt="image-20201230114700451"></p>
+<p>5） 重启gitlab容器</p>
+  <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">docker restart gitlab<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>6） 浏览器访问: <a target="_blank" rel="noopener" href="http://192.168.12.135/">http://192.168.12.135/</a>  ；刚进入需要修改root用户的密码；</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230115709369-1612172677917.png" alt="image-20201230115709369"></p>
+<p> 比如：我修改的 用户名及密码为: root / root123456 ；修改之后使用新密码登录：</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230115916987-1612172677917.png" alt="image-20201230115916987"></p>
+<ol>
+<li><p>密码重置无法生效时</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 进入gitlab容器</span>
+root@server:/<span class="token comment"># docker exec -it gitlab /bin/bash</span>
+
+<span class="token comment"># 登录容器里面的gitlab,开启 Rails console.</span>
+root@1fab12c6d626:/<span class="token comment"># gitlab-rails console</span>
+<span class="token comment"># 执行 u = User.find_by_username('root') 查找root用户</span>
+irb<span class="token punctuation">(</span>main<span class="token punctuation">)</span>:002:<span class="token operator"><span class="token file-descriptor important">0</span>&gt;</span> u <span class="token operator">=</span> User.find_by_username<span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span>
+irb<span class="token punctuation">(</span>main<span class="token punctuation">)</span>:003:<span class="token operator"><span class="token file-descriptor important">0</span>&gt;</span> u.skip_reconfirmation<span class="token operator">!</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>然后重新尝试登陆</p>
+</li>
+</ol>
+<ol start="2">
+<li><p>重置密码</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 进入gitlab容器</span>
+root@server:/<span class="token comment"># docker exec -it gitlab /bin/bash</span>
+
+<span class="token comment"># 登录容器里面的gitlab,开启 Rails console.</span>
+root@1fab12c6d626:/<span class="token comment"># gitlab-rails console</span>
+<span class="token comment"># 执行 u = User.find_by_username('root') 查找root用户</span>
+irb<span class="token punctuation">(</span>main<span class="token punctuation">)</span>:002:<span class="token operator"><span class="token file-descriptor important">0</span>&gt;</span> user <span class="token operator">=</span> User.find_by_username<span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span>
+irb<span class="token punctuation">(</span>main<span class="token punctuation">)</span>:003:<span class="token operator"><span class="token file-descriptor important">0</span>&gt;</span> user.password <span class="token operator">=</span> <span class="token string">'secret_pass'</span>
+irb<span class="token punctuation">(</span>main<span class="token punctuation">)</span>:004:<span class="token operator"><span class="token file-descriptor important">0</span>&gt;</span> user.password_confirmation  <span class="token operator">=</span> <span class="token string">'secret_pass'</span>
+<span class="token comment"># When using this method instead of the Users API, GitLab sends an email to the user stating that the user changed their password.</span>
+<span class="token comment"># If the password was changed by an administrator, execute the following command to notify the user by email: </span>
+irb<span class="token punctuation">(</span>main<span class="token punctuation">)</span>:005:<span class="token operator"><span class="token file-descriptor important">0</span>&gt;</span> user.send_only_admin_changed_your_password_notification<span class="token operator">!</span>
+irb<span class="token punctuation">(</span>main<span class="token punctuation">)</span>:005:<span class="token operator"><span class="token file-descriptor important">0</span>&gt;</span> user.save<span class="token operator">!</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>登录之后：</p>
+</li>
+</ol>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230115929790-1612172677917.png" alt="image-20201230115929790"></p>
+<h3 id="2-3、创建项目"><a href="#2-3、创建项目" class="headerlink" title="2.3、创建项目"></a>2.3、创建项目</h3><p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230163053509-1612172677917.png" alt="image-20201230163053509"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230163102687-1612172677917.png" alt="image-20201230163102687"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230163110022-1612172677917.png" alt="image-20201230163110022"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230163116600-1612172677917.png" alt="image-20201230163116600"></p>
+<h3 id="2-4、上传项目"><a href="#2-4、上传项目" class="headerlink" title="2.4、上传项目"></a>2.4、上传项目</h3><p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230163229879-1612172677918.png" alt="image-20201230163229879"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230165352730-1612172677918.png" alt="image-20201230165352730"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230170222226-1612172677918.png" alt="image-20201230170222226"></p>
+<p>可以把 target/*.iml等文件也添加到忽略文件中。</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230170341676-1612172677918.png" alt="image-20201230170341676"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230170325796-1612172677918.png" alt="image-20201230170325796"></p>
+<p>推送到远程仓库：</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230170449172-1612172677918.png" alt="image-20201230170449172"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230170504423-1612172677918.png" alt="image-20201230170504423"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230170535508-1612172677918.png" alt="image-20201230170535508"></p>
+<p>上图中输入 gitlab 中的用户名/密码。再到gitlab查看如下：</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230170645415-1612172677918.png" alt="image-20201230170645415"></p>
+<h2 id="3、持续集成"><a href="#3、持续集成" class="headerlink" title="3、持续集成"></a>3、持续集成</h2><h3 id="3-1、简介"><a href="#3-1、简介" class="headerlink" title="3.1、简介"></a>3.1、简介</h3><p>持续集成Continuous integration，简称CI 随着软件开发复杂度的不断提高，团队开发成员间如何更好地协同工作以确保软件开发的质量已经慢慢成为开发过程中不可回避的问题。尤其是近些年来，敏捷Agile在软件工程领域越来越红火，如何能在不断变化的需求中快速适应和保证软件的质量也显得尤其的重要。持续集成正是针对这一类问题的一种软件开发实践。它倡导团队开发成员必须<strong>经常集成</strong>他们的工作，甚至每天都可能发生多次集成。而每次的集成都是<strong>通过自动化的构建来验证，包括自动编译、发布和测试，从而尽快地发现集成错误，让团队能够更快的开发内聚的软件</strong>。</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230172232893-1612172677918.png" alt="image-20201230172232893"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230173409927-1612172677918.png" alt="image-20201230173409927"></p>
+<p>1.统一的代码库</p>
+<p>2.自动构建</p>
+<p>3.自动测试</p>
+<p>4.每个人每天都要向代码库主干提交代码</p>
+<p>5.每次代码递交后都会在持续集成服务器上触发一次构建</p>
+<p>6.保证快速构建</p>
+<p>7.模拟生产环境的自动测试</p>
+<p>8.每个人都可以很容易的获取最新可执行的应用程序</p>
+<p>9.每个人都清楚正在发生的状况</p>
+<p>10.自动化的部署</p>
+<h3 id="3-2、特点"><a href="#3-2、特点" class="headerlink" title="3.2、特点"></a>3.2、特点</h3><p>它是一个自动化的周期性的集成测试过程，<strong>从检出代码、编译构建、运行测试、结果记录、测试统计等都是自动完成的，无需过多人工干预</strong>；需要有专门的集成服务器来执行集成构建；需要有代码托管工具支持。</p>
+<h3 id="3-3、作用"><a href="#3-3、作用" class="headerlink" title="3.3、作用"></a>3.3、作用</h3><p>保证团队开发人员提交代码的质量，<strong>减轻了软件发布时的压力</strong>；持续集成中的任何一个环节都是自动完成的，无需太多的人工干预，有利于减少重复过程以节省时间、费用和工作量。</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/1594018223501-1612172677918.png" alt="1594018223501"></p>
+<h2 id="4、Jenkins"><a href="#4、Jenkins" class="headerlink" title="4、Jenkins"></a>4、Jenkins</h2><h3 id="4-1、简介"><a href="#4-1、简介" class="headerlink" title="4.1、简介"></a>4.1、简介</h3><p>官方网站: <a target="_blank" rel="noopener" href="https://www.jenkins.io/zh/">https://www.jenkins.io/zh/</a> </p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230174428489-1612172677918.png" alt="image-20201230174428489"></p>
+<ul>
+<li>Jenkins原名Hudson，2011年改为现在的名字，它是一个开源的实现持续集成的软件工具。</li>
+<li>Jenkins是一款开源 CI&amp;CD 软件领导者，提供超过1000个插件来支持: <strong>自动化构建、部署</strong>、满足任何项目的需要。</li>
+<li>Jenkins能实施监控集成中存在的错误，提供详细的日志文件和提醒功能，还能用图表的形式形象地展示项目构建的趋势和稳定性。 </li>
+</ul>
+<p> <strong>特点:</strong> </p>
+<ul>
+<li>易配置：提供友好的GUI配置界面。</li>
+<li>变更支持：Jenkins能从代码仓库（CVS/SVN/Git）中获取代码更新列表并输出到编译输出信息中。</li>
+<li>支持永久链接：用户是通过web来访问Jenkins的，而这些web页面的链接地址都是永久链接地址，因此，你可以在各种文档中直接使用该链接。</li>
+<li>集成E-Mail/RSS/IM: 当完成一次集成时，可通过这些工具实时告诉你集成结果（一般情况下，构建一次集成需要花费一定时间，有了这个功能，你就可以在等待结果过程中，干别的事情）。</li>
+<li>JUnit/TestNG测试报告: 也就是用以图表等形式提供详细的测试报表功能。</li>
+<li>支持分布式构建: Jenkins可以把集成构建等工作分发到多台计算机中完成。</li>
+<li>支持第三方插件: 使得Jenkins变得越来越强大。</li>
+</ul>
+<h3 id="4-2、安装"><a href="#4-2、安装" class="headerlink" title="4.2、安装"></a>4.2、安装</h3><p>1）拉取jenkins镜像</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">docker pull jenkins/jenkins:lts-centos7<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>2）创建jenkins容器</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">docker run -d --name<span class="token operator">=</span>jenkins -p <span class="token number">8888</span>:8080 jenkins/jenkins:lts-centos7<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="4-3、配置"><a href="#4-3、配置" class="headerlink" title="4.3、配置"></a>4.3、配置</h3><h4 id="4-3-1、配置插件镜像地址"><a href="#4-3-1、配置插件镜像地址" class="headerlink" title="4.3.1、配置插件镜像地址"></a>4.3.1、配置插件镜像地址</h4><p>配置插件镜像加速： jenkins官方地址下载速度比较慢，需要配置国内镜像。<a href="/2021/02/01/jiu-ye-ji-zhu-jia-qiang-08-ke-chi-xu-hua-ji-cheng-bu-shu-1/default.txt" title="default.txt">default.txt</a>(自行修改后缀为json)</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token builtin class-name">cd</span> /usr/local
+  
+<span class="token comment"># 1. 上传 资料/jenkins/default.json 文件到 /usr/local 目录下</span>
+  
+<span class="token comment"># 2. 将当前文件夹下的default.json文件复制到容器中</span>
+docker <span class="token function">cp</span> default.json jenkins:/var/jenkins_home/updates/default.json
+  
+<span class="token comment"># 3. 重启jenkins</span>
+docker restart jenkins<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="4-3-2、解锁"><a href="#4-3-2、解锁" class="headerlink" title="4.3.2、解锁"></a>4.3.2、解锁</h4><p>访问配置: <a target="_blank" rel="noopener" href="http://192.168.12.135:8888/">http://192.168.12.135:8888</a> 访问jenkins，提示需要解锁</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230180026407-1612172677918.png" alt="image-20201230180026407"></p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment"># 进入容器</span>
+docker <span class="token builtin class-name">exec</span> -it -u root jenkins <span class="token function">bash</span>
+ 
+<span class="token comment"># 查看密钥</span>
+<span class="token function">cat</span> /var/jenkins_home/secrets/initialAdminPassword<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230180247096-1612172677918.png" alt="image-20201230180247096"></p>
+<p> 复制密钥 到浏览器 并点击 <code>继续</code></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230180504301-1612172677918.png" alt="image-20201230180504301"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230180619752-1612172677918.png" alt="image-20201230180619752"></p>
+<p>  进入jenkins欢迎页面：</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230180626922-1612172677918.png" alt="image-20201230180626922"></p>
+<h4 id="4-3-3、修改admin密码"><a href="#4-3-3、修改admin密码" class="headerlink" title="4.3.3、修改admin密码"></a>4.3.3、修改admin密码</h4><p>刚刚设置的密码太长；太难记住；可以修改admin密码；如修改为：123456</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230180809150-1612172677918.png" alt="image-20201230180809150"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230180905979-1612172677918.png" alt="image-20201230180905979"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230180954662-1612172677918.png" alt="image-20201230180954662"></p>
+<h4 id="4-3-4、创建用户"><a href="#4-3-4、创建用户" class="headerlink" title="4.3.4、创建用户"></a>4.3.4、创建用户</h4><p>可以创建除了admin外用户；如创建一个用户为 <code>itheima</code>步骤如下：</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230181133965-1612172677919.png" alt="image-20201230181133965"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230181205236-1612172677919.png" alt="image-20201230181205236"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230181241731-1612172677919.png" alt="image-20201230181241731"></p>
+<h3 id="4-4、使用"><a href="#4-4、使用" class="headerlink" title="4.4、使用"></a>4.4、使用</h3><h4 id="4-4-1、安装maven插件"><a href="#4-4-1、安装maven插件" class="headerlink" title="4.4.1、安装maven插件"></a>4.4.1、安装maven插件</h4><p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230182141874-1612172677919.png" alt="image-20201230182141874"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230182256451-1612172677919.png" alt="image-20201230182256451"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230182447972-1612172677919.png" alt="image-20201230182447972"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230182723305-1612172677919.png" alt="image-20201230182723305"></p>
+<h4 id="4-4-2、安装git插件"><a href="#4-4-2、安装git插件" class="headerlink" title="4.4.2、安装git插件"></a>4.4.2、安装git插件</h4><p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230182851956-1612172677919.png" alt="image-20201230182851956"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230202342066-1612172677919.png" alt="image-20201230202342066"></p>
+<h4 id="4-4-3、全局工具配置"><a href="#4-4-3、全局工具配置" class="headerlink" title="4.4.3、全局工具配置"></a>4.4.3、全局工具配置</h4><p>因为Jenkins构建的时候需要使用到JDK以及Maven；所以将两个工具配置到安装了Jenkins的容器中。</p>
+<p>1）<strong>上传资料</strong></p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token builtin class-name">cd</span> /usr/local
+<span class="token comment"># 1. 上传 资料/jdk-8u202-linux-x64.rpm 、资料/apache-maven-3.6.3-bin.tar.gz  到 /usr/local</span>
+
+<span class="token comment"># 2. 将 /usr/local下的两个资源拷贝到Jenkins容器中</span>
+docker <span class="token function">cp</span> jdk-8u202-linux-x64.rpm jenkins:/usr/local/
+docker <span class="token function">cp</span> apache-maven-3.6.3-bin.tar.gz jenkins:/usr/local/
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>2）<strong>安装JDK</strong></p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment"># 进入容器</span>
+docker <span class="token builtin class-name">exec</span> -it -u root jenkins <span class="token function">bash</span>
+
+<span class="token comment"># 安装jdk 会被安装到这个目录: /usr/java/jdk1.8.0_202</span>
+<span class="token builtin class-name">cd</span> /usr/local
+
+<span class="token function">rpm</span> -ivh jdk-8u202-linux-x64.rpm
+
+<span class="token comment"># 配置环境变量</span>
+<span class="token function">vi</span> /etc/profile
+
+<span class="token comment"># 在文件最后面追加如下内容</span>
+<span class="token builtin class-name">export</span> <span class="token environment constant">PATH</span> <span class="token environment constant">USER</span> <span class="token environment constant">LOGNAME</span> MAIL <span class="token environment constant">HOSTNAME</span> <span class="token environment constant">HISTSIZE</span> <span class="token environment constant">HISTCONTROL</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">JAVA_HOME</span><span class="token operator">=</span>/usr/java/jdk1.8.0_202-amd64
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">CLASSPATH</span><span class="token operator">=</span>.:<span class="token variable">$JAVA_HOME</span>/lib/dt.jar:<span class="token variable">$JAVA_HOME</span>/lib/tools.jar
+<span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token variable">$JAVA_HOME</span>/bin:<span class="token environment constant">$PATH</span>
+
+<span class="token comment"># 使配置生效</span>
+<span class="token builtin class-name">source</span> /etc/profile<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230191112497-1612172677919.png" alt="image-20201230191112497"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230191203627-1612172677919.png" alt="image-20201230191203627"></p>
+<p>3）<strong>安装Maven</strong></p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token builtin class-name">cd</span> /usr/local
+<span class="token comment"># 解压maven</span>
+<span class="token function">tar</span> -zxvf apache-maven-3.6.3-bin.tar.gz
+
+<span class="token comment"># 配置maven的下载镜像为阿里云镜像</span>
+<span class="token function">vi</span> /usr/local/apache-maven-3.6.3/conf/settings.xml
+
+
+<span class="token comment"># 大概在第 159 行；添加如下镜像配置</span>
+<span class="token operator">&lt;</span>mirror<span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>id<span class="token operator">&gt;</span>alimaven<span class="token operator">&lt;</span>/id<span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>mirrorOf<span class="token operator">&gt;</span>central<span class="token operator">&lt;</span>/mirrorOf<span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>name<span class="token operator">&gt;</span>aliyun maven<span class="token operator">&lt;</span>/name<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>url<span class="token operator">&gt;</span>http://maven.aliyun.com/nexus/content/repositories/central/<span class="token operator">&lt;</span>/url<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/mirror<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230191605279-1612172677919.png" alt="image-20201230191605279"></p>
+<p>4）<strong>配置Jenkins中的Jdk和Maven</strong></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230191743307-1612172677919.png" alt="image-20201230191743307"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230191812111-1612172677919.png" alt="image-20201230191812111"></p>
+<p>jdk 路径在Jenkins容器中的路径为：<code>/usr/java/jdk1.8.0_202-amd64</code></p>
+<p>maven路径在Jenkins容器中的路径为：<code>/usr/local/apache-maven-3.6.3</code></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230192332541-1612172677919.png" alt="image-20201230192332541"></p>
+<h4 id="4-4-4、创建Maven任务"><a href="#4-4-4、创建Maven任务" class="headerlink" title="4.4.4、创建Maven任务"></a>4.4.4、创建Maven任务</h4><p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230201235335-1612172677919.png" alt="image-20201230201235335"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230202737739-1612172677919.png" alt="image-20201230202737739"></p>
+<p>设置Git仓库路径：</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230203221883-1612172677919.png" alt="image-20201230203221883"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230210031042-1612172677919.png" alt="image-20201230210031042"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230210204568-1612172677919.png" alt="image-20201230210204568"></p>
+<p>设置在构建时要执行的命令： <code>clean package docker:removeImage docker:build</code></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230210226781-1612172677919.png" alt="image-20201230210226781"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230210238373-1612172677920.png" alt="image-20201230210238373"></p>
+<p>构建完成后可以到docker服务器上查看最新构建的镜像；然后也可以通过修改代码，每3分钟如果有变化就会触发构建。</p>
+<blockquote>
+<p>Jenkins 更加完整的参考视频：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1kJ411p7mV">https://www.bilibili.com/video/BV1kJ411p7mV</a></p>
+</blockquote>
+<h2 id="5、Rancher"><a href="#5、Rancher" class="headerlink" title="5、Rancher"></a>5、Rancher</h2><h3 id="5-1、简介"><a href="#5-1、简介" class="headerlink" title="5.1、简介"></a>5.1、简介</h3><p>Rancher是一套容器管理平台,它可以帮助组织在生产环境中轻松快捷的部署和管理容器。</p>
+<p>Rancher为采用容器的团队提供了完整的软件堆栈，解决了跨任何基础设施架构管理多个Kubernetes集群的运维和安全挑战，同时为DevOps团队提供了用于运行容器化工作负载的集成工具。</p>
+<p>官网地址: <a target="_blank" rel="noopener" href="https://www.rancher.cn/">https://www.rancher.cn/</a> </p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/1595075181534-1612172677920.png" alt="1595075181534"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/1595075199813-1612172677920.png" alt="1595075199813"></p>
+<h3 id="5-2、安装"><a href="#5-2、安装" class="headerlink" title="5.2、安装"></a>5.2、安装</h3><p>1）根据docker版本拉去 Rancher镜像  <a target="_blank" rel="noopener" href="https://rancher.com/docs/rancher/v1.6/en/hosts/#supported-docker-versionstrueSupportedDockerVersions">Supported Docker Versions</a>， Docker版本是20+的考虑 Rancher 2.x。 以下步骤以Rancher 1.x为例。</p>
+  <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">docker pull rancher/server  <span class="token comment">#for Rancher 1.x</span>
+docker pull rancher/rancher <span class="token comment">#for Rancher 2.x</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>2）创建Rancher容器</p>
+  <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment">#for Rancher 1.x</span>
+docker run -d --name<span class="token operator">=</span>rancher -p <span class="token number">9191</span>:8080 rancher/server
+
+<span class="token comment">#for Rancher 2.x ，启动rancher的时候需要权限</span>
+docker run -d --privileged --restart<span class="token operator">=</span>unless-stopped -p <span class="token number">80</span>:80 -p <span class="token number">443</span>:443 rancher/rancher
+
+
+
+<span class="token comment"># 批量删除 rancher 相关的容器</span>
+docker <span class="token function">rm</span> <span class="token variable"><span class="token variable">$(</span>docker <span class="token function">ps</span> -a <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'/rancher/ {print <span class="token variable">$1</span>}'</span><span class="token variable">)</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>  3）浏览器访问: <a target="_blank" rel="noopener" href="http://192.168.12.135:9191/">http://192.168.12.135:9191</a></p>
+<p>  <img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230212027579-1612172677920.png" alt="image-20201230212027579"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230212041555-1612172677920.png" alt="image-20201230212041555"></p>
+<p>4）切换至中文界面</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230212149494-1612172677920.png" alt="image-20201230212149494"></p>
+<h3 id="5-3、使用"><a href="#5-3、使用" class="headerlink" title="5.3、使用"></a>5.3、使用</h3><p>1）<strong>添加环境</strong></p>
+<p>Rancher 支持将资源分组归属到多个环境。 每个环境具有自己独立的基础架构资源及服务，并由一个或多个用户、团队或组织所管理。<br>例如；您可以创建独立的“开发”、“测试”及“生产”环境以确保环境之间的安全隔离，将“开发”环境的访问权限赋予全部人员，但限制“生产”环境的访问权限给一个小的团队。</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230212430332-1612172677920.png" alt="image-20201230212430332"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230212410588-1612172677920.png" alt="image-20201230212410588"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230212554407-1612172677920.png" alt="image-20201230212554407"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230212538348-1612172677920.png" alt="image-20201230212538348"></p>
+<p>2）<strong>配置主机</strong></p>
+<p>以dev开发环境为例，选择dev，配置该环境所对应的主机。</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230212635681-1612172677920.png" alt="image-20201230212635681"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230213254874-1612172677920.png" alt="image-20201230213254874"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230213306770-1612172677920.png" alt="image-20201230213306770"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230213320092-1612172677920.png" alt="image-20201230213320092"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230213335705-1612172677920.png" alt="image-20201230213335705"></p>
+<p>将上面复制的内容拷贝到我们的虚拟机中执行：</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230213416714-1612172677920.png" alt="image-20201230213416714"></p>
+<p>执行完后，回到主机页面，稍等一会刷新页面可以看到主机信息，代表rancher已经连接到配置的主机服务器:</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230213518346-1612172677920.png" alt="image-20201230213518346"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230213532437-1612172677920.png" alt="image-20201230213532437"></p>
+<p>3）<strong>创建容器</strong></p>
+<p>1）点击【基础架构】菜单中的【容器】，进入到容器管理页面，可以看到当前服务器的容器列表。</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230213747636-1612172677920.png" alt="image-20201230213747636"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230213820090-1612172677920.png" alt="image-20201230213820090"></p>
+<p>2）点击【添加容器】按钮，创建容器:</p>
+<p>填写名称、描述、端口映射等容器信息，点击下面的创建，即可创建容器。</p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230213844440-1612172677920.png" alt="image-20201230213844440"></p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230214111006-1612172677920.png" alt="image-20201230214111006"> </p>
+<p><img src="%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA-08-%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8C%96%E9%9B%86%E6%88%90%E9%83%A8%E7%BD%B2-1.assets/image-20201230214151784-1612172677920.png" alt="image-20201230214151784"></p>
+<p>3）浏览器访问: <a target="_blank" rel="noopener" href="http://192.168.12.135:9091/hello/itcast">http://192.168.12.135:9091/hello/itcast</a> </p>
+<p><img src="assets/image-20201230214358405.png" alt="image-20201230214358405"></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">durex</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://chenliren9527.github.io/2021/02/01/jiu-ye-ji-zhu-jia-qiang-08-ke-chi-xu-hua-ji-cheng-bu-shu-1/">https://chenliren9527.github.io/2021/02/01/jiu-ye-ji-zhu-jia-qiang-08-ke-chi-xu-hua-ji-cheng-bu-shu-1/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">durex</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">笔记</span>
+                                </a>
+                            
+                                <a href="/tags/Docker/">
+                                    <span class="chip bg-color">Docker</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA/">
+                                    <span class="chip bg-color">就业技术加强</span>
+                                </a>
+                            
+                                <a href="/tags/Jenkins/">
+                                    <span class="chip bg-color">Jenkins</span>
+                                </a>
+                            
+                                <a href="/tags/Docker%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1/">
+                                    <span class="chip bg-color">Docker部署微服务</span>
+                                </a>
+                            
+                                <a href="/tags/GitLab/">
+                                    <span class="chip bg-color">GitLab</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90Jenkins/">
+                                    <span class="chip bg-color">持续集成Jenkins</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%AE%B9%E5%99%A8%E7%AE%A1%E7%90%86Rancher/">
+                                    <span class="chip bg-color">容器管理Rancher</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/02/01/jiu-ye-ji-zhu-jia-qiang-08-ke-chi-xu-hua-ji-cheng-bu-shu-2/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/117.jpg" class="responsive-img" alt="就业技术加强(08)-可持续化集成部署课堂笔记">
+                        
+                        <span class="card-title">就业技术加强(08)-可持续化集成部署课堂笔记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-01
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA/" class="post-category">
+                                    就业技术加强
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
+                    </a>
+                    
+                    <a href="/tags/Docker/">
+                        <span class="chip bg-color">Docker</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%B0%B1%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%8A%A0%E5%BC%BA/">
+                        <span class="chip bg-color">就业技术加强</span>
+                    </a>
+                    
+                    <a href="/tags/Jenkins/">
+                        <span class="chip bg-color">Jenkins</span>
+                    </a>
+                    
+                    <a href="/tags/Docker%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1/">
+                        <span class="chip bg-color">Docker部署微服务</span>
+                    </a>
+                    
+                    <a href="/tags/GitLab/">
+                        <span class="chip bg-color">GitLab</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90Jenkins/">
+                        <span class="chip bg-color">持续集成Jenkins</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%AE%B9%E5%99%A8%E7%AE%A1%E7%90%86Rancher/">
+                        <span class="chip bg-color">容器管理Rancher</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/01/31/freemarker-jiang-yi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/105.jpg" class="responsive-img" alt="FreeMarker讲义">
+                        
+                        <span class="card-title">FreeMarker讲义</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-31
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/ssm%E6%A1%86%E6%9E%B6/" class="post-category">
+                                    ssm框架
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
+                    </a>
+                    
+                    <a href="/tags/FreeMarker/">
+                        <span class="chip bg-color">FreeMarker</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%A1%B5%E9%9D%A2%E9%9D%99%E6%80%81%E5%8C%96/">
+                        <span class="chip bg-color">页面静态化</span>
+                    </a>
+                    
+                    <a href="/tags/Spring-MVC/">
+                        <span class="chip bg-color">Spring MVC</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2022</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">durex</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">896.5k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2021";
+                    var startMonth = "1";
+                    var startDate = "08";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
