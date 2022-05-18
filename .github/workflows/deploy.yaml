@@ -41,9 +41,9 @@ jobs:
 
     - name: Generate files
       # 编译 markdown 文件
+      # gulp相当于 hexo cl&&hexo g 并且再把代码和图片压缩
       run: |
-#        gulp相当于 hexo cl&&hexo g 并且再把代码和图片压缩
-         gulp
+        gulp
 #        hexo clean
 #        hexo generate
 
