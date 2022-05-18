@@ -16,6 +16,7 @@ timezone: ''
 url: https://chenliren9527.github.io
 root: /
 permalink: :year/:month/:day/:title/
+#permalink: posts/:abbrlink.html  图片无法显示，不使用
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -128,3 +129,7 @@ githubEmojis:
 search:
   path: search.xml
   field: post
+# hexo-abbrlink config 固定文章地址插件,无法显示图片
+#abbrlink:
+#  alg: crc16  #算法选项：crc16、crc32，区别见之前的文章，这里默认为crc16丨crc32比crc16复杂一点，长一点
+#  rep: dec    #输出进制：十进制和十六进制，默认为10进制。丨dec为十进制，hex为十六进制

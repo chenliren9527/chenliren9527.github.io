@@ -42,8 +42,10 @@ jobs:
     - name: Generate files
       # 编译 markdown 文件
       run: |
-        hexo clean
-        hexo generate
+#        gulp相当于 hexo cl&&hexo g 并且再把代码和图片压缩
+         gulp
+#        hexo clean
+#        hexo generate
 
     - name: Deploy hexo blog
       env: 
