@@ -36,7 +36,7 @@ date: 2021-12-27 23:19:1
 
 业务中台主要针对其电商交易业务，具体包括售前、售中、售后三部分，业务中台被划分为许多中心服务，即会员中心、商品中心、交易中心、评价中心、店铺中心、支付中心、营销中心、库存中心，贯穿整个电商业务流程。数据中台主要提供大数据相关的计算、存储、共享能力，将线上与线下的数据源进行连接打通，进而实现决策分析、精准营销等战略手段。
 
-![1597655324153](E:/Users/durex/Documents/%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AC%2594%25E8%25AE%25B0/Java%25E7%25AC%2594%25E8%25AE%25B0/%25E4%25B8%25AD%25E5%258F%25B0%25E7%25BB%2584%25E4%25BB%25B6%25E8%25AF%25BE%25E7%25A8%258B%25E9%2585%258D%25E5%25A5%2597%25E8%25B5%2584%25E6%2596%2599/%25E5%25B8%25B8%25E8%25A7%2581%25E7%25BB%2584%25E4%25BB%25B6%25E4%25B8%258E%25E4%25B8%25AD%25E5%258F%25B0%25E5%258C%2596/%25E8%25AE%25B2%25E4%25B9%2589/assets/1597655324153.png) 
+![1597655324153](Java%E9%AB%98%E6%89%8B%E7%8F%AD-%E9%98%B6%E6%AE%B5%E4%B8%80-%E5%B8%B8%E8%A7%81%E7%BB%84%E4%BB%B6%E4%B8%8E%E4%B8%AD%E5%8F%B0%E5%8C%96.assets/1597655324153.png) 
 
 阿里提出中台战略之后，滴滴、京东等互联网厂商陆续推出对应的中台战略，同时数据中台、业务中台、技术中台、内容中台等多种形式中台出现。
 
@@ -79,20 +79,20 @@ date: 2021-12-27 23:19:1
 本项目具有两个主要功能特性：
 
 - 用户权限管理
-
+  
   具有用户、部门、岗位、角色、菜单管理，并通过网关进行统一的权限认证
 
 - 微服务开发框架
-
+  
   本项目同时也是一个微服务开发框架，集成了基础的公共组件，包括数据库、缓存、日志、表单验证、对象转换、防注入和接口文档管理等工具。
 
 系统架构：
 
-![image-20201207094701062](E:/Users/durex/Documents/%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AC%2594%25E8%25AE%25B0/Java%25E7%25AC%2594%25E8%25AE%25B0/%25E4%25B8%25AD%25E5%258F%25B0%25E7%25BB%2584%25E4%25BB%25B6%25E8%25AF%25BE%25E7%25A8%258B%25E9%2585%258D%25E5%25A5%2597%25E8%25B5%2584%25E6%2596%2599/%25E5%25B8%25B8%25E8%25A7%2581%25E7%25BB%2584%25E4%25BB%25B6%25E4%25B8%258E%25E4%25B8%25AD%25E5%258F%25B0%25E5%258C%2596/%25E8%25AE%25B2%25E4%25B9%2589/assets/image-20201207094701062.png)
+![image-20201207094701062](Java%E9%AB%98%E6%89%8B%E7%8F%AD-%E9%98%B6%E6%AE%B5%E4%B8%80-%E5%B8%B8%E8%A7%81%E7%BB%84%E4%BB%B6%E4%B8%8E%E4%B8%AD%E5%8F%B0%E5%8C%96.assets/image-20201207094701062.png)
 
 技术架构：
 
-![image-20201207101527251](E:/Users/durex/Documents/%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AC%2594%25E8%25AE%25B0/Java%25E7%25AC%2594%25E8%25AE%25B0/%25E4%25B8%25AD%25E5%258F%25B0%25E7%25BB%2584%25E4%25BB%25B6%25E8%25AF%25BE%25E7%25A8%258B%25E9%2585%258D%25E5%25A5%2597%25E8%25B5%2584%25E6%2596%2599/%25E5%25B8%25B8%25E8%25A7%2581%25E7%25BB%2584%25E4%25BB%25B6%25E4%25B8%258E%25E4%25B8%25AD%25E5%258F%25B0%25E5%258C%2596/%25E8%25AE%25B2%25E4%25B9%2589/assets/image-20201207101527251.png)
+![image-20201207101527251](Java%E9%AB%98%E6%89%8B%E7%8F%AD-%E9%98%B6%E6%AE%B5%E4%B8%80-%E5%B8%B8%E8%A7%81%E7%BB%84%E4%BB%B6%E4%B8%8E%E4%B8%AD%E5%8F%B0%E5%8C%96.assets/image-20201207101527251.png)
 
 工程结构：
 
@@ -100,8 +100,8 @@ date: 2021-12-27 23:19:1
 
 项目服务有两个：网关服务和权限服务
 
-| 应用           | 端口 | 说明     | 启动命令                       |
-| -------------- | ---- | -------- | ------------------------------ |
+| 应用             | 端口   | 说明   | 启动命令                           |
+| -------------- | ---- | ---- | ------------------------------ |
 | pd-gateway     | 8760 | 网关服务 | java -jar pd-gateway.jar &     |
 | pd-auth-server | 8764 | 权限服务 | java -jar pd-auth-server.jar & |
 
@@ -175,17 +175,17 @@ StationController：岗位管理控制器
 
 ![image-20200415093512088](Java%E9%AB%98%E6%89%8B%E7%8F%AD-%E9%98%B6%E6%AE%B5%E4%B8%80-%E5%B8%B8%E8%A7%81%E7%BB%84%E4%BB%B6%E4%B8%8E%E4%B8%AD%E5%8F%B0%E5%8C%96.assets/image-20200415093512088.png)
 
-~~~file
+```file
 pd-goods              #商品服务父工程
-├── pd-goods-entity	  #实体
-├── pd-goods-server	  #服务
-~~~
+├── pd-goods-entity      #实体
+├── pd-goods-server      #服务
+```
 
 ###### 2.1.4.1.2.2 pd-goods-entity开发
 
 第一步：配置pom.xml
 
-~~~xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -214,11 +214,11 @@ pd-goods              #商品服务父工程
         </dependency>
     </dependencies>
 </project>
-~~~
+```
 
 第二步：创建商品实体类
 
-~~~java
+```java
 package com.itheima.pinda.goods.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -340,11 +340,11 @@ public class GoodsInfo extends Entity<Long> {
     private String descript;
 
 }
-~~~
+```
 
 第三步：创建商品操作对应的多个DTO类
 
-~~~java
+```java
 package com.itheima.pinda.goods.dto;
 
 import com.itheima.pinda.goods.entity.GoodsInfo;
@@ -362,31 +362,31 @@ public class GoodsInfoPageDTO extends GoodsInfo {
     private LocalDateTime startCreateTime;
     private LocalDateTime endCreateTime;
 }
-~~~
+```
 
-~~~java
+```java
 package com.itheima.pinda.goods.dto;
 
 import com.itheima.pinda.goods.entity.GoodsInfo;
 
 public class GoodsInfoSaveDTO extends GoodsInfo {
 }
-~~~
+```
 
-~~~java
+```java
 package com.itheima.pinda.goods.dto;
 
 import com.itheima.pinda.goods.entity.GoodsInfo;
 
 public class GoodsInfoUpdateDTO extends GoodsInfo {
 }
-~~~
+```
 
 ###### 2.1.4.1.2.3 pd-goods-server开发
 
 第一步：配置pom.xml文件
 
-~~~xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -541,7 +541,7 @@ public class GoodsInfoUpdateDTO extends GoodsInfo {
         </plugins>
     </build>
 </project>
-~~~
+```
 
 第二步：导入资料中提供的配置文件
 
@@ -553,7 +553,7 @@ public class GoodsInfoUpdateDTO extends GoodsInfo {
 
 配置文件内容如下：
 
-~~~yaml
+```yaml
 # 在这里配置 权限服务 所有环境都能使用的配置
 pinda:
   mysql:
@@ -567,11 +567,11 @@ pinda:
 
 server:
   port: 8767
-~~~
+```
 
 第四步：编写启动类
 
-~~~java
+```java
 package com.itheima.pinda;
 
 import com.itheima.pinda.validator.config.EnableFormValidator;
@@ -610,7 +610,7 @@ public class GoodsServerApplication {
 
     }
 }
-~~~
+```
 
 第五步：导入资料中提供的配置类
 
@@ -618,7 +618,7 @@ public class GoodsServerApplication {
 
 第六步：创建Mapper接口
 
-~~~java
+```java
 package com.itheima.pinda.goods.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
@@ -631,11 +631,11 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface GoodsInfoMapper extends BaseMapper<GoodsInfo> {
 }
-~~~
+```
 
 第七步：创建Service接口和实现类
 
-~~~java
+```java
 package com.itheima.pinda.goods.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
@@ -643,9 +643,9 @@ import com.itheima.pinda.goods.entity.GoodsInfo;
 
 public interface GoodsInfoService extends IService<GoodsInfo> {
 }
-~~~
+```
 
-~~~java
+```java
 package com.itheima.pinda.goods.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -659,11 +659,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class GoodsInfoServiceImpl extends ServiceImpl<GoodsInfoMapper, GoodsInfo> implements GoodsInfoService {
 }
-~~~
+```
 
 第八步：创建Controller
 
-~~~java
+```java
 package com.itheima.pinda.goods.controller;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -803,13 +803,13 @@ public class GoodsInfoController extends BaseController {
         return success();
     }
 }
-~~~
+```
 
 ##### 2.1.4.1.3 配置网关路由规则
 
 在Nacos中的pd-gateway.yml中新增商品服务相关的路由配置，内容如下：
 
-~~~yaml
+```yaml
 zuul:
   #  debug:
   #    request: true
@@ -827,7 +827,7 @@ zuul:
     goods:
       path: /goods/**
       serviceId: pd-goods-server
-~~~
+```
 
 ##### 2.1.4.1.4 前端开发
 
@@ -839,14 +839,12 @@ zuul:
 
 ![image-20200415102224580](Java%E9%AB%98%E6%89%8B%E7%8F%AD-%E9%98%B6%E6%AE%B5%E4%B8%80-%E5%B8%B8%E8%A7%81%E7%BB%84%E4%BB%B6%E4%B8%8E%E4%B8%AD%E5%8F%B0%E5%8C%96.assets/image-20200415102224580.png)
 
-
-
 ![image-20200415102314102](Java%E9%AB%98%E6%89%8B%E7%8F%AD-%E9%98%B6%E6%AE%B5%E4%B8%80-%E5%B8%B8%E8%A7%81%E7%BB%84%E4%BB%B6%E4%B8%8E%E4%B8%AD%E5%8F%B0%E5%8C%96.assets/image-20200415102314102.png)
 
-goodsInfo:add	新增		POST	/goodsInfo
-goodsInfo:update	修改		PUT	/goodsInfo
-goodsInfo:delete	删除		DELETE	/goodsInfo
-goodsInfo:view	列表		GET	/goodsInfo/page
+goodsInfo:add    新增        POST    /goodsInfo
+goodsInfo:update    修改        PUT    /goodsInfo
+goodsInfo:delete    删除        DELETE    /goodsInfo
+goodsInfo:view    列表        GET    /goodsInfo/page
 
 ##### 2.1.4.1.6 配置角色
 
@@ -854,11 +852,7 @@ goodsInfo:view	列表		GET	/goodsInfo/page
 
 ![image-20200415105314675](Java%E9%AB%98%E6%89%8B%E7%8F%AD-%E9%98%B6%E6%AE%B5%E4%B8%80-%E5%B8%B8%E8%A7%81%E7%BB%84%E4%BB%B6%E4%B8%8E%E4%B8%AD%E5%8F%B0%E5%8C%96.assets/image-20200415105314675.png)
 
-
-
 ![image-20200415105358366](Java%E9%AB%98%E6%89%8B%E7%8F%AD-%E9%98%B6%E6%AE%B5%E4%B8%80-%E5%B8%B8%E8%A7%81%E7%BB%84%E4%BB%B6%E4%B8%8E%E4%B8%AD%E5%8F%B0%E5%8C%96.assets/image-20200415105358366.png)
-
-
 
 ![image-20200415105457620](Java%E9%AB%98%E6%89%8B%E7%8F%AD-%E9%98%B6%E6%AE%B5%E4%B8%80-%E5%B8%B8%E8%A7%81%E7%BB%84%E4%BB%B6%E4%B8%8E%E4%B8%AD%E5%8F%B0%E5%8C%96.assets/image-20200415105457620.png)
 
@@ -872,7 +866,7 @@ goodsInfo:view	列表		GET	/goodsInfo/page
 
 对于已经完成相关业务开发的项目，可以将其前端系统的页面通过iframe的形式内嵌到通用权限系统的前端页面中，这就需要对其前端系统的页面进行相应的修改。因为原来的TMS系统前端页面的左侧菜单和导航菜单都在自己页面中展示，现在需要将这些菜单配置到通用权限系统中，通过权限系统的前端系统来展示。
 
-![image-20200423103130632](E:/Users/durex/Documents/%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AC%2594%25E8%25AE%25B0/Java%25E7%25AC%2594%25E8%25AE%25B0/%25E4%25B8%25AD%25E5%258F%25B0%25E7%25BB%2584%25E4%25BB%25B6%25E8%25AF%25BE%25E7%25A8%258B%25E9%2585%258D%25E5%25A5%2597%25E8%25B5%2584%25E6%2596%2599/%25E5%25B8%25B8%25E8%25A7%2581%25E7%25BB%2584%25E4%25BB%25B6%25E4%25B8%258E%25E4%25B8%25AD%25E5%258F%25B0%25E5%258C%2596/%25E8%25AE%25B2%25E4%25B9%2589/assets/image-20200423103130632.png)
+![image-20200423103130632](Java%E9%AB%98%E6%89%8B%E7%8F%AD-%E9%98%B6%E6%AE%B5%E4%B8%80-%E5%B8%B8%E8%A7%81%E7%BB%84%E4%BB%B6%E4%B8%8E%E4%B8%AD%E5%8F%B0%E5%8C%96.assets/image-20200423103130632.png)
 
 ###### 2.1.4.2.1.2 请求地址
 
@@ -884,7 +878,7 @@ goodsInfo:view	列表		GET	/goodsInfo/page
 
 配置通用权限系统的网关路由规则，将针对TMS的请求转发到TMS相关服务：
 
-~~~yaml
+```yaml
 zuul:
   retryable: false
   servlet-path: /
@@ -903,7 +897,7 @@ zuul:
     web-xczx:
       path: /xczx/api/**
       url: http://xc-main-java.itheima.net:7291/api/
-~~~
+```
 
 ##### 2.1.4.2.3 通用权限系统配置
 
@@ -925,21 +919,15 @@ zuul:
 
 ![image-20200423114347953](Java%E9%AB%98%E6%89%8B%E7%8F%AD-%E9%98%B6%E6%AE%B5%E4%B8%80-%E5%B8%B8%E8%A7%81%E7%BB%84%E4%BB%B6%E4%B8%8E%E4%B8%AD%E5%8F%B0%E5%8C%96.assets/image-20200423114347953.png)
 
-
-
 角色创建完成后可以为角色配置菜单权限和资源权限：
 
 ![image-20200423114722781](Java%E9%AB%98%E6%89%8B%E7%8F%AD-%E9%98%B6%E6%AE%B5%E4%B8%80-%E5%B8%B8%E8%A7%81%E7%BB%84%E4%BB%B6%E4%B8%8E%E4%B8%AD%E5%8F%B0%E5%8C%96.assets/image-20200423114722781.png)
 
-
-
 完成角色的菜单权限和资源权限配置后可以将角色授权给用户：
 
-![image-20200423115004298](E:/Users/durex/Documents/%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AC%2594%25E8%25AE%25B0/Java%25E7%25AC%2594%25E8%25AE%25B0/%25E4%25B8%25AD%25E5%258F%25B0%25E7%25BB%2584%25E4%25BB%25B6%25E8%25AF%25BE%25E7%25A8%258B%25E9%2585%258D%25E5%25A5%2597%25E8%25B5%2584%25E6%2596%2599/%25E5%25B8%25B8%25E8%25A7%2581%25E7%25BB%2584%25E4%25BB%25B6%25E4%25B8%258E%25E4%25B8%25AD%25E5%258F%25B0%25E5%258C%2596/%25E8%25AE%25B2%25E4%25B9%2589/assets/image-20200423115004298.png)
+![image-20200423115004298](Java%E9%AB%98%E6%89%8B%E7%8F%AD-%E9%98%B6%E6%AE%B5%E4%B8%80-%E5%B8%B8%E8%A7%81%E7%BB%84%E4%BB%B6%E4%B8%8E%E4%B8%AD%E5%8F%B0%E5%8C%96.assets/image-20200423115004298.png)
 
-
-
-![image-20200423115042703](E:/Users/durex/Documents/%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AC%2594%25E8%25AE%25B0/Java%25E7%25AC%2594%25E8%25AE%25B0/%25E4%25B8%25AD%25E5%258F%25B0%25E7%25BB%2584%25E4%25BB%25B6%25E8%25AF%25BE%25E7%25A8%258B%25E9%2585%258D%25E5%25A5%2597%25E8%25B5%2584%25E6%2596%2599/%25E5%25B8%25B8%25E8%25A7%2581%25E7%25BB%2584%25E4%25BB%25B6%25E4%25B8%258E%25E4%25B8%25AD%25E5%258F%25B0%25E5%258C%2596/%25E8%25AE%25B2%25E4%25B9%2589/assets/image-20200423115042703.png)
+![image-20200423115042703](Java%E9%AB%98%E6%89%8B%E7%8F%AD-%E9%98%B6%E6%AE%B5%E4%B8%80-%E5%B8%B8%E8%A7%81%E7%BB%84%E4%BB%B6%E4%B8%8E%E4%B8%AD%E5%8F%B0%E5%8C%96.assets/image-20200423115042703.png)
 
 ## 2.2. 注册登录服务
 
@@ -957,9 +945,9 @@ zuul:
 
 项目服务有两个：网关服务和注册登录服务
 
-| 应用         | 端口 | 说明         | 启动命令                     |
-| ------------ | ---- | ------------ | ---------------------------- |
-| auth-gateway | 8782 | 网关服务     | java -jar auth-gateway.jar & |
+| 应用           | 端口   | 说明     | 启动命令                         |
+| ------------ | ---- | ------ | ---------------------------- |
+| auth-gateway | 8782 | 网关服务   | java -jar auth-gateway.jar & |
 | auth         | 8783 | 注册登录服务 | java -jar auth.jar &         |
 
 ![image-20201211134913609](Java%E9%AB%98%E6%89%8B%E7%8F%AD-%E9%98%B6%E6%AE%B5%E4%B8%80-%E5%B8%B8%E8%A7%81%E7%BB%84%E4%BB%B6%E4%B8%8E%E4%B8%AD%E5%8F%B0%E5%8C%96.assets/image-20201211134913609.png)
@@ -991,7 +979,7 @@ zuul:
 
 第三步：在网关服务配置文件中配置路由规则，由网关服务进行jwt校验
 
-~~~yaml
+```yaml
 spring:
   cloud:
     # 路由网关配置
@@ -1021,7 +1009,7 @@ spring:
             - Path=/user/**
           filters:
             - StripPrefix= 1
-~~~
+```
 
 第四步：修改业务应用页面，请求时需要将token放在请求头中提交
 
@@ -1068,7 +1056,7 @@ ID，全称Identifier，中文翻译为标识符，是用来唯一标识对象�
 分布式ID生成系统部署完成后，第三方系统接入即可直接获取ID。
 
 1. 引入distributedid-client依赖：在项目pom.xml添加坐标
-
+   
    ```xml
    <dependencies>
         <dependency>
@@ -1080,7 +1068,6 @@ ID，全称Identifier，中文翻译为标识符，是用来唯一标识对象�
    ```
 
 ```
-   
 2. 分布式ID生成系统客户端配置，在项目resources目录下编辑distributedid_client.properties
 
    ```properties
@@ -1094,18 +1081,15 @@ ID，全称Identifier，中文翻译为标识符，是用来唯一标识对象�
 ```
 
 3. 获取ID时，直接调用即可
-
+   
    ```java
    Long id = 0L;
    //从服务端获取自增型ID
    id = DistributedId.autoincrementId("your service name");
-                   
+   
    //本地生成雪花算法ID
    id = DistributedId.snowflake();
    
    //从服务端获取雪花算法ID
    id = DistributedId.snowflakeFromServer();
    ```
-
-
-
