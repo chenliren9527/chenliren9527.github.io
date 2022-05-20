@@ -8,6 +8,7 @@ tags:
   - 自定义MyBatis框架
 categories:
   - 数据库
+abbrlink: 15030
 date: 2020-09-24 00:15:48
 ---
 

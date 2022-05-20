@@ -4,12 +4,13 @@ tags:
   - 笔记
   - 项目实战一
   - RabbitMQ
-  - Quartz 
+  - Quartz
   - 任务调度框架
   - 定时任务
   - 消息队列
 categories:
   - 项目实战一
+abbrlink: 22809
 date: 2020-12-05 16:09:49
 ---
 

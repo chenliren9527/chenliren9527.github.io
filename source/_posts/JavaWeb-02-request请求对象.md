@@ -4,12 +4,13 @@ tags:
   - 笔记
   - JavaWeb
   - HTTP协议
-  - Request域对象 
+  - Request域对象
   - Request对象做请求转发
   - HTTP请求参数的乱码
   - HTTP协议请求
 categories:
   - JavaWeb
+abbrlink: 6283
 date: 2020-10-10 16:26:01
 ---
 

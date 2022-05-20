@@ -15,6 +15,7 @@ tags:
   - 注解@Results和@Result属性
 categories:
   - 数据库
+abbrlink: 23223
 date: 2020-09-26 00:20:58
 ---
 

@@ -18,6 +18,7 @@ tags:
   - 传统的DAO实现类的开发方式
 categories:
   - 数据库
+abbrlink: 51894
 date: 2020-09-25 00:16:51
 ---
 
