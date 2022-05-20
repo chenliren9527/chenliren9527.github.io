@@ -1,14 +1,14 @@
 ---
 title: JavaWeb(03)-servletContext和response
 tags:
-- 笔记
-- JavaWeb
-- servletcontext
-- response
-- 文件下载
+  - 笔记
+  - JavaWeb
+  - servletcontext
+  - response
+  - 文件下载
 categories:
-- JavaWeb
-  date: 2022-05-20 19:03:18
+  - JavaWeb
+date: 2020-10-11 19:03:18
 
 ---
 
