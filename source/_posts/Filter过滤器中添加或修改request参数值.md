@@ -220,6 +220,8 @@ public class HttpHelper {
 
 ### 三、实体json参数：RequestWrapper
 
+request.getInputStream()执行一次后（可正常读取body数据），之后再执行就无效了。 所以需要重写获取 输入流的方法，保证流可写可读多次
+
 ```java
 import com.hean.iot.platform.utils.HttpHelper;
 
