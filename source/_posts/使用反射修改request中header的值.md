@@ -3,6 +3,7 @@ title: 使用反射修改request中header的值
 tags:
   - 笔记
   - JavaWeb
+  - 拦截器
 categories:
   - JavaWeb
 date: 2022-05-25 19:23:39
@@ -64,7 +65,7 @@ coyoteRequest实现类=org.apache.coyote.Request
 ```
 ## 具体过程如下
 
-### 步骤一：先找到具体的Request对象是哪个类，根据打印信息看源码
+先找到具体的Request对象是哪个类，根据打印信息看源码
 
 进入其中找到getHeader()方法，如下
 ```java
