@@ -151,6 +151,7 @@ gulp.task(
         "compressHtml",
         "compressCss",
         "compressJs",
+        "compressImage",
         gulp.parallel("deploy")
     )
 );
